@@ -17,6 +17,7 @@ namespace
 	}
 }
 
+void* downsample_buffer;
 HDRPipeline::HDRPipeline(unsigned int width, unsigned int height)
 	: d_input_image(cudaMalloc<float>(width * height * 3)),
 	  d_luminance_image(cudaMalloc<float>(width * height)),
@@ -26,6 +27,17 @@ HDRPipeline::HDRPipeline(unsigned int width, unsigned int height)
 	  width(width),
 	  height(height)
 {
+
+	// we need a memory buffer on the GPU to store the intermediate images we compute while downscaling -> CudaMalloc
+	// we use floats, and only one color channel (luminance). Image is half size in width, and half in height -> 1/4 of original size
+
+//	cudaError_t res = cudaMalloc(&downsample_buffer, width*height / 4.0f * sizeof(float));
+//	if (res != cudaSuccess){
+//		throw std::runtime_error("something went wrong with downscaling memory allocation");
+//	}
+
+	// this function does the same thing as the above, but a lot more concise
+	throw_error(cudaMalloc(&downsample_buffer, width*height / 4 * sizeof(float)));
 }
 
 void HDRPipeline::consume(const float* input_image)
@@ -36,7 +48,6 @@ void HDRPipeline::consume(const float* input_image)
 
 float HDRPipeline::downsample()
 {
-	// TODO: implement downsampling and return average luminance
 	// implement downsampling and return average luminance
 	// call the function from hdr_pipeline.cu
 	// dest and input buffers: see HDRPipeline declaration in header file
@@ -45,6 +56,9 @@ float HDRPipeline::downsample()
 			d_input_image.get(),
 			width,
 			height);
+
+	void downsample(float* dest,	const float* input, unsigned int width, unsigned int height);
+	downsample((float*)downsample_buffer, d_luminance_image.get(), width, height);
 	return 1.0;
 }
 
@@ -73,9 +87,9 @@ image<float> HDRPipeline::readLuminance()
 
 image<float> HDRPipeline::readDownsample()
 {
-	image<float> output(width, height);
+	image<float> output(width/2, height/2);
 	// copy back output data from GPU
-	throw_error(cudaMemcpy(data(output), d_buffer_image.get(), width * height * 4U, cudaMemcpyDeviceToHost));
+	throw_error(cudaMemcpy(data(output), downsample_buffer, width/2 * height/2 * 4U, cudaMemcpyDeviceToHost));
 	return output;
 }
 

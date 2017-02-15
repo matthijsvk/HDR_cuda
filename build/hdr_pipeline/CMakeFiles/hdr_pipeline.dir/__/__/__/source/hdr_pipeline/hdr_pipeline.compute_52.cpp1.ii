@@ -38658,7 +38658,7 @@ __attribute__((global)) void luminance_kernel(float* dest, const float* input, u
  if (x < width && y < height){
   const float* input_pixel = input + 3 * (width*y + x);
 
-  float lum = (input_pixel[0] + input_pixel[1] + input_pixel[2]) / 3.0f;
+  float lum = 0.21f * input_pixel[0] + 0.72f * input_pixel[1] + 0.07f * input_pixel[2];
 
   dest[width *y + x] = lum;
  }
@@ -38675,6 +38675,44 @@ void luminance(float* dest, const float* input, unsigned int width, unsigned int
 
 
  luminance_kernel<<<num_blocks, block_size>>>(dest, input, width, height);
+
+
+
+
+
+}
+
+__attribute__((global)) void downsample_kernel(float* dest, const float* input, unsigned int width, unsigned int height){
+
+  unsigned int x = blockIdx.x * blockDim.x + threadIdx.x;
+  unsigned int y = blockIdx.y * blockDim.y + threadIdx.y;
+
+  int F = 2;
+
+  if ((x >= width / F ) || (y >= height / F))
+   return;
+
+  F = 4;
+
+  float sum = 0.0f;
+# 122 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+  for (int i = 0; i< F; i++){
+   sum += input[F * (y * width + x) + i];
+  }
+  dest[y * width /F + x] = sum / F;
+}
+
+
+void downsample(float* dest, const float* luminance, unsigned int width, unsigned int height){
+ const dim3 block_size = { 32, 32 };
+
+ const dim3 num_blocks = {
+  divup(width, block_size.x),
+  divup(height, block_size.y)
+ };
+
+
+ downsample_kernel<<<num_blocks, block_size>>>(dest, luminance, width, height);
 }
 
 

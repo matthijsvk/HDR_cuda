@@ -71,7 +71,7 @@ __global__ void luminance_kernel(float* dest, const float* input, unsigned int w
 	if (x < width && y < height){
 		const float* input_pixel = input + 3 * (width*y + x); // *3 b/c three colors (=bytes) per pixel.
 
-		float lum = (input_pixel[0] + input_pixel[1] + input_pixel[2]) / 3.0f;
+		float lum =  0.21f * input_pixel[0] + 0.72f * input_pixel[1] + 0.07f * input_pixel[2];  //compensate for human vision
 
 		dest[width *y + x] = lum; //store the results. not * 3 b/c only luminance, no colors
 	}
@@ -88,6 +88,54 @@ void luminance(float* dest,	const float* input, unsigned int width, unsigned int
 
 	// launch the kernel that we wrote above for all the blocks
 	luminance_kernel<<<num_blocks, block_size>>>(dest, input, width, height);
+
+	// this 'downsampling' step takes about 1.3ms on a GT 730m
+	// now we want to run this in a hierarchical way: reduce the image in each step
+	// -> launch blocks on the images, reducing its size each step until we end up with a 1x1 color
+	// -> we need to allocate memory for a buffer in the HDRPipeline object declaration
+}
+
+__global__ void downsample_kernel(float* dest, const float* input, unsigned int width, unsigned int height){
+	// each thread needs to know on which pixels to work -> get absolute coordinates of the thread in the grid
+		unsigned int x = blockIdx.x * blockDim.x + threadIdx.x;
+		unsigned int y = blockIdx.y * blockDim.y + threadIdx.y;
+
+		int F = 2; //width of downsampling square (F^2 = number of pixels to be pooled together)
+
+		if ((x >= width / F ) || (y >= height / F))
+			return;
+
+		F = 4;
+
+		float sum = 0.0f;
+
+		// 2D version
+//		for (int j = 0; j<F; j++){
+//			for (int i = 0; i < F; i++){
+//				// current pixel : (x+i, y+j)
+//				sum += input[(y*F+j) * width + x*F +i];
+//			}
+//		}
+//		dest[ y* width / F + x] = sum / (F * F);
+
+		// 1D version : F is amount of pixels we pool
+		for (int i = 0; i< F; i++){
+			sum += input[F * (y * width + x) + i]; //jump with step pool_size
+		}
+		dest[y * width /F + x] = sum / F; //store the results. not * 3 b/c only luminance, no colors
+}
+
+// get the required number of blocks to cover the whole image, and run the kernel on all blocks
+void downsample(float* dest,	const float* luminance, unsigned int width, unsigned int height){
+	const dim3 block_size = { 32, 32 };
+	// calculate number of blocks required to process the whole image -> round up to the next multiple of 32 (full block)
+	const dim3 num_blocks = {
+		divup(width, block_size.x),
+		divup(height, block_size.y)
+	};
+
+	// launch the kernel that we wrote above for all the blocks
+	downsample_kernel<<<num_blocks, block_size>>>(dest, luminance, width, height);
 }
 
 
