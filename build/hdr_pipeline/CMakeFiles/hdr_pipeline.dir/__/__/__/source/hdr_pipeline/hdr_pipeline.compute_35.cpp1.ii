@@ -38692,14 +38692,22 @@ __attribute__((global)) void downsample_kernel(float* dest, const float* input, 
   if ((x >= width / F ) || (y >= height / F))
    return;
 
-  F = 4;
-
   float sum = 0.0f;
-# 122 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
-  for (int i = 0; i< F; i++){
-   sum += input[F * (y * width + x) + i];
+
+
+  for (int j = 0; j<F; j++){
+   for (int i = 0; i < F; i++){
+
+    sum += input[(y*F+j) * width + x*F +i];
+   }
   }
-  dest[y * width /F + x] = sum / F;
+  dest[ y* width / F + x] = sum / (F * F);
+
+
+
+
+
+
 }
 
 

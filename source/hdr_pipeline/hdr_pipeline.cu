@@ -105,24 +105,22 @@ __global__ void downsample_kernel(float* dest, const float* input, unsigned int 
 		if ((x >= width / F ) || (y >= height / F))
 			return;
 
-		F = 4;
-
 		float sum = 0.0f;
 
 		// 2D version
-//		for (int j = 0; j<F; j++){
-//			for (int i = 0; i < F; i++){
-//				// current pixel : (x+i, y+j)
-//				sum += input[(y*F+j) * width + x*F +i];
-//			}
-//		}
-//		dest[ y* width / F + x] = sum / (F * F);
+		for (int j = 0; j<F; j++){
+			for (int i = 0; i < F; i++){
+				// current pixel : (x+i, y+j)
+				sum += input[(y*F+j) * width + x*F +i];
+			}
+		}
+		dest[ y* width / F + x] = sum / (F * F);
 
 		// 1D version : F is amount of pixels we pool
-		for (int i = 0; i< F; i++){
-			sum += input[F * (y * width + x) + i]; //jump with step pool_size
-		}
-		dest[y * width /F + x] = sum / F; //store the results. not * 3 b/c only luminance, no colors
+//		for (int i = 0; i< F; i++){
+//			sum += input[F * (y * width + x) + i]; //jump with step pool_size
+//		}
+//		dest[y * width /F + x] = sum / F; //store the results. not * 3 b/c only luminance, no colors
 }
 
 // get the required number of blocks to cover the whole image, and run the kernel on all blocks
