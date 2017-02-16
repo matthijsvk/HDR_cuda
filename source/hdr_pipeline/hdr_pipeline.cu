@@ -95,35 +95,28 @@ void luminance(float* dest,	const float* input, unsigned int width, unsigned int
 	// -> we need to allocate memory for a buffer in the HDRPipeline object declaration
 }
 
-__global__ void downsample_kernel(float* dest, float* input, unsigned int width, unsigned int height){
+__global__ void downsample_kernel(float* dest, float* input, unsigned int width, unsigned int height, unsigned int inputPitch, unsigned int outputPitch){
 	// each thread needs to know on which pixels to work -> get absolute coordinates of the thread in the grid
 		unsigned int x = blockIdx.x * blockDim.x + threadIdx.x;
 		unsigned int y = blockIdx.y * blockDim.y + threadIdx.y;
 
 		int F = 2; //width of downsampling square (F^2 = number of pixels to be pooled together)
 
+		//printf(" KERNEL width %d | height %d \n", width, height);
 		if ((x >= width / F ) || (y >= height / F))
 			return;
 
 		float sum = 0.0f;
 
-		// 2D version
+		// 2D version: add pixels in 2x2 block, calculate the average. Jump with F so different threads don't operate on the same pixels.
+
 		for (int j = 0; j<F; j++){
 			for (int i = 0; i < F; i++){
 				// current pixel : (x+i, y+j)
-				sum += input[(y*F+j) * width + x*F +i];
+				sum += input[(y*F+j) * inputPitch + x*F +i];
 			}
 		}
-		dest[ y* width / F + x] = sum / (F * F);
-
-		printf(" KERNEL width %d | height %d \n", width, height);
-
-
-		// 1D version : F is amount of pixels we pool. Only works for F=2, not F=4 as would make more sense. Weird.
-//		for (int i = 0; i< F; i++){
-//			sum += input[F * (y * width + x) + i]; //jump with step pool_size
-//		}
-//		dest[y * width /F + x] = sum / F; //store the results. not * 3 b/c only luminance, no colors
+		dest[ y* outputPitch + x] = sum / (F * F);
 }
 
 // get the required number of blocks to cover the whole image, and run the kernel on all blocks
@@ -135,31 +128,45 @@ void downsample(float* dest,	float* luminance, unsigned int width, unsigned int 
 		divup(height, block_size.y)
 	};
 
-	int ping = 0; //result in dest buffer
-	// first iteration
-	downsample_kernel<<<num_blocks, block_size>>>(dest, luminance, width, height);
-	ping = 0;
+	// Store original width = width of buffer
+	const unsigned int pitchBuf = width /2;
+	const unsigned int pitchLuminance = width;
 
-	while (width != 1 && height != 1){
+	// first iteration
+	downsample_kernel<<<num_blocks, block_size>>>(dest, luminance, width, height, pitchLuminance, pitchBuf);
+	int ping = 0; //result in dest buffer
+
+	while (width != 1 || height != 1){
 		// result will be in the dest buffer
 		width = width / 2;
-		height = height/2;
+		height = height / 2;
+		if (width < 1){
+			width = 1;
+			printf("width < 1 \n");
+		}
+		if (height < 1){
+			height = 1;
+			printf("height < 1 \n");
+		}
 
 		printf(" width %d | height %d \n", width, height);
 		if (ping){
-			downsample_kernel<<<num_blocks, block_size>>>(dest, luminance, width, height);
-			ping = 0;
+			downsample_kernel<<<num_blocks, block_size>>>(dest, luminance, width, height, pitchLuminance, pitchBuf);
 		}
 		else {
 			// now ping-pong; result will be in the luminance buffer
-			downsample_kernel<<<num_blocks, block_size>>>(luminance, dest, width, height);
-			ping = 1;
+			downsample_kernel<<<num_blocks, block_size>>>(luminance, dest, width, height, pitchBuf, pitchLuminance);
 		}
+		ping = ! ping;
 	}
+
 	// make sure the result is stored in dest
 	if (ping){
 		cudaMemcpy(luminance, dest, 1, cudaMemcpyDeviceToDevice);
 	}
+
+	// return the grayscale value
+	//printf("grayscale value: %f \n", dest[0]);
 }
 
 

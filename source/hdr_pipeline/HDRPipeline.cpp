@@ -37,7 +37,7 @@ HDRPipeline::HDRPipeline(unsigned int width, unsigned int height)
 //	}
 
 	// this function does the same thing as the above, but a lot more concise
-	throw_error(cudaMalloc(&downsample_buffer, width*height / 4 * sizeof(float)));
+	throw_error(cudaMalloc(&downsample_buffer, width*height * sizeof(float) / 4));
 }
 
 void HDRPipeline::consume(const float* input_image)
@@ -59,6 +59,9 @@ float HDRPipeline::downsample()
 
 	void downsample(float* dest, float* input, unsigned int width, unsigned int height);
 	downsample((float*)downsample_buffer, d_luminance_image.get(), width, height);
+
+	//printf("average: %d ", *(float*)downsample_buffer);
+
 	return 1.0;
 }
 

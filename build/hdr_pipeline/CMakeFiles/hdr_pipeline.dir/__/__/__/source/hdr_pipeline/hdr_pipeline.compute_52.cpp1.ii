@@ -38682,12 +38682,13 @@ void luminance(float* dest, const float* input, unsigned int width, unsigned int
 
 }
 
-__attribute__((global)) void downsample_kernel(float* dest, float* input, unsigned int width, unsigned int height){
+__attribute__((global)) void downsample_kernel(float* dest, float* input, unsigned int width, unsigned int height, unsigned int inputPitch, unsigned int outputPitch){
 
   unsigned int x = blockIdx.x * blockDim.x + threadIdx.x;
   unsigned int y = blockIdx.y * blockDim.y + threadIdx.y;
 
   int F = 2;
+
 
   if ((x >= width / F ) || (y >= height / F))
    return;
@@ -38695,22 +38696,14 @@ __attribute__((global)) void downsample_kernel(float* dest, float* input, unsign
   float sum = 0.0f;
 
 
+
   for (int j = 0; j<F; j++){
    for (int i = 0; i < F; i++){
 
-    sum += input[(y*F+j) * width + x*F +i];
+    sum += input[(y*F+j) * inputPitch + x*F +i];
    }
   }
-  dest[ y* width / F + x] = sum / (F * F);
-
-  printf(" KERNEL width %d | height %d \n", width, height);
-
-
-
-
-
-
-
+  dest[ y* outputPitch + x] = sum / (F * F);
 }
 
 
@@ -38722,31 +38715,45 @@ void downsample(float* dest, float* luminance, unsigned int width, unsigned int 
   divup(height, block_size.y)
  };
 
+
+ const unsigned int pitchBuf = width /2;
+ const unsigned int pitchLuminance = width;
+
+
+ downsample_kernel<<<num_blocks, block_size>>>(dest, luminance, width, height, pitchLuminance, pitchBuf);
  int ping = 0;
 
- downsample_kernel<<<num_blocks, block_size>>>(dest, luminance, width, height);
- ping = 0;
-
- while (width != 1 && height != 1){
+ while (width != 1 || height != 1){
 
   width = width / 2;
-  height = height/2;
+  height = height / 2;
+  if (width < 1){
+   width = 1;
+   printf("width < 1 \n");
+  }
+  if (height < 1){
+   height = 1;
+   printf("height < 1 \n");
+  }
 
   printf(" width %d | height %d \n", width, height);
   if (ping){
-   downsample_kernel<<<num_blocks, block_size>>>(dest, luminance, width, height);
-   ping = 0;
+   downsample_kernel<<<num_blocks, block_size>>>(dest, luminance, width, height, pitchLuminance, pitchBuf);
   }
   else {
 
-   downsample_kernel<<<num_blocks, block_size>>>(luminance, dest, width, height);
-   ping = 1;
+   downsample_kernel<<<num_blocks, block_size>>>(luminance, dest, width, height, pitchBuf, pitchLuminance);
   }
+  ping = ! ping;
  }
+
 
  if (ping){
   cudaMemcpy(luminance, dest, 1, cudaMemcpyDeviceToDevice);
  }
+
+
+
 }
 
 
