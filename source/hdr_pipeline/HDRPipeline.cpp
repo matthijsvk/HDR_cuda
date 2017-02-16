@@ -57,7 +57,7 @@ float HDRPipeline::downsample()
 			width,
 			height);
 
-	void downsample(float* dest,	const float* input, unsigned int width, unsigned int height);
+	void downsample(float* dest, float* input, unsigned int width, unsigned int height);
 	downsample((float*)downsample_buffer, d_luminance_image.get(), width, height);
 	return 1.0;
 }

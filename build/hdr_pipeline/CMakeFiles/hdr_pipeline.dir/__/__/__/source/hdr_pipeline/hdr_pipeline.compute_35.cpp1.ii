@@ -38682,7 +38682,7 @@ void luminance(float* dest, const float* input, unsigned int width, unsigned int
 
 }
 
-__attribute__((global)) void downsample_kernel(float* dest, const float* input, unsigned int width, unsigned int height){
+__attribute__((global)) void downsample_kernel(float* dest, float* input, unsigned int width, unsigned int height){
 
   unsigned int x = blockIdx.x * blockDim.x + threadIdx.x;
   unsigned int y = blockIdx.y * blockDim.y + threadIdx.y;
@@ -38703,6 +38703,9 @@ __attribute__((global)) void downsample_kernel(float* dest, const float* input, 
   }
   dest[ y* width / F + x] = sum / (F * F);
 
+  printf(" KERNEL width %d | height %d \n", width, height);
+
+
 
 
 
@@ -38711,7 +38714,7 @@ __attribute__((global)) void downsample_kernel(float* dest, const float* input, 
 }
 
 
-void downsample(float* dest, const float* luminance, unsigned int width, unsigned int height){
+void downsample(float* dest, float* luminance, unsigned int width, unsigned int height){
  const dim3 block_size = { 32, 32 };
 
  const dim3 num_blocks = {
@@ -38719,8 +38722,31 @@ void downsample(float* dest, const float* luminance, unsigned int width, unsigne
   divup(height, block_size.y)
  };
 
+ int ping = 0;
 
  downsample_kernel<<<num_blocks, block_size>>>(dest, luminance, width, height);
+ ping = 0;
+
+ while (width != 1 && height != 1){
+
+  width = width / 2;
+  height = height/2;
+
+  printf(" width %d | height %d \n", width, height);
+  if (ping){
+   downsample_kernel<<<num_blocks, block_size>>>(dest, luminance, width, height);
+   ping = 0;
+  }
+  else {
+
+   downsample_kernel<<<num_blocks, block_size>>>(luminance, dest, width, height);
+   ping = 1;
+  }
+ }
+
+ if (ping){
+  cudaMemcpy(luminance, dest, 1, cudaMemcpyDeviceToDevice);
+ }
 }
 
 

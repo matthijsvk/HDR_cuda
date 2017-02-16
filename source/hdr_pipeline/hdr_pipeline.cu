@@ -95,7 +95,7 @@ void luminance(float* dest,	const float* input, unsigned int width, unsigned int
 	// -> we need to allocate memory for a buffer in the HDRPipeline object declaration
 }
 
-__global__ void downsample_kernel(float* dest, const float* input, unsigned int width, unsigned int height){
+__global__ void downsample_kernel(float* dest, float* input, unsigned int width, unsigned int height){
 	// each thread needs to know on which pixels to work -> get absolute coordinates of the thread in the grid
 		unsigned int x = blockIdx.x * blockDim.x + threadIdx.x;
 		unsigned int y = blockIdx.y * blockDim.y + threadIdx.y;
@@ -116,7 +116,10 @@ __global__ void downsample_kernel(float* dest, const float* input, unsigned int 
 		}
 		dest[ y* width / F + x] = sum / (F * F);
 
-		// 1D version : F is amount of pixels we pool
+		printf(" KERNEL width %d | height %d \n", width, height);
+
+
+		// 1D version : F is amount of pixels we pool. Only works for F=2, not F=4 as would make more sense. Weird.
 //		for (int i = 0; i< F; i++){
 //			sum += input[F * (y * width + x) + i]; //jump with step pool_size
 //		}
@@ -124,7 +127,7 @@ __global__ void downsample_kernel(float* dest, const float* input, unsigned int 
 }
 
 // get the required number of blocks to cover the whole image, and run the kernel on all blocks
-void downsample(float* dest,	const float* luminance, unsigned int width, unsigned int height){
+void downsample(float* dest,	float* luminance, unsigned int width, unsigned int height){
 	const dim3 block_size = { 32, 32 };
 	// calculate number of blocks required to process the whole image -> round up to the next multiple of 32 (full block)
 	const dim3 num_blocks = {
@@ -132,8 +135,31 @@ void downsample(float* dest,	const float* luminance, unsigned int width, unsigne
 		divup(height, block_size.y)
 	};
 
-	// launch the kernel that we wrote above for all the blocks
+	int ping = 0; //result in dest buffer
+	// first iteration
 	downsample_kernel<<<num_blocks, block_size>>>(dest, luminance, width, height);
+	ping = 0;
+
+	while (width != 1 && height != 1){
+		// result will be in the dest buffer
+		width = width / 2;
+		height = height/2;
+
+		printf(" width %d | height %d \n", width, height);
+		if (ping){
+			downsample_kernel<<<num_blocks, block_size>>>(dest, luminance, width, height);
+			ping = 0;
+		}
+		else {
+			// now ping-pong; result will be in the luminance buffer
+			downsample_kernel<<<num_blocks, block_size>>>(luminance, dest, width, height);
+			ping = 1;
+		}
+	}
+	// make sure the result is stored in dest
+	if (ping){
+		cudaMemcpy(luminance, dest, 1, cudaMemcpyDeviceToDevice);
+	}
 }
 
 
