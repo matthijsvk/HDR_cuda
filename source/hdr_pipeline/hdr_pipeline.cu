@@ -144,10 +144,12 @@ float downsample(float* dest,	float* luminance, unsigned int width, unsigned int
 	return average;
 }
 
+// first do it on the x direction
+// then do it on the y direction (-> texture memory to make this fast)
 
-__global__ void blur_kernel(float* dest, const float* src, unsigned int width, unsigned int height)
+__global__ void blur_kernel_x(float* dest, const float* src, unsigned int width, unsigned int height, unsigned int inputPitch, unsigned int outputPitch)
 {
-	constexpr float weights[] = {
+	constexpr float weights[] = {  //weights in one dimension -> 33x33 filter
 		//  -16           -15         -14          -13          -12          -11          -10           -9           -8           -7           -6           -5           -4           -3           -2           -1
 		0.00288204f, 0.00418319f, 0.00592754f, 0.00819980f, 0.01107369f, 0.01459965f, 0.01879116f, 0.02361161f, 0.02896398f, 0.03468581f, 0.04055144f, 0.04628301f, 0.05157007f, 0.05609637f, 0.05957069f, 0.06175773f,
 		//    0
@@ -156,12 +158,33 @@ __global__ void blur_kernel(float* dest, const float* src, unsigned int width, u
 		0.06175773f, 0.05957069f, 0.05609637f, 0.05157007f, 0.04628301f, 0.04055144f, 0.03468581f, 0.02896398f, 0.02361161f, 0.01879116f, 0.01459965f, 0.01107369f, 0.00819980f, 0.00592754f, 0.00418319f, 0.00288204f
 	};
 
+	// 1 thread per output pixel
+	unsigned int x = blockIdx.x * blockDim.x + threadIdx.x;
+	unsigned int y = blockIdx.y * blockDim.y + threadIdx.y;
 
+	float sum = 0.0f;
+	for (int i = x-16; i<=16; i++){
+		if ((x+i) < width){
+			printf("weight: %d \n", weights[i+16]);
+			sum += src[y*inputPitch + x +i] * weights[i+16];
+		}
+	}
+	printf("sum: %d \n", sum);
+	dest[ y* outputPitch + x] = sum;
 }
 
 void gaussian_blur(float* dest, const float* src, unsigned int width, unsigned int height)
 {
-	// TODO: gaussian blur of brightpass
+	const dim3 block_size = { 32, 32 };
+	// calculate number of blocks required to process the whole image -> round up to the next multiple of 32 (full block)
+	const dim3 num_blocks = {
+		divup(width, block_size.x),
+		divup(height, block_size.y)
+	};
+
+	int inputPitch = width;
+	int outputPitch = width;
+	blur_kernel_x<<<num_blocks, block_size>>>(dest, src, width, height, inputPitch, outputPitch);
 }
 
 

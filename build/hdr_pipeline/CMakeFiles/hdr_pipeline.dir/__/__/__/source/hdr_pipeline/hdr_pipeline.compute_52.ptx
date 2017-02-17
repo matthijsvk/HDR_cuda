@@ -11,6 +11,14 @@
 .address_size 64
 
 	// .globl	_Z16luminance_kernelPfPKfjj
+.extern .func  (.param .b32 func_retval0) vprintf
+(
+	.param .b64 vprintf_param_0,
+	.param .b64 vprintf_param_1
+)
+;
+.global .align 1 .b8 $str[13] = {119, 101, 105, 103, 104, 116, 58, 32, 37, 100, 32, 10, 0};
+.global .align 1 .b8 $str1[10] = {115, 117, 109, 58, 32, 37, 100, 32, 10, 0};
 
 .visible .entry _Z16luminance_kernelPfPKfjj(
 	.param .u64 _Z16luminance_kernelPfPKfjj_param_0,
@@ -210,18 +218,235 @@ BB1_10:
 	ret;
 }
 
-	// .globl	_Z11blur_kernelPfPKfjj
-.visible .entry _Z11blur_kernelPfPKfjj(
-	.param .u64 _Z11blur_kernelPfPKfjj_param_0,
-	.param .u64 _Z11blur_kernelPfPKfjj_param_1,
-	.param .u32 _Z11blur_kernelPfPKfjj_param_2,
-	.param .u32 _Z11blur_kernelPfPKfjj_param_3
+	// .globl	_Z13blur_kernel_xPfPKfjjjj
+.visible .entry _Z13blur_kernel_xPfPKfjjjj(
+	.param .u64 _Z13blur_kernel_xPfPKfjjjj_param_0,
+	.param .u64 _Z13blur_kernel_xPfPKfjjjj_param_1,
+	.param .u32 _Z13blur_kernel_xPfPKfjjjj_param_2,
+	.param .u32 _Z13blur_kernel_xPfPKfjjjj_param_3,
+	.param .u32 _Z13blur_kernel_xPfPKfjjjj_param_4,
+	.param .u32 _Z13blur_kernel_xPfPKfjjjj_param_5
 )
 {
+	.local .align 8 .b8 	__local_depot2[144];
+	.reg .b64 	%SP;
+	.reg .b64 	%SPL;
+	.reg .pred 	%p<6>;
+	.reg .b16 	%rs<2>;
+	.reg .f32 	%f<10>;
+	.reg .b32 	%r<36>;
+	.reg .f64 	%fd<3>;
+	.reg .b64 	%rd<48>;
 
 
+	mov.u64 	%rd47, __local_depot2;
+	cvta.local.u64 	%SP, %rd47;
+	ld.param.u64 	%rd10, [_Z13blur_kernel_xPfPKfjjjj_param_0];
+	ld.param.u64 	%rd11, [_Z13blur_kernel_xPfPKfjjjj_param_1];
+	ld.param.u32 	%r17, [_Z13blur_kernel_xPfPKfjjjj_param_2];
+	ld.param.u32 	%r18, [_Z13blur_kernel_xPfPKfjjjj_param_4];
+	ld.param.u32 	%r19, [_Z13blur_kernel_xPfPKfjjjj_param_5];
+	add.u64 	%rd13, %SP, 0;
+	.loc 1 172 1
+	cvta.to.local.u64 	%rd3, %rd13;
+	add.u64 	%rd14, %SP, 136;
+	cvta.to.local.u64 	%rd2, %rd14;
+	mov.u64 	%rd45, 0;
+	mov.pred 	%p1, 0;
+	@%p1 bra 	BB2_2;
 
-	.loc 1 160 2
+BB2_1:
+	add.s64 	%rd15, %rd3, %rd45;
+	mov.u16 	%rs1, 0;
+	st.local.u8 	[%rd15], %rs1;
+	add.s64 	%rd45, %rd45, 1;
+	setp.lt.u64	%p2, %rd45, 132;
+	@%p2 bra 	BB2_1;
+
+BB2_2:
+	mov.u64 	%rd16, 998839076;
+	.loc 1 152 1
+	st.local.u32 	[%rd3+4], %rd16;
+	mov.u64 	%rd17, 993845404;
+	.loc 1 152 1
+	st.local.u32 	[%rd3], %rd17;
+	mov.u64 	%rd18, 1007048820;
+	.loc 1 152 1
+	st.local.u32 	[%rd3+12], %rd18;
+	mov.u64 	%rd19, 1002585039;
+	.loc 1 152 1
+	st.local.u32 	[%rd3+8], %rd19;
+	mov.u64 	%rd20, 1013920607;
+	.loc 1 152 1
+	st.local.u32 	[%rd3+20], %rd20;
+	mov.u64 	%rd21, 1010134636;
+	.loc 1 152 1
+	st.local.u32 	[%rd3+16], %rd21;
+	mov.u64 	%rd22, 1019309347;
+	.loc 1 152 1
+	st.local.u32 	[%rd3+28], %rd22;
+	mov.u64 	%rd23, 1016721387;
+	.loc 1 152 1
+	st.local.u32 	[%rd3+24], %rd23;
+	mov.u64 	%rd24, 1024332469;
+	.loc 1 152 1
+	st.local.u32 	[%rd3+36], %rd24;
+	mov.u64 	%rd25, 1022182878;
+	.loc 1 152 1
+	st.local.u32 	[%rd3+32], %rd25;
+	mov.u64 	%rd26, 1027445569;
+	.loc 1 152 1
+	st.local.u32 	[%rd3+44], %rd26;
+	mov.u64 	%rd27, 1025907012;
+	.loc 1 152 1
+	st.local.u32 	[%rd3+40], %rd27;
+	mov.u64 	%rd28, 1030079823;
+	.loc 1 152 1
+	st.local.u32 	[%rd3+52], %rd28;
+	mov.u64 	%rd29, 1028864803;
+	.loc 1 152 1
+	st.local.u32 	[%rd3+48], %rd29;
+	mov.u64 	%rd30, 1031599532;
+	.loc 1 152 1
+	st.local.u32 	[%rd3+60], %rd30;
+	mov.u64 	%rd31, 1031012453;
+	.loc 1 152 1
+	st.local.u32 	[%rd3+56], %rd31;
+	st.local.u32 	[%rd3+68], %rd30;
+	mov.u64 	%rd32, 1031799380;
+	.loc 1 152 1
+	st.local.u32 	[%rd3+64], %rd32;
+	st.local.u32 	[%rd3+76], %rd28;
+	st.local.u32 	[%rd3+72], %rd31;
+	st.local.u32 	[%rd3+84], %rd26;
+	st.local.u32 	[%rd3+80], %rd29;
+	st.local.u32 	[%rd3+92], %rd24;
+	st.local.u32 	[%rd3+88], %rd27;
+	st.local.u32 	[%rd3+100], %rd22;
+	st.local.u32 	[%rd3+96], %rd25;
+	st.local.u32 	[%rd3+108], %rd20;
+	st.local.u32 	[%rd3+104], %rd23;
+	st.local.u32 	[%rd3+116], %rd18;
+	st.local.u32 	[%rd3+112], %rd21;
+	st.local.u32 	[%rd3+124], %rd16;
+	st.local.u32 	[%rd3+120], %rd19;
+	mov.u32 	%r20, 993845404;
+	.loc 1 152 1
+	st.local.u32 	[%rd3+128], %r20;
+	.loc 1 162 1
+	mov.u32 	%r1, %ntid.x;
+	mov.u32 	%r2, %ctaid.x;
+	mov.u32 	%r3, %tid.x;
+	mad.lo.s32 	%r4, %r1, %r2, %r3;
+	.loc 1 163 1
+	mov.u32 	%r5, %ntid.y;
+	mov.u32 	%r6, %ctaid.y;
+	mov.u32 	%r7, %tid.y;
+	.loc 1 166 1
+	add.s32 	%r35, %r4, -16;
+	mov.f32 	%f9, 0f00000000;
+	.loc 1 166 1
+	setp.gt.s32	%p3, %r35, 16;
+	@%p3 bra 	BB2_7;
+
+	cvta.to.global.u64 	%rd6, %rd11;
+	.loc 1 167 1
+	mul.lo.s32 	%r21, %r1, %r2;
+	add.s32 	%r22, %r3, %r21;
+	mul.wide.s32 	%rd33, %r22, 4;
+	add.s64 	%rd46, %rd3, %rd33;
+	.loc 1 167 1
+	shl.b32 	%r23, %r21, 1;
+	mad.lo.s32 	%r24, %r5, %r6, %r7;
+	mad.lo.s32 	%r25, %r18, %r24, %r23;
+	shl.b32 	%r26, %r3, 1;
+	add.s32 	%r27, %r25, %r26;
+	add.s32 	%r34, %r27, -16;
+	add.s32 	%r28, %r23, %r26;
+	add.s32 	%r33, %r28, -16;
+	mov.f32 	%f9, 0f00000000;
+
+BB2_4:
+	.loc 1 167 1
+	setp.ge.u32	%p4, %r33, %r17;
+	@%p4 bra 	BB2_6;
+
+	.loc 1 168 1
+	ld.local.f32 	%f7, [%rd46];
+	cvt.ftz.f64.f32	%fd1, %f7;
+	st.local.f64 	[%rd2], %fd1;
+	mov.u64 	%rd34, $str;
+	cvta.global.u64 	%rd35, %rd34;
+	// Callseq Start 0
+	{
+	.reg .b32 temp_param_reg;
+	// <end>}
+	.param .b64 param0;
+	st.param.b64	[param0+0], %rd35;
+	.param .b64 param1;
+	st.param.b64	[param1+0], %rd14;
+	.param .b32 retval0;
+	call.uni (retval0), 
+	vprintf, 
+	(
+	param0, 
+	param1
+	);
+	ld.param.b32	%r29, [retval0+0];
+	
+	//{
+	}// Callseq End 0
+	.loc 1 169 1
+	mul.wide.u32 	%rd37, %r34, 4;
+	add.s64 	%rd38, %rd6, %rd37;
+	ld.global.f32 	%f8, [%rd38];
+	fma.rn.ftz.f32 	%f9, %f8, %f7, %f9;
+
+BB2_6:
+	.loc 1 166 1
+	add.s64 	%rd46, %rd46, 4;
+	add.s32 	%r34, %r34, 1;
+	add.s32 	%r33, %r33, 1;
+	.loc 1 166 19
+	add.s32 	%r35, %r35, 1;
+	.loc 1 166 1
+	setp.lt.s32	%p5, %r35, 17;
+	@%p5 bra 	BB2_4;
+
+BB2_7:
+	cvta.to.global.u64 	%rd39, %rd10;
+	.loc 1 163 1
+	mad.lo.s32 	%r30, %r5, %r6, %r7;
+	.loc 1 172 1
+	cvt.ftz.f64.f32	%fd2, %f9;
+	st.local.f64 	[%rd2], %fd2;
+	mov.u64 	%rd40, $str1;
+	cvta.global.u64 	%rd41, %rd40;
+	// Callseq Start 1
+	{
+	.reg .b32 temp_param_reg;
+	// <end>}
+	.param .b64 param0;
+	st.param.b64	[param0+0], %rd41;
+	.param .b64 param1;
+	st.param.b64	[param1+0], %rd14;
+	.param .b32 retval0;
+	call.uni (retval0), 
+	vprintf, 
+	(
+	param0, 
+	param1
+	);
+	ld.param.b32	%r31, [retval0+0];
+	
+	//{
+	}// Callseq End 1
+	.loc 1 173 1
+	mad.lo.s32 	%r32, %r30, %r19, %r4;
+	mul.wide.u32 	%rd43, %r32, 4;
+	add.s64 	%rd44, %rd39, %rd43;
+	st.global.f32 	[%rd44], %f9;
+	.loc 1 174 2
 	ret;
 }
 
@@ -249,17 +474,17 @@ BB1_10:
 	ld.param.u32 	%r4, [_Z14tonemap_kernelPfS_PKfjjff_param_4];
 	ld.param.f32 	%f1, [_Z14tonemap_kernelPfS_PKfjjff_param_5];
 	ld.param.f32 	%f2, [_Z14tonemap_kernelPfS_PKfjjff_param_6];
-	.loc 1 178 1
+	.loc 1 201 1
 	mov.u32 	%r5, %ntid.x;
 	mov.u32 	%r6, %ctaid.x;
 	mov.u32 	%r7, %tid.x;
 	mad.lo.s32 	%r1, %r5, %r6, %r7;
-	.loc 1 179 1
+	.loc 1 202 1
 	mov.u32 	%r8, %ntid.y;
 	mov.u32 	%r9, %ctaid.y;
 	mov.u32 	%r10, %tid.y;
 	mad.lo.s32 	%r2, %r8, %r9, %r10;
-	.loc 1 181 1
+	.loc 1 204 1
 	setp.lt.u32	%p1, %r1, %r3;
 	setp.lt.u32	%p2, %r2, %r4;
 	and.pred  	%p3, %p1, %p2;
@@ -267,11 +492,11 @@ BB1_10:
 	bra.uni 	BB3_1;
 
 BB3_1:
-	.loc 1 178 1
+	.loc 1 201 1
 	cvta.to.global.u64 	%rd4, %rd2;
 	cvta.to.global.u64 	%rd5, %rd1;
 	cvta.to.global.u64 	%rd6, %rd3;
-	.loc 1 196 1
+	.loc 1 219 1
 	mad.lo.s32 	%r11, %r2, %r3, %r1;
 	mul.lo.s32 	%r12, %r11, 3;
 	mul.wide.u32 	%rd7, %r12, 4;
@@ -303,7 +528,7 @@ BB3_1:
 	add.ftz.f32 	%f15, %f14, 0fBD888888;
 	.loc 3 1470 12
 	div.approx.ftz.f32 	%f16, %f11, %f15;
-	.loc 1 196 1
+	.loc 1 219 1
 	ld.global.f32 	%f17, [%rd10];
 	.loc 4 27 1
 	mul.ftz.f32 	%f18, %f17, %f1;
@@ -319,7 +544,7 @@ BB3_1:
 	add.ftz.f32 	%f25, %f24, 0fBD888888;
 	.loc 3 1470 12
 	div.approx.ftz.f32 	%f26, %f25, %f15;
-	.loc 1 196 1
+	.loc 1 219 1
 	ld.global.f32 	%f27, [%rd12];
 	.loc 4 27 1
 	mul.ftz.f32 	%f28, %f27, %f1;
@@ -335,40 +560,40 @@ BB3_1:
 	add.ftz.f32 	%f35, %f34, 0fBD888888;
 	.loc 3 1470 12
 	div.approx.ftz.f32 	%f36, %f35, %f15;
-	.loc 1 190 1
+	.loc 1 213 1
 	add.s64 	%rd13, %rd5, %rd7;
 	st.global.f32 	[%rd13], %f16;
-	.loc 1 191 1
+	.loc 1 214 1
 	add.s64 	%rd14, %rd5, %rd9;
 	st.global.f32 	[%rd14], %f26;
-	.loc 1 192 1
+	.loc 1 215 1
 	add.s64 	%rd15, %rd5, %rd11;
 	st.global.f32 	[%rd15], %f36;
 	.loc 4 9 19
 	mul.ftz.f32 	%f37, %f26, 0f3F371759;
 	fma.rn.ftz.f32 	%f38, %f16, 0f3E59B3D0, %f37;
 	fma.rn.ftz.f32 	%f39, %f36, 0f3D93DD98, %f38;
-	.loc 1 192 3
+	.loc 1 215 3
 	setp.gt.ftz.f32	%p4, %f39, %f2;
 	selp.f32	%f40, %f36, 0f00000000, %p4;
 	selp.f32	%f41, %f26, 0f00000000, %p4;
 	selp.f32	%f42, %f16, 0f00000000, %p4;
-	.loc 1 196 1
+	.loc 1 219 1
 	add.s64 	%rd16, %rd4, %rd7;
 	st.global.f32 	[%rd16], %f42;
-	.loc 1 197 1
+	.loc 1 220 1
 	add.s64 	%rd17, %rd4, %rd9;
 	st.global.f32 	[%rd17], %f41;
-	.loc 1 198 1
+	.loc 1 221 1
 	add.s64 	%rd18, %rd4, %rd11;
 	st.global.f32 	[%rd18], %f40;
 
 BB3_2:
-	.loc 1 200 2
+	.loc 1 223 2
 	ret;
 }
 
-	.file	1 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu", 1487332329, 8057
+	.file	1 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu", 1487338595, 9020
 	.file	2 "/usr/local/cuda-8.0/include/cuda_device_runtime_api.h", 1473894118, 13858
 	.file	3 "/usr/local/cuda-8.0/include/device_functions.hpp", 1473894118, 164382
 	.file	4 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/color.cuh", 1487319565, 1220

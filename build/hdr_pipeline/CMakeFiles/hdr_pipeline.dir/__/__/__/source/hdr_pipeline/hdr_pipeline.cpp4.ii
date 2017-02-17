@@ -35183,7 +35183,9 @@ float downsample(float* dest, float* luminance, unsigned int width, unsigned int
 }
 
 
-__attribute__((global)) void blur_kernel(float* dest, const float* src, unsigned int width, unsigned int height)
+
+
+__attribute__((global)) void blur_kernel_x(float* dest, const float* src, unsigned int width, unsigned int height, unsigned int inputPitch, unsigned int outputPitch)
 {
  constexpr float weights[] = {
 
@@ -35195,11 +35197,32 @@ __attribute__((global)) void blur_kernel(float* dest, const float* src, unsigned
  };
 
 
+ unsigned int x = blockIdx.x * blockDim.x + threadIdx.x;
+ unsigned int y = blockIdx.y * blockDim.y + threadIdx.y;
+
+ float sum = 0.0f;
+ for (int i = x-16; i<=16; i++){
+  if ((x+i) < width){
+   printf("weight: %d \n", weights[i+16]);
+   sum += src[y*inputPitch + x +i] * weights[i+16];
+  }
+ }
+ printf("sum: %d \n", sum);
+ dest[ y* outputPitch + x] = sum;
 }
 
 void gaussian_blur(float* dest, const float* src, unsigned int width, unsigned int height)
 {
+ const dim3 block_size = { 32, 32 };
 
+ const dim3 num_blocks = {
+  divup(width, block_size.x),
+  divup(height, block_size.y)
+ };
+
+ int inputPitch = width;
+ int outputPitch = width;
+ blur_kernel_x<<<num_blocks, block_size>>>(dest, src, width, height, inputPitch, outputPitch);
 }
 
 
