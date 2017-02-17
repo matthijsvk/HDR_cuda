@@ -6,11 +6,11 @@
 
 #pragma once
 
-#include <cstdint>
 #include <memory>
 
 #include <cuda_runtime_api.h>
 
+#include <framework/rgb32f.h>
 #include <framework/image.h>
 
 
@@ -33,22 +33,28 @@ class HDRPipeline
 
 	cuda_unique_ptr<float> d_input_image;
 	cuda_unique_ptr<float> d_luminance_image;
-	cuda_unique_ptr<float> d_buffer_image;
-	cuda_unique_ptr<uchar4> d_brightpass_image;
-	cuda_unique_ptr<uchar4> d_output_image;
+	cuda_unique_ptr<float> d_downsample_buffer;
+	cuda_unique_ptr<float> d_tonemapped_image;
+	cuda_unique_ptr<float> d_brightpass_image;
+	cuda_unique_ptr<float> d_blurred_image;
+	cuda_unique_ptr<float> d_output_image;
 
 public:
 	HDRPipeline(unsigned int width, unsigned int height);
 
 	void consume(const float* input_image);
+	void computeLuminance();
 	float downsample();
 	void tonemap(float exposure, float brightpass_threshold);
+	void blur();
 	void compose();
 
 	image<float> readLuminance();
 	image<float> readDownsample();
-	image<std::uint32_t> readBrightpass();
-	image<std::uint32_t> readOutput();
+	image<RGB32F> readTonemapped();
+	image<RGB32F> readBrightpass();
+	image<RGB32F> readBlurred();
+	image<RGB32F> readOutput();
 };
 
 #endif // INCLUDED_HDRPIPELINE

@@ -6,23 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp
 framework/CUDA/error.h
 -
 HDRPipeline.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.h
-cstdint
--
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.h
 memory
 -
 cuda_runtime_api.h
 -
+framework/rgb32f.h
+-
 framework/image.h
 -
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp
+cstdint
+-
+cmath
+-
+algorithm
+-
 iomanip
 -
 iostream
@@ -35,12 +41,16 @@ framework/cmd_args.h
 -
 framework/CUDA/error.h
 -
+framework/rgb32f.h
+-
+framework/image.h
+-
 framework/pfm.h
 -
 framework/png.h
 -
 HDRPipeline.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.h
 
 /usr/local/cuda-8.0/include/builtin_types.h
 device_types.h

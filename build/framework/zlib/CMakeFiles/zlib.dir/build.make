@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake
+CMAKE_SOURCE_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build
+CMAKE_BINARY_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build
 
 # Include any dependencies generated for this target.
 include framework/zlib/CMakeFiles/zlib.dir/depend.make
@@ -59,16 +59,16 @@ include framework/zlib/CMakeFiles/zlib.dir/flags.make
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/deflate.c.o: framework/zlib/CMakeFiles/zlib.dir/flags.make
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/deflate.c.o: dependencies/zlib/deflate.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/deflate.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/deflate.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/deflate.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/deflate.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/deflate.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/deflate.c
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/deflate.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zlib.dir/__/__/dependencies/zlib/deflate.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/deflate.c > CMakeFiles/zlib.dir/__/__/dependencies/zlib/deflate.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/deflate.c > CMakeFiles/zlib.dir/__/__/dependencies/zlib/deflate.c.i
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/deflate.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zlib.dir/__/__/dependencies/zlib/deflate.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/deflate.c -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/deflate.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/deflate.c -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/deflate.c.s
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/deflate.c.o.requires:
 
@@ -83,16 +83,16 @@ framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/deflate.c.o.provides.
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/zutil.c.o: framework/zlib/CMakeFiles/zlib.dir/flags.make
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/zutil.c.o: dependencies/zlib/zutil.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/zutil.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/zutil.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/zutil.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/zutil.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/zutil.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/zutil.c
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/zutil.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zlib.dir/__/__/dependencies/zlib/zutil.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/zutil.c > CMakeFiles/zlib.dir/__/__/dependencies/zlib/zutil.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/zutil.c > CMakeFiles/zlib.dir/__/__/dependencies/zlib/zutil.c.i
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/zutil.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zlib.dir/__/__/dependencies/zlib/zutil.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/zutil.c -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/zutil.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/zutil.c -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/zutil.c.s
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/zutil.c.o.requires:
 
@@ -107,16 +107,16 @@ framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/zutil.c.o.provides.bu
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inftrees.c.o: framework/zlib/CMakeFiles/zlib.dir/flags.make
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inftrees.c.o: dependencies/zlib/inftrees.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inftrees.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/inftrees.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/inftrees.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inftrees.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/inftrees.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/inftrees.c
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inftrees.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zlib.dir/__/__/dependencies/zlib/inftrees.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/inftrees.c > CMakeFiles/zlib.dir/__/__/dependencies/zlib/inftrees.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/inftrees.c > CMakeFiles/zlib.dir/__/__/dependencies/zlib/inftrees.c.i
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inftrees.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zlib.dir/__/__/dependencies/zlib/inftrees.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/inftrees.c -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/inftrees.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/inftrees.c -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/inftrees.c.s
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inftrees.c.o.requires:
 
@@ -131,16 +131,16 @@ framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inftrees.c.o.provides
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inffast.c.o: framework/zlib/CMakeFiles/zlib.dir/flags.make
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inffast.c.o: dependencies/zlib/inffast.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inffast.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/inffast.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/inffast.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inffast.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/inffast.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/inffast.c
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inffast.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zlib.dir/__/__/dependencies/zlib/inffast.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/inffast.c > CMakeFiles/zlib.dir/__/__/dependencies/zlib/inffast.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/inffast.c > CMakeFiles/zlib.dir/__/__/dependencies/zlib/inffast.c.i
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inffast.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zlib.dir/__/__/dependencies/zlib/inffast.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/inffast.c -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/inffast.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/inffast.c -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/inffast.c.s
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inffast.c.o.requires:
 
@@ -155,16 +155,16 @@ framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inffast.c.o.provides.
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inflate.c.o: framework/zlib/CMakeFiles/zlib.dir/flags.make
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inflate.c.o: dependencies/zlib/inflate.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inflate.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/inflate.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/inflate.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inflate.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/inflate.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/inflate.c
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inflate.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zlib.dir/__/__/dependencies/zlib/inflate.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/inflate.c > CMakeFiles/zlib.dir/__/__/dependencies/zlib/inflate.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/inflate.c > CMakeFiles/zlib.dir/__/__/dependencies/zlib/inflate.c.i
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inflate.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zlib.dir/__/__/dependencies/zlib/inflate.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/inflate.c -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/inflate.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/inflate.c -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/inflate.c.s
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inflate.c.o.requires:
 
@@ -179,16 +179,16 @@ framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/inflate.c.o.provides.
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/uncompr.c.o: framework/zlib/CMakeFiles/zlib.dir/flags.make
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/uncompr.c.o: dependencies/zlib/uncompr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/uncompr.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/uncompr.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/uncompr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/uncompr.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/uncompr.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/uncompr.c
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/uncompr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zlib.dir/__/__/dependencies/zlib/uncompr.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/uncompr.c > CMakeFiles/zlib.dir/__/__/dependencies/zlib/uncompr.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/uncompr.c > CMakeFiles/zlib.dir/__/__/dependencies/zlib/uncompr.c.i
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/uncompr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zlib.dir/__/__/dependencies/zlib/uncompr.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/uncompr.c -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/uncompr.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/uncompr.c -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/uncompr.c.s
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/uncompr.c.o.requires:
 
@@ -203,16 +203,16 @@ framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/uncompr.c.o.provides.
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/trees.c.o: framework/zlib/CMakeFiles/zlib.dir/flags.make
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/trees.c.o: dependencies/zlib/trees.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/trees.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/trees.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/trees.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/trees.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/trees.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/trees.c
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/trees.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zlib.dir/__/__/dependencies/zlib/trees.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/trees.c > CMakeFiles/zlib.dir/__/__/dependencies/zlib/trees.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/trees.c > CMakeFiles/zlib.dir/__/__/dependencies/zlib/trees.c.i
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/trees.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zlib.dir/__/__/dependencies/zlib/trees.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/trees.c -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/trees.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/trees.c -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/trees.c.s
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/trees.c.o.requires:
 
@@ -227,16 +227,16 @@ framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/trees.c.o.provides.bu
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/adler32.c.o: framework/zlib/CMakeFiles/zlib.dir/flags.make
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/adler32.c.o: dependencies/zlib/adler32.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/adler32.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/adler32.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/adler32.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/adler32.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/adler32.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/adler32.c
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/adler32.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zlib.dir/__/__/dependencies/zlib/adler32.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/adler32.c > CMakeFiles/zlib.dir/__/__/dependencies/zlib/adler32.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/adler32.c > CMakeFiles/zlib.dir/__/__/dependencies/zlib/adler32.c.i
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/adler32.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zlib.dir/__/__/dependencies/zlib/adler32.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/adler32.c -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/adler32.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/adler32.c -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/adler32.c.s
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/adler32.c.o.requires:
 
@@ -251,16 +251,16 @@ framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/adler32.c.o.provides.
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/infback.c.o: framework/zlib/CMakeFiles/zlib.dir/flags.make
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/infback.c.o: dependencies/zlib/infback.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/infback.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/infback.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/infback.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/infback.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/infback.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/infback.c
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/infback.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zlib.dir/__/__/dependencies/zlib/infback.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/infback.c > CMakeFiles/zlib.dir/__/__/dependencies/zlib/infback.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/infback.c > CMakeFiles/zlib.dir/__/__/dependencies/zlib/infback.c.i
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/infback.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zlib.dir/__/__/dependencies/zlib/infback.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/infback.c -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/infback.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/infback.c -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/infback.c.s
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/infback.c.o.requires:
 
@@ -275,16 +275,16 @@ framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/infback.c.o.provides.
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/crc32.c.o: framework/zlib/CMakeFiles/zlib.dir/flags.make
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/crc32.c.o: dependencies/zlib/crc32.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/crc32.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/crc32.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/crc32.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/crc32.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/crc32.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/crc32.c
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/crc32.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zlib.dir/__/__/dependencies/zlib/crc32.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/crc32.c > CMakeFiles/zlib.dir/__/__/dependencies/zlib/crc32.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/crc32.c > CMakeFiles/zlib.dir/__/__/dependencies/zlib/crc32.c.i
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/crc32.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zlib.dir/__/__/dependencies/zlib/crc32.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/crc32.c -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/crc32.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/crc32.c -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/crc32.c.s
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/crc32.c.o.requires:
 
@@ -299,16 +299,16 @@ framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/crc32.c.o.provides.bu
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/compress.c.o: framework/zlib/CMakeFiles/zlib.dir/flags.make
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/compress.c.o: dependencies/zlib/compress.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/compress.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/compress.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/compress.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/compress.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/compress.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/compress.c
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/compress.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zlib.dir/__/__/dependencies/zlib/compress.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/compress.c > CMakeFiles/zlib.dir/__/__/dependencies/zlib/compress.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/compress.c > CMakeFiles/zlib.dir/__/__/dependencies/zlib/compress.c.i
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/compress.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zlib.dir/__/__/dependencies/zlib/compress.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/zlib/compress.c -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/compress.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/zlib/compress.c -o CMakeFiles/zlib.dir/__/__/dependencies/zlib/compress.c.s
 
 framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/compress.c.o.requires:
 
@@ -351,9 +351,9 @@ lib/libzlib.a: framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/crc32.
 lib/libzlib.a: framework/zlib/CMakeFiles/zlib.dir/__/__/dependencies/zlib/compress.c.o
 lib/libzlib.a: framework/zlib/CMakeFiles/zlib.dir/build.make
 lib/libzlib.a: framework/zlib/CMakeFiles/zlib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C static library ../../lib/libzlib.a"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && $(CMAKE_COMMAND) -P CMakeFiles/zlib.dir/cmake_clean_target.cmake
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/zlib.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C static library ../../lib/libzlib.a"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && $(CMAKE_COMMAND) -P CMakeFiles/zlib.dir/cmake_clean_target.cmake
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/zlib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 framework/zlib/CMakeFiles/zlib.dir/build: lib/libzlib.a
@@ -375,10 +375,10 @@ framework/zlib/CMakeFiles/zlib.dir/requires: framework/zlib/CMakeFiles/zlib.dir/
 .PHONY : framework/zlib/CMakeFiles/zlib.dir/requires
 
 framework/zlib/CMakeFiles/zlib.dir/clean:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib && $(CMAKE_COMMAND) -P CMakeFiles/zlib.dir/cmake_clean.cmake
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib && $(CMAKE_COMMAND) -P CMakeFiles/zlib.dir/cmake_clean.cmake
 .PHONY : framework/zlib/CMakeFiles/zlib.dir/clean
 
 framework/zlib/CMakeFiles/zlib.dir/depend:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/framework/zlib /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/zlib/CMakeFiles/zlib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/framework/zlib /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/zlib/CMakeFiles/zlib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : framework/zlib/CMakeFiles/zlib.dir/depend
 

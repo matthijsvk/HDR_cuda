@@ -1,4 +1,4 @@
-# 1 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+# 1 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 #pragma GCC diagnostic ignored "-Wunused-local-typedefs"
 # 1
 #pragma GCC diagnostic push
@@ -35272,7 +35272,7 @@ extern wostream wclog;
 static ios_base::Init __ioinit; 
 # 77
 }
-# 29 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/framework/../../dependencies/math/math.h"
+# 29 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/framework/../../dependencies/math/math.h"
 namespace math { 
 # 31
 template< class T> struct constants; 
@@ -35702,7 +35702,7 @@ return ((t * t) * t) * ((t * ((t * (6.0L)) - (15.0L))) + (10.0L));
 } 
 # 317
 }
-# 28 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/framework/../../dependencies/math/vector.h"
+# 28 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/framework/../../dependencies/math/vector.h"
 #pragma warning (push)
 #pragma warning (disable : 4522)
 # 31
@@ -37319,7 +37319,7 @@ typedef vector< unsigned, 4U>  uint4;
 }
 # 1030
 #pragma warning (pop)
-# 7 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/color.cuh"
+# 7 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/color.cuh"
 __attribute__((unused)) float luminance(const math::float3 &color) 
 # 8
 {int volatile ___ = 1;(void)color;
@@ -37333,7 +37333,7 @@ return dot(color, math::float3{(0.2125999928F), (0.715200007F), (0.07220000029F)
 # 10
 } 
 #endif
-# 12 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/color.cuh"
+# 12 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/color.cuh"
 __attribute__((unused)) float Uncharted2Tonemap(float x) 
 # 13
 {int volatile ___ = 1;(void)x;
@@ -37359,7 +37359,7 @@ return (((x * ((A * x) + (C * B))) + (D * E)) / ((x * ((A * x) + B)) + (D * F)))
 # 22
 } 
 #endif
-# 24 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/color.cuh"
+# 24 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/color.cuh"
 __attribute__((unused)) float tonemap(float c, float exposure) 
 # 25
 {int volatile ___ = 1;(void)c;(void)exposure;
@@ -37375,7 +37375,7 @@ return Uncharted2Tonemap((c * exposure) * (2.0F)) / Uncharted2Tonemap(W);
 # 28
 } 
 #endif
-# 30 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/color.cuh"
+# 30 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/color.cuh"
 __attribute__((unused)) math::float3 tonemap(const math::float3 &c, float exposure) 
 # 31
 {int volatile ___ = 1;(void)c;(void)exposure;
@@ -37389,7 +37389,7 @@ return {tonemap(c.x, exposure), tonemap(c.y, exposure), tonemap(c.z, exposure)};
 # 33
 } 
 #endif
-# 35 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/color.cuh"
+# 35 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/color.cuh"
 __attribute__((unused)) unsigned char toLinear8(float c) 
 # 36
 {int volatile ___ = 1;(void)c;
@@ -37403,7 +37403,7 @@ return static_cast< unsigned char>(saturate(c) * (255.0F));
 # 38
 } 
 #endif
-# 40 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/color.cuh"
+# 40 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/color.cuh"
 __attribute__((unused)) unsigned char toSRGB8(float c) 
 # 41
 {int volatile ___ = 1;(void)c;
@@ -37417,7 +37417,7 @@ return toLinear8(powf(c, (1.0F) / (2.200000048F)));
 # 43
 } 
 #endif
-# 45 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/color.cuh"
+# 45 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/color.cuh"
 __attribute__((unused)) float fromLinear8(unsigned char c) 
 # 46
 {int volatile ___ = 1;(void)c;
@@ -37431,7 +37431,7 @@ return c * ((1.0F) / (255.0F));
 # 48
 } 
 #endif
-# 50 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/color.cuh"
+# 50 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/color.cuh"
 __attribute__((unused)) float fromSRGB8(unsigned char c) 
 # 51
 {int volatile ___ = 1;(void)c;
@@ -37445,7 +37445,7 @@ return powf(fromLinear8(c), (2.200000048F));
 # 53
 } 
 #endif
-# 10 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+# 10 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 namespace _GLOBAL__N__31_hdr_pipeline_compute_52_cpp1_ii_b5585b97 { }; using namespace ::_GLOBAL__N__31_hdr_pipeline_compute_52_cpp1_ii_b5585b97; namespace _GLOBAL__N__31_hdr_pipeline_compute_52_cpp1_ii_b5585b97 { 
 # 11
 constexpr unsigned divup(unsigned a, unsigned b) 
@@ -37456,194 +37456,222 @@ return ((a + b) - (1)) / b;
 # 14
 } 
 # 16
-const math::float2 gauss_kernel[] = {math::float2(-(16.0F), (0.002882040106F)), math::float2(-(15.0F), (0.004183189943F)), math::float2(-(14.0F), (0.005927539896F)), math::float2(-(13.0F), (0.008199799806F)), math::float2(-(12.0F), (0.01107368991F)), math::float2(-(11.0F), (0.01459965017F)), math::float2(-(10.0F), (0.01879115961F)), math::float2(-(9.0F), (0.02361161076F)), math::float2(-(8.0F), (0.02896397933F)), math::float2(-(7.0F), (0.03468580917F)), math::float2(-(6.0F), (0.04055143893F)), math::float2(-(5.0F), (0.04628301039F)), math::float2(-(4.0F), (0.05157006904F)), math::float2(-(3.0F), (0.05609637126F)), math::float2(-(2.0F), (0.05957068875F)), math::float2(-(1.0F), (0.06175772846F)), math::float2((0.0F), (0.06250444055F)), math::float2((1.0F), (0.06175772846F)), math::float2((2.0F), (0.05957068875F)), math::float2((3.0F), (0.05609637126F)), math::float2((4.0F), (0.05157006904F)), math::float2((5.0F), (0.04628301039F)), math::float2((6.0F), (0.04055143893F)), math::float2((7.0F), (0.03468580917F)), math::float2((8.0F), (0.02896397933F)), math::float2((9.0F), (0.02361161076F)), math::float2((10.0F), (0.01879115961F)), math::float2((11.0F), (0.01459965017F)), math::float2((12.0F), (0.01107368991F)), math::float2((13.0F), (0.008199799806F)), math::float2((14.0F), (0.005927539896F)), math::float2((15.0F), (0.004183189943F)), math::float2((16.0F), (0.002882040106F))}; 
-# 51
-}
-# 53
 template< class T> void 
-# 54
+# 17
 swap(T &a, T &b) 
-# 55
+# 18
 { 
-# 56
+# 19
 T c = b; 
-# 57
+# 20
 b = a; 
-# 58
+# 21
 a = c; 
-# 59
+# 22
 } 
-# 62
+# 23
+}
+# 26
 void luminance_kernel(float *dest, const float *input, unsigned width, unsigned height) ;
 #if 0
-# 63
+# 27
 { 
-# 65
+# 29
 unsigned x = ((__device_builtin_variable_blockIdx.x) * (__device_builtin_variable_blockDim.x)) + (__device_builtin_variable_threadIdx.x); 
-# 66
+# 30
 unsigned y = ((__device_builtin_variable_blockIdx.y) * (__device_builtin_variable_blockDim.y)) + (__device_builtin_variable_threadIdx.y); 
-# 71
+# 35
 if ((x < width) && (y < height)) { 
-# 72
+# 36
 const float *input_pixel = input + ((3) * ((width * y) + x)); 
-# 74
+# 38
 float lum = (((0.2099999934F) * (input_pixel[0])) + ((0.7200000286F) * (input_pixel[1]))) + ((0.0700000003F) * (input_pixel[2])); 
-# 76
+# 40
 (dest[(width * y) + x]) = lum; 
-# 77
+# 41
 }  
-# 78
+# 42
 } 
 #endif
-# 81 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+# 45 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 void luminance(float *dest, const float *input, unsigned width, unsigned height) { 
-# 82
+# 46
 const dim3 block_size = {32, 32}; 
-# 84
+# 48
 const dim3 num_blocks = {divup(width, block_size.x), divup(height, block_size.y)}; 
-# 90
+# 54
 (cudaConfigureCall(num_blocks, block_size)) ? (void)0 : (luminance_kernel)(dest, input, width, height); 
-# 96
+# 60
 } 
-# 98
+# 62
 void downsample_kernel(float *dest, float *input, unsigned width, unsigned height, unsigned outputPitch, unsigned inputPitch) ;
 #if 0
-# 98
+# 62
 { 
-# 100
+# 64
 unsigned x = ((__device_builtin_variable_blockIdx.x) * (__device_builtin_variable_blockDim.x)) + (__device_builtin_variable_threadIdx.x); 
-# 101
+# 65
 unsigned y = ((__device_builtin_variable_blockIdx.y) * (__device_builtin_variable_blockDim.y)) + (__device_builtin_variable_threadIdx.y); 
-# 103
+# 67
 int F = 2; 
-# 106
+# 70
 if ((x >= (width / F)) || (y >= (height / F))) { 
-# 107
+# 71
 return; }  
-# 109
+# 73
 float sum = (0.0F); 
-# 113
+# 77
 for (int j = 0; j < F; j++) { 
-# 114
+# 78
 for (int i = 0; i < F; i++) { 
-# 116
+# 80
 sum += (input[((((y * F) + j) * inputPitch) + (x * F)) + i]); 
-# 117
+# 81
 }  
-# 118
+# 82
 }  
-# 119
+# 83
 (dest[(y * outputPitch) + x]) = (sum / (F * F)); 
-# 120
+# 84
 } 
 #endif
-# 123 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+# 87 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 float downsample(float *dest, float *luminance, unsigned width, unsigned height) { 
-# 124
+# 88
 const dim3 block_size = {32, 32}; 
-# 126
+# 90
 const dim3 num_blocks = {divup(width, block_size.x), divup(height, block_size.y)}; 
-# 132
+# 96
 const unsigned pitchBuf = width / (2); 
-# 133
+# 97
 const unsigned pitchLuminance = width; 
-# 136
+# 100
 (cudaConfigureCall(num_blocks, block_size)) ? (void)0 : (downsample_kernel)(dest, luminance, width, height, pitchBuf, pitchLuminance); 
-# 137
+# 101
 int ping = 0; 
-# 139
+# 103
 while ((width != (1)) || (height != (1))) { 
-# 141
+# 105
 width = (width / (2)); 
-# 142
+# 106
 height = (height / (2)); 
-# 143
+# 107
 if (width < (1)) { 
-# 144
+# 108
 width = (1); 
-# 145
+# 109
 printf("width < 1 \n"); 
-# 146
+# 110
 }  
-# 147
+# 111
 if (height < (1)) { 
-# 148
+# 112
 height = (1); 
-# 149
+# 113
 printf("height < 1 \n"); 
-# 150
+# 114
 }  
-# 152
+# 116
 printf(" width %d | height %d \n", width, height); 
-# 153
+# 117
 if (ping) { 
-# 154
+# 118
 (cudaConfigureCall(num_blocks, block_size)) ? (void)0 : (downsample_kernel)(dest, luminance, width, height, pitchBuf, pitchLuminance); 
-# 155
+# 119
 } else 
-# 156
+# 120
 { 
-# 158
+# 122
 (cudaConfigureCall(num_blocks, block_size)) ? (void)0 : (downsample_kernel)(luminance, dest, width, height, pitchLuminance, pitchBuf); 
-# 159
+# 123
 }  
-# 160
+# 124
 ping = (!ping); 
-# 161
+# 125
 }  
-# 164
+# 128
 if (ping) { 
-# 165
+# 129
 cudaMemcpy(luminance, dest, 1, cudaMemcpyDeviceToDevice); 
-# 166
+# 130
 }  
-# 170
+# 133
 float average; 
-# 171
+# 134
 cudaMemcpy(&average, dest, sizeof(float), cudaMemcpyDeviceToHost); 
-# 172
+# 135
 return average; 
-# 173
+# 136
 } 
-# 178
-void tonemap_kernel(uchar4 *tonemapped, uchar4 *brightpass, const float *src, unsigned width, unsigned height, float exposure, float brightpass_thdesthold) ;
+# 139
+void blur_kernel(float *dest, const float *src, unsigned width, unsigned height) ;
 #if 0
-# 179
+# 140
 { 
-# 180
-unsigned x = ((__device_builtin_variable_blockIdx.x) * (__device_builtin_variable_blockDim.x)) + (__device_builtin_variable_threadIdx.x); 
-# 181
-unsigned y = ((__device_builtin_variable_blockIdx.y) * (__device_builtin_variable_blockDim.y)) + (__device_builtin_variable_threadIdx.y); 
-# 183
-if ((x < width) && (y < height)) 
-# 184
-{ 
-# 186
-math::float3 c = {src[((3) * ((y * width) + x)) + (0)], src[((3) * ((y * width) + x)) + (1)], src[((3) * ((y * width) + x)) + (2)]}; 
-# 189
-math::float3 c_t = tonemap(c, exposure); 
-# 192
-uchar4 out = {toSRGB8(c_t.x), toSRGB8(c_t.y), toSRGB8(c_t.z), (255U)}; 
-# 193
-(tonemapped[(y * width) + x]) = out; 
-# 194
-(brightpass[(y * width) + x]) = (((luminance(c_t) > brightpass_thdesthold) ? out : (uchar4{(0U), (0U), (0U), (255U)}))); 
-# 195
-}  
-# 196
+# 141
+constexpr float weights[] = {(0.002882040106F), (0.004183189943F), (0.005927539896F), (0.008199799806F), (0.01107368991F), (0.01459965017F), (0.01879115961F), (0.02361161076F), (0.02896397933F), (0.03468580917F), (0.04055143893F), (0.04628301039F), (0.05157006904F), (0.05609637126F), (0.05957068875F), (0.06175772846F), (0.06250444055F), (0.06175772846F), (0.05957068875F), (0.05609637126F), (0.05157006904F), (0.04628301039F), (0.04055143893F), (0.03468580917F), (0.02896397933F), (0.02361161076F), (0.01879115961F), (0.01459965017F), (0.01107368991F), (0.008199799806F), (0.005927539896F), (0.004183189943F), (0.002882040106F)}; 
+# 151
 } 
 #endif
-# 198 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
-void tonemap(uchar4 *tonemapped, uchar4 *brightpass, const float *src, unsigned width, unsigned height, float exposure, float brightpass_thdesthold) 
-# 199
+# 153 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+void gaussian_blur(float *dest, const float *src, unsigned width, unsigned height) 
+# 154
 { 
-# 200
+# 156
+} 
+# 160
+void compose(float *output, const float *tonemapped, const float *blurred, unsigned width, unsigned height) 
+# 161
+{ 
+# 163
+} 
+# 167
+void tonemap_kernel(float *tonemapped, float *brightpass, const float *src, unsigned width, unsigned height, float exposure, float brightpass_threshold) ;
+#if 0
+# 168
+{ 
+# 169
+unsigned x = ((__device_builtin_variable_blockIdx.x) * (__device_builtin_variable_blockDim.x)) + (__device_builtin_variable_threadIdx.x); 
+# 170
+unsigned y = ((__device_builtin_variable_blockIdx.y) * (__device_builtin_variable_blockDim.y)) + (__device_builtin_variable_threadIdx.y); 
+# 172
+if ((x < width) && (y < height)) 
+# 173
+{ 
+# 175
+math::float3 c = {src[((3) * ((y * width) + x)) + (0)], src[((3) * ((y * width) + x)) + (1)], src[((3) * ((y * width) + x)) + (2)]}; 
+# 178
+math::float3 c_t = tonemap(c, exposure); 
+# 181
+(tonemapped[((3) * ((y * width) + x)) + (0)]) = (c_t.x); 
+# 182
+(tonemapped[((3) * ((y * width) + x)) + (1)]) = (c_t.y); 
+# 183
+(tonemapped[((3) * ((y * width) + x)) + (2)]) = (c_t.z); 
+# 186
+math::float3 c_b = ((luminance(c_t) > brightpass_threshold) ? c_t : math::float3{(0.0F), (0.0F), (0.0F)}); 
+# 187
+(brightpass[((3) * ((y * width) + x)) + (0)]) = (c_b.x); 
+# 188
+(brightpass[((3) * ((y * width) + x)) + (1)]) = (c_b.y); 
+# 189
+(brightpass[((3) * ((y * width) + x)) + (2)]) = (c_b.z); 
+# 190
+}  
+# 191
+} 
+#endif
+# 193 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+void tonemap(float *tonemapped, float *brightpass, const float *src, unsigned width, unsigned height, float exposure, float brightpass_threshold) 
+# 194
+{ 
+# 195
 const auto block_size = dim3{32U, 32U}; 
-# 202
+# 197
 auto num_blocks = dim3{divup(width, block_size.x), divup(height, block_size.y)}; 
-# 204
-(cudaConfigureCall(num_blocks, block_size)) ? (void)0 : (tonemap_kernel)(tonemapped, brightpass, src, width, height, exposure, brightpass_thdesthold); 
-# 205
+# 199
+(cudaConfigureCall(num_blocks, block_size)) ? (void)0 : (tonemap_kernel)(tonemapped, brightpass, src, width, height, exposure, brightpass_threshold); 
+# 200
 } 
 
 # 1 "hdr_pipeline.compute_52.cudafe1.stub.c"

@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /mnt/data/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles/CMakeTmp
+Change Dir: /mnt/data/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8df68/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8df68.dir/build.make CMakeFiles/cmTC_8df68.dir/build
-make[1]: Entering directory '/mnt/data/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8df68.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -fPIC    -o CMakeFiles/cmTC_8df68.dir/CheckSymbolExists.c.o   -c /mnt/data/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_8df68
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8df68.dir/link.txt --verbose=1
-/usr/bin/cc  -fPIC     CMakeFiles/cmTC_8df68.dir/CheckSymbolExists.c.o  -o cmTC_8df68 -rdynamic 
-CMakeFiles/cmTC_8df68.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_d74f5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d74f5.dir/build.make CMakeFiles/cmTC_d74f5.dir/build
+make[1]: Entering directory '/mnt/data/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d74f5.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -fPIC    -o CMakeFiles/cmTC_d74f5.dir/CheckSymbolExists.c.o   -c /mnt/data/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_d74f5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d74f5.dir/link.txt --verbose=1
+/usr/bin/cc  -fPIC     CMakeFiles/cmTC_d74f5.dir/CheckSymbolExists.c.o  -o cmTC_d74f5 -rdynamic 
+CMakeFiles/cmTC_d74f5.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_8df68.dir/build.make:97: recipe for target 'cmTC_8df68' failed
-make[1]: *** [cmTC_8df68] Error 1
-make[1]: Leaving directory '/mnt/data/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_8df68/fast' failed
-make: *** [cmTC_8df68/fast] Error 2
+CMakeFiles/cmTC_d74f5.dir/build.make:97: recipe for target 'cmTC_d74f5' failed
+make[1]: *** [cmTC_d74f5] Error 1
+make[1]: Leaving directory '/mnt/data/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d74f5/fast' failed
+make: *** [cmTC_d74f5/fast] Error 2
 
-File /mnt/data/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /mnt/data/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /mnt/data/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles/CMakeTmp
+Change Dir: /mnt/data/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_289af/fast"
-/usr/bin/make -f CMakeFiles/cmTC_289af.dir/build.make CMakeFiles/cmTC_289af.dir/build
-make[1]: Entering directory '/mnt/data/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_289af.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_289af.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_289af
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_289af.dir/link.txt --verbose=1
-/usr/bin/cc  -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_289af.dir/CheckFunctionExists.c.o  -o cmTC_289af -rdynamic -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_fe543/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fe543.dir/build.make CMakeFiles/cmTC_fe543.dir/build
+make[1]: Entering directory '/mnt/data/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fe543.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_fe543.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fe543
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe543.dir/link.txt --verbose=1
+/usr/bin/cc  -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_fe543.dir/CheckFunctionExists.c.o  -o cmTC_fe543 -rdynamic -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_289af.dir/build.make:97: recipe for target 'cmTC_289af' failed
-make[1]: *** [cmTC_289af] Error 1
-make[1]: Leaving directory '/mnt/data/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_289af/fast' failed
-make: *** [cmTC_289af/fast] Error 2
+CMakeFiles/cmTC_fe543.dir/build.make:97: recipe for target 'cmTC_fe543' failed
+make[1]: *** [cmTC_fe543] Error 1
+make[1]: Leaving directory '/mnt/data/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_fe543/fast' failed
+make: *** [cmTC_fe543/fast] Error 2
 
 

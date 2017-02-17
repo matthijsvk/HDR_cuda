@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake
+CMAKE_SOURCE_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build
+CMAKE_BINARY_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build
 
 # Include any dependencies generated for this target.
 include framework/CMakeFiles/framework.dir/depend.make
@@ -57,139 +57,139 @@ include framework/CMakeFiles/framework.dir/progress.make
 # Include the compile flags for this target's objects.
 include framework/CMakeFiles/framework.dir/flags.make
 
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp.o: framework/CMakeFiles/framework.dir/flags.make
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp.o: /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp.o -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp.o: framework/CMakeFiles/framework.dir/flags.make
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp.o: /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp.o -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp
 
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp > CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp.i
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp.i"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp > CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp.i
 
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp -o CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp.s
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp.s"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp -o CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp.s
 
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp.o.requires:
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp.o.requires:
 
-.PHONY : framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp.o.requires
+.PHONY : framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp.o.requires
 
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp.o.provides: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp.o.requires
-	$(MAKE) -f framework/CMakeFiles/framework.dir/build.make framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp.o.provides.build
-.PHONY : framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp.o.provides
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp.o.provides: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp.o.requires
+	$(MAKE) -f framework/CMakeFiles/framework.dir/build.make framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp.o.provides.build
+.PHONY : framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp.o.provides
 
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp.o.provides.build: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp.o
-
-
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp.o: framework/CMakeFiles/framework.dir/flags.make
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp.o: /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp.o -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp
-
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp > CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp.i
-
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp -o CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp.s
-
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp.o.requires:
-
-.PHONY : framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp.o.requires
-
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp.o.provides: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp.o.requires
-	$(MAKE) -f framework/CMakeFiles/framework.dir/build.make framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp.o.provides.build
-.PHONY : framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp.o.provides
-
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp.o.provides.build: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp.o
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp.o.provides.build: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp.o
 
 
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp.o: framework/CMakeFiles/framework.dir/flags.make
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp.o: /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp.o -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp.o: framework/CMakeFiles/framework.dir/flags.make
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp.o: /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp.o -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp
 
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp > CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp.i
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp.i"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp > CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp.i
 
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp -o CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp.s
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp.s"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp -o CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp.s
 
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp.o.requires:
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp.o.requires:
 
-.PHONY : framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp.o.requires
+.PHONY : framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp.o.requires
 
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp.o.provides: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp.o.requires
-	$(MAKE) -f framework/CMakeFiles/framework.dir/build.make framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp.o.provides.build
-.PHONY : framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp.o.provides
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp.o.provides: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp.o.requires
+	$(MAKE) -f framework/CMakeFiles/framework.dir/build.make framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp.o.provides.build
+.PHONY : framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp.o.provides
 
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp.o.provides.build: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp.o
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp.o.provides.build: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp.o
 
 
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp.o: framework/CMakeFiles/framework.dir/flags.make
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp.o: /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp.o -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp.o: framework/CMakeFiles/framework.dir/flags.make
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp.o: /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp.o -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp
 
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp > CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp.i
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp.i"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp > CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp.i
 
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp -o CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp.s
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp.s"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp -o CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp.s
 
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp.o.requires:
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp.o.requires:
 
-.PHONY : framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp.o.requires
+.PHONY : framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp.o.requires
 
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp.o.provides: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp.o.requires
-	$(MAKE) -f framework/CMakeFiles/framework.dir/build.make framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp.o.provides.build
-.PHONY : framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp.o.provides
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp.o.provides: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp.o.requires
+	$(MAKE) -f framework/CMakeFiles/framework.dir/build.make framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp.o.provides.build
+.PHONY : framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp.o.provides
 
-framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp.o.provides.build: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp.o
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp.o.provides.build: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp.o
+
+
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp.o: framework/CMakeFiles/framework.dir/flags.make
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp.o: /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp.o -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp
+
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp.i"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp > CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp.i
+
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp.s"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp -o CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp.s
+
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp.o.requires:
+
+.PHONY : framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp.o.requires
+
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp.o.provides: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp.o.requires
+	$(MAKE) -f framework/CMakeFiles/framework.dir/build.make framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp.o.provides.build
+.PHONY : framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp.o.provides
+
+framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp.o.provides.build: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp.o
 
 
 # Object files for target framework
 framework_OBJECTS = \
-"CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp.o" \
-"CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp.o" \
-"CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp.o" \
-"CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp.o"
+"CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp.o" \
+"CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp.o" \
+"CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp.o" \
+"CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp.o"
 
 # External object files for target framework
 framework_EXTERNAL_OBJECTS =
 
-lib/libframework.a: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp.o
-lib/libframework.a: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp.o
-lib/libframework.a: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp.o
-lib/libframework.a: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp.o
+lib/libframework.a: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp.o
+lib/libframework.a: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp.o
+lib/libframework.a: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp.o
+lib/libframework.a: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp.o
 lib/libframework.a: framework/CMakeFiles/framework.dir/build.make
 lib/libframework.a: framework/CMakeFiles/framework.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library ../lib/libframework.a"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework && $(CMAKE_COMMAND) -P CMakeFiles/framework.dir/cmake_clean_target.cmake
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/framework.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library ../lib/libframework.a"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework && $(CMAKE_COMMAND) -P CMakeFiles/framework.dir/cmake_clean_target.cmake
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/framework.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 framework/CMakeFiles/framework.dir/build: lib/libframework.a
 
 .PHONY : framework/CMakeFiles/framework.dir/build
 
-framework/CMakeFiles/framework.dir/requires: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp.o.requires
-framework/CMakeFiles/framework.dir/requires: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp.o.requires
-framework/CMakeFiles/framework.dir/requires: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp.o.requires
-framework/CMakeFiles/framework.dir/requires: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp.o.requires
+framework/CMakeFiles/framework.dir/requires: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp.o.requires
+framework/CMakeFiles/framework.dir/requires: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp.o.requires
+framework/CMakeFiles/framework.dir/requires: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp.o.requires
+framework/CMakeFiles/framework.dir/requires: framework/CMakeFiles/framework.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp.o.requires
 
 .PHONY : framework/CMakeFiles/framework.dir/requires
 
 framework/CMakeFiles/framework.dir/clean:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework && $(CMAKE_COMMAND) -P CMakeFiles/framework.dir/cmake_clean.cmake
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework && $(CMAKE_COMMAND) -P CMakeFiles/framework.dir/cmake_clean.cmake
 .PHONY : framework/CMakeFiles/framework.dir/clean
 
 framework/CMakeFiles/framework.dir/depend:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/framework /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/CMakeFiles/framework.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/framework /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/CMakeFiles/framework.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : framework/CMakeFiles/framework.dir/depend
 

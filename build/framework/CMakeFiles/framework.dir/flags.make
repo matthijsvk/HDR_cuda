@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++11
 
 CXX_DEFINES = -DZ_SOLO
 
-CXX_INCLUDES = -I/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/framework/libpng/../../../dependencies/libpng -I/usr/local/cuda-8.0/include -I/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/framework/../../dependencies -I/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/framework/../../../source/framework/.. 
+CXX_INCLUDES = -I/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/framework/libpng/../../../dependencies/libpng -I/usr/local/cuda-8.0/include -I/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/framework/../../dependencies -I/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/framework/../../../source/framework/.. 
 

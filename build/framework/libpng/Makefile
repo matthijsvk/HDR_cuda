@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake
+CMAKE_SOURCE_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build
+CMAKE_BINARY_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng/CMakeFiles/progress.marks
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f CMakeFiles/Makefile2 framework/libpng/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles 0
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng/CMakeFiles/progress.marks
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f CMakeFiles/Makefile2 framework/libpng/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f CMakeFiles/Makefile2 framework/libpng/clean
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f CMakeFiles/Makefile2 framework/libpng/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f CMakeFiles/Makefile2 framework/libpng/preinstall
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f CMakeFiles/Makefile2 framework/libpng/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f CMakeFiles/Makefile2 framework/libpng/preinstall
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f CMakeFiles/Makefile2 framework/libpng/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 framework/libpng/CMakeFiles/lpng.dir/rule:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f CMakeFiles/Makefile2 framework/libpng/CMakeFiles/lpng.dir/rule
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f CMakeFiles/Makefile2 framework/libpng/CMakeFiles/lpng.dir/rule
 .PHONY : framework/libpng/CMakeFiles/lpng.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ lpng: framework/libpng/CMakeFiles/lpng.dir/rule
 
 # fast build rule for target.
 lpng/fast:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/build
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/build
 .PHONY : lpng/fast
 
 __/__/dependencies/libpng/png.o: __/__/dependencies/libpng/png.c.o
@@ -131,7 +131,7 @@ __/__/dependencies/libpng/png.o: __/__/dependencies/libpng/png.c.o
 
 # target to build an object file
 __/__/dependencies/libpng/png.c.o:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/png.c.o
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/png.c.o
 .PHONY : __/__/dependencies/libpng/png.c.o
 
 __/__/dependencies/libpng/png.i: __/__/dependencies/libpng/png.c.i
@@ -140,7 +140,7 @@ __/__/dependencies/libpng/png.i: __/__/dependencies/libpng/png.c.i
 
 # target to preprocess a source file
 __/__/dependencies/libpng/png.c.i:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/png.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/png.c.i
 .PHONY : __/__/dependencies/libpng/png.c.i
 
 __/__/dependencies/libpng/png.s: __/__/dependencies/libpng/png.c.s
@@ -149,7 +149,7 @@ __/__/dependencies/libpng/png.s: __/__/dependencies/libpng/png.c.s
 
 # target to generate assembly for a file
 __/__/dependencies/libpng/png.c.s:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/png.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/png.c.s
 .PHONY : __/__/dependencies/libpng/png.c.s
 
 __/__/dependencies/libpng/pngerror.o: __/__/dependencies/libpng/pngerror.c.o
@@ -158,7 +158,7 @@ __/__/dependencies/libpng/pngerror.o: __/__/dependencies/libpng/pngerror.c.o
 
 # target to build an object file
 __/__/dependencies/libpng/pngerror.c.o:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngerror.c.o
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngerror.c.o
 .PHONY : __/__/dependencies/libpng/pngerror.c.o
 
 __/__/dependencies/libpng/pngerror.i: __/__/dependencies/libpng/pngerror.c.i
@@ -167,7 +167,7 @@ __/__/dependencies/libpng/pngerror.i: __/__/dependencies/libpng/pngerror.c.i
 
 # target to preprocess a source file
 __/__/dependencies/libpng/pngerror.c.i:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngerror.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngerror.c.i
 .PHONY : __/__/dependencies/libpng/pngerror.c.i
 
 __/__/dependencies/libpng/pngerror.s: __/__/dependencies/libpng/pngerror.c.s
@@ -176,7 +176,7 @@ __/__/dependencies/libpng/pngerror.s: __/__/dependencies/libpng/pngerror.c.s
 
 # target to generate assembly for a file
 __/__/dependencies/libpng/pngerror.c.s:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngerror.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngerror.c.s
 .PHONY : __/__/dependencies/libpng/pngerror.c.s
 
 __/__/dependencies/libpng/pngget.o: __/__/dependencies/libpng/pngget.c.o
@@ -185,7 +185,7 @@ __/__/dependencies/libpng/pngget.o: __/__/dependencies/libpng/pngget.c.o
 
 # target to build an object file
 __/__/dependencies/libpng/pngget.c.o:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngget.c.o
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngget.c.o
 .PHONY : __/__/dependencies/libpng/pngget.c.o
 
 __/__/dependencies/libpng/pngget.i: __/__/dependencies/libpng/pngget.c.i
@@ -194,7 +194,7 @@ __/__/dependencies/libpng/pngget.i: __/__/dependencies/libpng/pngget.c.i
 
 # target to preprocess a source file
 __/__/dependencies/libpng/pngget.c.i:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngget.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngget.c.i
 .PHONY : __/__/dependencies/libpng/pngget.c.i
 
 __/__/dependencies/libpng/pngget.s: __/__/dependencies/libpng/pngget.c.s
@@ -203,7 +203,7 @@ __/__/dependencies/libpng/pngget.s: __/__/dependencies/libpng/pngget.c.s
 
 # target to generate assembly for a file
 __/__/dependencies/libpng/pngget.c.s:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngget.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngget.c.s
 .PHONY : __/__/dependencies/libpng/pngget.c.s
 
 __/__/dependencies/libpng/pngmem.o: __/__/dependencies/libpng/pngmem.c.o
@@ -212,7 +212,7 @@ __/__/dependencies/libpng/pngmem.o: __/__/dependencies/libpng/pngmem.c.o
 
 # target to build an object file
 __/__/dependencies/libpng/pngmem.c.o:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngmem.c.o
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngmem.c.o
 .PHONY : __/__/dependencies/libpng/pngmem.c.o
 
 __/__/dependencies/libpng/pngmem.i: __/__/dependencies/libpng/pngmem.c.i
@@ -221,7 +221,7 @@ __/__/dependencies/libpng/pngmem.i: __/__/dependencies/libpng/pngmem.c.i
 
 # target to preprocess a source file
 __/__/dependencies/libpng/pngmem.c.i:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngmem.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngmem.c.i
 .PHONY : __/__/dependencies/libpng/pngmem.c.i
 
 __/__/dependencies/libpng/pngmem.s: __/__/dependencies/libpng/pngmem.c.s
@@ -230,7 +230,7 @@ __/__/dependencies/libpng/pngmem.s: __/__/dependencies/libpng/pngmem.c.s
 
 # target to generate assembly for a file
 __/__/dependencies/libpng/pngmem.c.s:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngmem.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngmem.c.s
 .PHONY : __/__/dependencies/libpng/pngmem.c.s
 
 __/__/dependencies/libpng/pngpread.o: __/__/dependencies/libpng/pngpread.c.o
@@ -239,7 +239,7 @@ __/__/dependencies/libpng/pngpread.o: __/__/dependencies/libpng/pngpread.c.o
 
 # target to build an object file
 __/__/dependencies/libpng/pngpread.c.o:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngpread.c.o
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngpread.c.o
 .PHONY : __/__/dependencies/libpng/pngpread.c.o
 
 __/__/dependencies/libpng/pngpread.i: __/__/dependencies/libpng/pngpread.c.i
@@ -248,7 +248,7 @@ __/__/dependencies/libpng/pngpread.i: __/__/dependencies/libpng/pngpread.c.i
 
 # target to preprocess a source file
 __/__/dependencies/libpng/pngpread.c.i:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngpread.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngpread.c.i
 .PHONY : __/__/dependencies/libpng/pngpread.c.i
 
 __/__/dependencies/libpng/pngpread.s: __/__/dependencies/libpng/pngpread.c.s
@@ -257,7 +257,7 @@ __/__/dependencies/libpng/pngpread.s: __/__/dependencies/libpng/pngpread.c.s
 
 # target to generate assembly for a file
 __/__/dependencies/libpng/pngpread.c.s:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngpread.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngpread.c.s
 .PHONY : __/__/dependencies/libpng/pngpread.c.s
 
 __/__/dependencies/libpng/pngread.o: __/__/dependencies/libpng/pngread.c.o
@@ -266,7 +266,7 @@ __/__/dependencies/libpng/pngread.o: __/__/dependencies/libpng/pngread.c.o
 
 # target to build an object file
 __/__/dependencies/libpng/pngread.c.o:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngread.c.o
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngread.c.o
 .PHONY : __/__/dependencies/libpng/pngread.c.o
 
 __/__/dependencies/libpng/pngread.i: __/__/dependencies/libpng/pngread.c.i
@@ -275,7 +275,7 @@ __/__/dependencies/libpng/pngread.i: __/__/dependencies/libpng/pngread.c.i
 
 # target to preprocess a source file
 __/__/dependencies/libpng/pngread.c.i:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngread.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngread.c.i
 .PHONY : __/__/dependencies/libpng/pngread.c.i
 
 __/__/dependencies/libpng/pngread.s: __/__/dependencies/libpng/pngread.c.s
@@ -284,7 +284,7 @@ __/__/dependencies/libpng/pngread.s: __/__/dependencies/libpng/pngread.c.s
 
 # target to generate assembly for a file
 __/__/dependencies/libpng/pngread.c.s:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngread.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngread.c.s
 .PHONY : __/__/dependencies/libpng/pngread.c.s
 
 __/__/dependencies/libpng/pngrio.o: __/__/dependencies/libpng/pngrio.c.o
@@ -293,7 +293,7 @@ __/__/dependencies/libpng/pngrio.o: __/__/dependencies/libpng/pngrio.c.o
 
 # target to build an object file
 __/__/dependencies/libpng/pngrio.c.o:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrio.c.o
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrio.c.o
 .PHONY : __/__/dependencies/libpng/pngrio.c.o
 
 __/__/dependencies/libpng/pngrio.i: __/__/dependencies/libpng/pngrio.c.i
@@ -302,7 +302,7 @@ __/__/dependencies/libpng/pngrio.i: __/__/dependencies/libpng/pngrio.c.i
 
 # target to preprocess a source file
 __/__/dependencies/libpng/pngrio.c.i:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrio.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrio.c.i
 .PHONY : __/__/dependencies/libpng/pngrio.c.i
 
 __/__/dependencies/libpng/pngrio.s: __/__/dependencies/libpng/pngrio.c.s
@@ -311,7 +311,7 @@ __/__/dependencies/libpng/pngrio.s: __/__/dependencies/libpng/pngrio.c.s
 
 # target to generate assembly for a file
 __/__/dependencies/libpng/pngrio.c.s:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrio.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrio.c.s
 .PHONY : __/__/dependencies/libpng/pngrio.c.s
 
 __/__/dependencies/libpng/pngrtran.o: __/__/dependencies/libpng/pngrtran.c.o
@@ -320,7 +320,7 @@ __/__/dependencies/libpng/pngrtran.o: __/__/dependencies/libpng/pngrtran.c.o
 
 # target to build an object file
 __/__/dependencies/libpng/pngrtran.c.o:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrtran.c.o
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrtran.c.o
 .PHONY : __/__/dependencies/libpng/pngrtran.c.o
 
 __/__/dependencies/libpng/pngrtran.i: __/__/dependencies/libpng/pngrtran.c.i
@@ -329,7 +329,7 @@ __/__/dependencies/libpng/pngrtran.i: __/__/dependencies/libpng/pngrtran.c.i
 
 # target to preprocess a source file
 __/__/dependencies/libpng/pngrtran.c.i:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrtran.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrtran.c.i
 .PHONY : __/__/dependencies/libpng/pngrtran.c.i
 
 __/__/dependencies/libpng/pngrtran.s: __/__/dependencies/libpng/pngrtran.c.s
@@ -338,7 +338,7 @@ __/__/dependencies/libpng/pngrtran.s: __/__/dependencies/libpng/pngrtran.c.s
 
 # target to generate assembly for a file
 __/__/dependencies/libpng/pngrtran.c.s:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrtran.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrtran.c.s
 .PHONY : __/__/dependencies/libpng/pngrtran.c.s
 
 __/__/dependencies/libpng/pngrutil.o: __/__/dependencies/libpng/pngrutil.c.o
@@ -347,7 +347,7 @@ __/__/dependencies/libpng/pngrutil.o: __/__/dependencies/libpng/pngrutil.c.o
 
 # target to build an object file
 __/__/dependencies/libpng/pngrutil.c.o:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrutil.c.o
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrutil.c.o
 .PHONY : __/__/dependencies/libpng/pngrutil.c.o
 
 __/__/dependencies/libpng/pngrutil.i: __/__/dependencies/libpng/pngrutil.c.i
@@ -356,7 +356,7 @@ __/__/dependencies/libpng/pngrutil.i: __/__/dependencies/libpng/pngrutil.c.i
 
 # target to preprocess a source file
 __/__/dependencies/libpng/pngrutil.c.i:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrutil.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrutil.c.i
 .PHONY : __/__/dependencies/libpng/pngrutil.c.i
 
 __/__/dependencies/libpng/pngrutil.s: __/__/dependencies/libpng/pngrutil.c.s
@@ -365,7 +365,7 @@ __/__/dependencies/libpng/pngrutil.s: __/__/dependencies/libpng/pngrutil.c.s
 
 # target to generate assembly for a file
 __/__/dependencies/libpng/pngrutil.c.s:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrutil.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrutil.c.s
 .PHONY : __/__/dependencies/libpng/pngrutil.c.s
 
 __/__/dependencies/libpng/pngset.o: __/__/dependencies/libpng/pngset.c.o
@@ -374,7 +374,7 @@ __/__/dependencies/libpng/pngset.o: __/__/dependencies/libpng/pngset.c.o
 
 # target to build an object file
 __/__/dependencies/libpng/pngset.c.o:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngset.c.o
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngset.c.o
 .PHONY : __/__/dependencies/libpng/pngset.c.o
 
 __/__/dependencies/libpng/pngset.i: __/__/dependencies/libpng/pngset.c.i
@@ -383,7 +383,7 @@ __/__/dependencies/libpng/pngset.i: __/__/dependencies/libpng/pngset.c.i
 
 # target to preprocess a source file
 __/__/dependencies/libpng/pngset.c.i:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngset.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngset.c.i
 .PHONY : __/__/dependencies/libpng/pngset.c.i
 
 __/__/dependencies/libpng/pngset.s: __/__/dependencies/libpng/pngset.c.s
@@ -392,7 +392,7 @@ __/__/dependencies/libpng/pngset.s: __/__/dependencies/libpng/pngset.c.s
 
 # target to generate assembly for a file
 __/__/dependencies/libpng/pngset.c.s:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngset.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngset.c.s
 .PHONY : __/__/dependencies/libpng/pngset.c.s
 
 __/__/dependencies/libpng/pngtrans.o: __/__/dependencies/libpng/pngtrans.c.o
@@ -401,7 +401,7 @@ __/__/dependencies/libpng/pngtrans.o: __/__/dependencies/libpng/pngtrans.c.o
 
 # target to build an object file
 __/__/dependencies/libpng/pngtrans.c.o:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngtrans.c.o
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngtrans.c.o
 .PHONY : __/__/dependencies/libpng/pngtrans.c.o
 
 __/__/dependencies/libpng/pngtrans.i: __/__/dependencies/libpng/pngtrans.c.i
@@ -410,7 +410,7 @@ __/__/dependencies/libpng/pngtrans.i: __/__/dependencies/libpng/pngtrans.c.i
 
 # target to preprocess a source file
 __/__/dependencies/libpng/pngtrans.c.i:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngtrans.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngtrans.c.i
 .PHONY : __/__/dependencies/libpng/pngtrans.c.i
 
 __/__/dependencies/libpng/pngtrans.s: __/__/dependencies/libpng/pngtrans.c.s
@@ -419,7 +419,7 @@ __/__/dependencies/libpng/pngtrans.s: __/__/dependencies/libpng/pngtrans.c.s
 
 # target to generate assembly for a file
 __/__/dependencies/libpng/pngtrans.c.s:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngtrans.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngtrans.c.s
 .PHONY : __/__/dependencies/libpng/pngtrans.c.s
 
 __/__/dependencies/libpng/pngwio.o: __/__/dependencies/libpng/pngwio.c.o
@@ -428,7 +428,7 @@ __/__/dependencies/libpng/pngwio.o: __/__/dependencies/libpng/pngwio.c.o
 
 # target to build an object file
 __/__/dependencies/libpng/pngwio.c.o:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwio.c.o
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwio.c.o
 .PHONY : __/__/dependencies/libpng/pngwio.c.o
 
 __/__/dependencies/libpng/pngwio.i: __/__/dependencies/libpng/pngwio.c.i
@@ -437,7 +437,7 @@ __/__/dependencies/libpng/pngwio.i: __/__/dependencies/libpng/pngwio.c.i
 
 # target to preprocess a source file
 __/__/dependencies/libpng/pngwio.c.i:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwio.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwio.c.i
 .PHONY : __/__/dependencies/libpng/pngwio.c.i
 
 __/__/dependencies/libpng/pngwio.s: __/__/dependencies/libpng/pngwio.c.s
@@ -446,7 +446,7 @@ __/__/dependencies/libpng/pngwio.s: __/__/dependencies/libpng/pngwio.c.s
 
 # target to generate assembly for a file
 __/__/dependencies/libpng/pngwio.c.s:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwio.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwio.c.s
 .PHONY : __/__/dependencies/libpng/pngwio.c.s
 
 __/__/dependencies/libpng/pngwrite.o: __/__/dependencies/libpng/pngwrite.c.o
@@ -455,7 +455,7 @@ __/__/dependencies/libpng/pngwrite.o: __/__/dependencies/libpng/pngwrite.c.o
 
 # target to build an object file
 __/__/dependencies/libpng/pngwrite.c.o:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwrite.c.o
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwrite.c.o
 .PHONY : __/__/dependencies/libpng/pngwrite.c.o
 
 __/__/dependencies/libpng/pngwrite.i: __/__/dependencies/libpng/pngwrite.c.i
@@ -464,7 +464,7 @@ __/__/dependencies/libpng/pngwrite.i: __/__/dependencies/libpng/pngwrite.c.i
 
 # target to preprocess a source file
 __/__/dependencies/libpng/pngwrite.c.i:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwrite.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwrite.c.i
 .PHONY : __/__/dependencies/libpng/pngwrite.c.i
 
 __/__/dependencies/libpng/pngwrite.s: __/__/dependencies/libpng/pngwrite.c.s
@@ -473,7 +473,7 @@ __/__/dependencies/libpng/pngwrite.s: __/__/dependencies/libpng/pngwrite.c.s
 
 # target to generate assembly for a file
 __/__/dependencies/libpng/pngwrite.c.s:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwrite.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwrite.c.s
 .PHONY : __/__/dependencies/libpng/pngwrite.c.s
 
 __/__/dependencies/libpng/pngwtran.o: __/__/dependencies/libpng/pngwtran.c.o
@@ -482,7 +482,7 @@ __/__/dependencies/libpng/pngwtran.o: __/__/dependencies/libpng/pngwtran.c.o
 
 # target to build an object file
 __/__/dependencies/libpng/pngwtran.c.o:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwtran.c.o
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwtran.c.o
 .PHONY : __/__/dependencies/libpng/pngwtran.c.o
 
 __/__/dependencies/libpng/pngwtran.i: __/__/dependencies/libpng/pngwtran.c.i
@@ -491,7 +491,7 @@ __/__/dependencies/libpng/pngwtran.i: __/__/dependencies/libpng/pngwtran.c.i
 
 # target to preprocess a source file
 __/__/dependencies/libpng/pngwtran.c.i:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwtran.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwtran.c.i
 .PHONY : __/__/dependencies/libpng/pngwtran.c.i
 
 __/__/dependencies/libpng/pngwtran.s: __/__/dependencies/libpng/pngwtran.c.s
@@ -500,7 +500,7 @@ __/__/dependencies/libpng/pngwtran.s: __/__/dependencies/libpng/pngwtran.c.s
 
 # target to generate assembly for a file
 __/__/dependencies/libpng/pngwtran.c.s:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwtran.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwtran.c.s
 .PHONY : __/__/dependencies/libpng/pngwtran.c.s
 
 __/__/dependencies/libpng/pngwutil.o: __/__/dependencies/libpng/pngwutil.c.o
@@ -509,7 +509,7 @@ __/__/dependencies/libpng/pngwutil.o: __/__/dependencies/libpng/pngwutil.c.o
 
 # target to build an object file
 __/__/dependencies/libpng/pngwutil.c.o:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwutil.c.o
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwutil.c.o
 .PHONY : __/__/dependencies/libpng/pngwutil.c.o
 
 __/__/dependencies/libpng/pngwutil.i: __/__/dependencies/libpng/pngwutil.c.i
@@ -518,7 +518,7 @@ __/__/dependencies/libpng/pngwutil.i: __/__/dependencies/libpng/pngwutil.c.i
 
 # target to preprocess a source file
 __/__/dependencies/libpng/pngwutil.c.i:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwutil.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwutil.c.i
 .PHONY : __/__/dependencies/libpng/pngwutil.c.i
 
 __/__/dependencies/libpng/pngwutil.s: __/__/dependencies/libpng/pngwutil.c.s
@@ -527,7 +527,7 @@ __/__/dependencies/libpng/pngwutil.s: __/__/dependencies/libpng/pngwutil.c.s
 
 # target to generate assembly for a file
 __/__/dependencies/libpng/pngwutil.c.s:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwutil.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwutil.c.s
 .PHONY : __/__/dependencies/libpng/pngwutil.c.s
 
 # Help Target
@@ -595,6 +595,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -6,33 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.cpp
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.cpp
 sstream
 -
 error.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/CUDA/error.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/CUDA/error.h
 exception
 -
 cuda_runtime_api.h
 -
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.cpp
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.cpp
 cstdlib
 -
 cstring
 -
 cmd_args.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/cmd_args.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/cmd_args.h
 cstring
 -
 stdexcept
 -
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/image.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/image.h
 cstddef
 -
 memory
@@ -40,27 +40,27 @@ memory
 algorithm
 -
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/io.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/io.h
 iostream
 -
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.cpp
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.cpp
 string
 -
 fstream
 -
 io.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/io.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/io.h
 pfm.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/pfm.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/pfm.h
 rgb32f.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/rgb32f.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/rgb32f.h
 image.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/image.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/image.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.cpp
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.cpp
 memory
 -
 string
@@ -68,9 +68,9 @@ string
 stdexcept
 -
 png.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/png.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/png.h
 cstdint
 -
 tuple
@@ -80,9 +80,9 @@ fstream
 png.h
 -
 image.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/image.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/image.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/framework/rgb32f.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/framework/rgb32f.h
 
 /usr/local/cuda-8.0/include/builtin_types.h
 device_types.h

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake
+CMAKE_SOURCE_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build
+CMAKE_BINARY_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build
 
 # Include any dependencies generated for this target.
 include framework/libpng/CMakeFiles/lpng.dir/depend.make
@@ -59,16 +59,16 @@ include framework/libpng/CMakeFiles/lpng.dir/flags.make
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwrite.c.o: framework/libpng/CMakeFiles/lpng.dir/flags.make
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwrite.c.o: dependencies/libpng/pngwrite.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwrite.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwrite.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngwrite.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwrite.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwrite.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngwrite.c
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwrite.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwrite.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngwrite.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwrite.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngwrite.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwrite.c.i
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwrite.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwrite.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngwrite.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwrite.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngwrite.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwrite.c.s
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwrite.c.o.requires:
 
@@ -83,16 +83,16 @@ framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwrite.c.o.prov
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngpread.c.o: framework/libpng/CMakeFiles/lpng.dir/flags.make
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngpread.c.o: dependencies/libpng/pngpread.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngpread.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngpread.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngpread.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngpread.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngpread.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngpread.c
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngpread.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngpread.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngpread.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngpread.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngpread.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngpread.c.i
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngpread.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngpread.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngpread.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngpread.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngpread.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngpread.c.s
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngpread.c.o.requires:
 
@@ -107,16 +107,16 @@ framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngpread.c.o.prov
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwutil.c.o: framework/libpng/CMakeFiles/lpng.dir/flags.make
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwutil.c.o: dependencies/libpng/pngwutil.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwutil.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwutil.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngwutil.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwutil.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwutil.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngwutil.c
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwutil.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwutil.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngwutil.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwutil.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngwutil.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwutil.c.i
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwutil.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwutil.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngwutil.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwutil.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngwutil.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwutil.c.s
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwutil.c.o.requires:
 
@@ -131,16 +131,16 @@ framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwutil.c.o.prov
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngmem.c.o: framework/libpng/CMakeFiles/lpng.dir/flags.make
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngmem.c.o: dependencies/libpng/pngmem.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngmem.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngmem.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngmem.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngmem.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngmem.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngmem.c
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngmem.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngmem.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngmem.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngmem.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngmem.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngmem.c.i
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngmem.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngmem.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngmem.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngmem.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngmem.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngmem.c.s
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngmem.c.o.requires:
 
@@ -155,16 +155,16 @@ framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngmem.c.o.provid
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrtran.c.o: framework/libpng/CMakeFiles/lpng.dir/flags.make
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrtran.c.o: dependencies/libpng/pngrtran.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrtran.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrtran.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngrtran.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrtran.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrtran.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngrtran.c
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrtran.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrtran.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngrtran.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrtran.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngrtran.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrtran.c.i
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrtran.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrtran.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngrtran.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrtran.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngrtran.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrtran.c.s
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrtran.c.o.requires:
 
@@ -179,16 +179,16 @@ framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrtran.c.o.prov
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngread.c.o: framework/libpng/CMakeFiles/lpng.dir/flags.make
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngread.c.o: dependencies/libpng/pngread.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngread.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngread.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngread.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngread.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngread.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngread.c
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngread.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngread.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngread.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngread.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngread.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngread.c.i
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngread.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngread.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngread.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngread.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngread.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngread.c.s
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngread.c.o.requires:
 
@@ -203,16 +203,16 @@ framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngread.c.o.provi
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwio.c.o: framework/libpng/CMakeFiles/lpng.dir/flags.make
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwio.c.o: dependencies/libpng/pngwio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwio.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwio.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngwio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwio.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwio.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngwio.c
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwio.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngwio.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwio.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngwio.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwio.c.i
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwio.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngwio.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwio.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngwio.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwio.c.s
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwio.c.o.requires:
 
@@ -227,16 +227,16 @@ framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwio.c.o.provid
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngget.c.o: framework/libpng/CMakeFiles/lpng.dir/flags.make
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngget.c.o: dependencies/libpng/pngget.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngget.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngget.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngget.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngget.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngget.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngget.c
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngget.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngget.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngget.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngget.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngget.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngget.c.i
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngget.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngget.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngget.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngget.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngget.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngget.c.s
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngget.c.o.requires:
 
@@ -251,16 +251,16 @@ framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngget.c.o.provid
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwtran.c.o: framework/libpng/CMakeFiles/lpng.dir/flags.make
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwtran.c.o: dependencies/libpng/pngwtran.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwtran.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwtran.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngwtran.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwtran.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwtran.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngwtran.c
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwtran.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwtran.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngwtran.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwtran.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngwtran.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwtran.c.i
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwtran.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwtran.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngwtran.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwtran.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngwtran.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwtran.c.s
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwtran.c.o.requires:
 
@@ -275,16 +275,16 @@ framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngwtran.c.o.prov
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngerror.c.o: framework/libpng/CMakeFiles/lpng.dir/flags.make
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngerror.c.o: dependencies/libpng/pngerror.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngerror.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngerror.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngerror.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngerror.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngerror.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngerror.c
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngerror.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngerror.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngerror.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngerror.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngerror.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngerror.c.i
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngerror.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngerror.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngerror.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngerror.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngerror.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngerror.c.s
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngerror.c.o.requires:
 
@@ -299,16 +299,16 @@ framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngerror.c.o.prov
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrutil.c.o: framework/libpng/CMakeFiles/lpng.dir/flags.make
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrutil.c.o: dependencies/libpng/pngrutil.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrutil.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrutil.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngrutil.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrutil.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrutil.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngrutil.c
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrutil.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrutil.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngrutil.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrutil.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngrutil.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrutil.c.i
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrutil.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrutil.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngrutil.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrutil.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngrutil.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrutil.c.s
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrutil.c.o.requires:
 
@@ -323,16 +323,16 @@ framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrutil.c.o.prov
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngset.c.o: framework/libpng/CMakeFiles/lpng.dir/flags.make
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngset.c.o: dependencies/libpng/pngset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngset.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngset.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngset.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngset.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngset.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngset.c
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngset.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngset.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngset.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngset.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngset.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngset.c.i
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngset.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngset.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngset.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngset.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngset.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngset.c.s
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngset.c.o.requires:
 
@@ -347,16 +347,16 @@ framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngset.c.o.provid
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngtrans.c.o: framework/libpng/CMakeFiles/lpng.dir/flags.make
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngtrans.c.o: dependencies/libpng/pngtrans.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngtrans.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngtrans.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngtrans.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngtrans.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngtrans.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngtrans.c
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngtrans.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngtrans.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngtrans.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngtrans.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngtrans.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngtrans.c.i
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngtrans.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngtrans.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngtrans.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngtrans.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngtrans.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngtrans.c.s
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngtrans.c.o.requires:
 
@@ -371,16 +371,16 @@ framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngtrans.c.o.prov
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/png.c.o: framework/libpng/CMakeFiles/lpng.dir/flags.make
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/png.c.o: dependencies/libpng/png.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/png.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/png.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/png.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/png.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/png.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/png.c
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/png.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lpng.dir/__/__/dependencies/libpng/png.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/png.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/png.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/png.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/png.c.i
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/png.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lpng.dir/__/__/dependencies/libpng/png.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/png.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/png.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/png.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/png.c.s
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/png.c.o.requires:
 
@@ -395,16 +395,16 @@ framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/png.c.o.provides.
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrio.c.o: framework/libpng/CMakeFiles/lpng.dir/flags.make
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrio.c.o: dependencies/libpng/pngrio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrio.c.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrio.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngrio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrio.c.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrio.c.o   -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngrio.c
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrio.c.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngrio.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrio.c.i
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngrio.c > CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrio.c.i
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrio.c.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngrio.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrio.c.s
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngrio.c -o CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrio.c.s
 
 framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrio.c.o.requires:
 
@@ -455,9 +455,9 @@ lib/liblpng.a: framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pn
 lib/liblpng.a: framework/libpng/CMakeFiles/lpng.dir/__/__/dependencies/libpng/pngrio.c.o
 lib/liblpng.a: framework/libpng/CMakeFiles/lpng.dir/build.make
 lib/liblpng.a: framework/libpng/CMakeFiles/lpng.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C static library ../../lib/liblpng.a"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && $(CMAKE_COMMAND) -P CMakeFiles/lpng.dir/cmake_clean_target.cmake
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lpng.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C static library ../../lib/liblpng.a"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && $(CMAKE_COMMAND) -P CMakeFiles/lpng.dir/cmake_clean_target.cmake
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lpng.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 framework/libpng/CMakeFiles/lpng.dir/build: lib/liblpng.a
@@ -483,10 +483,10 @@ framework/libpng/CMakeFiles/lpng.dir/requires: framework/libpng/CMakeFiles/lpng.
 .PHONY : framework/libpng/CMakeFiles/lpng.dir/requires
 
 framework/libpng/CMakeFiles/lpng.dir/clean:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng && $(CMAKE_COMMAND) -P CMakeFiles/lpng.dir/cmake_clean.cmake
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng && $(CMAKE_COMMAND) -P CMakeFiles/lpng.dir/cmake_clean.cmake
 .PHONY : framework/libpng/CMakeFiles/lpng.dir/clean
 
 framework/libpng/CMakeFiles/lpng.dir/depend:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/framework/libpng /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/framework/libpng/CMakeFiles/lpng.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/framework/libpng /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/framework/libpng/CMakeFiles/lpng.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : framework/libpng/CMakeFiles/lpng.dir/depend
 

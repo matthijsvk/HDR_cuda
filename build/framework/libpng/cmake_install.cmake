@@ -1,4 +1,4 @@
-# Install script for directory: /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/framework/libpng
+# Install script for directory: /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/framework/libpng
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

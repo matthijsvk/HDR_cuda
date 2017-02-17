@@ -1,6 +1,9 @@
 
 
 
+#include <cstdint>
+#include <cmath>
+#include <algorithm>
 #include <iomanip>
 #include <iostream>
 #include <exception>
@@ -9,6 +12,8 @@
 
 #include <framework/cmd_args.h>
 #include <framework/CUDA/error.h>
+#include <framework/rgb32f.h>
+#include <framework/image.h>
 #include <framework/pfm.h>
 #include <framework/png.h>
 
@@ -18,6 +23,16 @@
 
 namespace
 {
+	std::uint8_t toLinear8(float c)
+	{
+		return static_cast<std::uint8_t>(std::min(std::max(c, 0.0f), 1.0f) * 255.0f);
+	}
+
+	std::uint8_t toSRGB8(float c)
+	{
+		return toLinear8(std::pow(c, 1.0f / 2.2f));
+	}
+
 	image<std::uint32_t> tonemap(const image<float>& img)
 	{
 		image<std::uint32_t> output(width(img), height(img));
@@ -26,10 +41,20 @@ namespace
 		{
 			for (std::size_t x = 0U; x < width(img); ++x)
 			{
-				std::uint8_t v = static_cast<std::uint8_t>(std::max(std::min(img(x, y), 1.0f), 0.0f) * 255.0f);
+				std::uint8_t v = toSRGB8(img(x, y));
 				output(x, y) = 0xFF000000U | (v << 16) | (v << 8) | v;
 			}
 		}
+		return output;
+	}
+
+	image<std::uint32_t> tonemap(const image<RGB32F>& img)
+	{
+		image<std::uint32_t> output(width(img), height(img));
+
+		for (std::size_t y = 0U; y < height(img); ++y)
+			for (std::size_t x = 0U; x < width(img); ++x)
+				output(x, y) = 0xFF000000U | (toSRGB8(channel<2>(img(x, y))) << 16) | (toSRGB8(channel<1>(img(x, y))) << 8) | toSRGB8(channel<0>(img(x, y)));
 		return output;
 	}
 }
@@ -71,19 +96,25 @@ int main(int argc, char* argv[])
 		throw_error(cudaSetDevice(cuda_device));
 
 
-		cudaEvent_t pipeline_consume, downsample_begin, downsample_end, tonemap_begin, tonemap_end, compose_begin, compose_end;
+		cudaEvent_t pipeline_consume, luminance_begin, luminance_end, downsample_begin, downsample_end, tonemap_begin, tonemap_end, blur_begin, blur_end, compose_begin, compose_end;
 		throw_error(cudaEventCreate(&pipeline_consume));
+		throw_error(cudaEventCreate(&luminance_begin));
+		throw_error(cudaEventCreate(&luminance_end));
 		throw_error(cudaEventCreate(&downsample_begin));
 		throw_error(cudaEventCreate(&downsample_end));
 		throw_error(cudaEventCreate(&tonemap_begin));
 		throw_error(cudaEventCreate(&tonemap_end));
+		throw_error(cudaEventCreate(&blur_begin));
+		throw_error(cudaEventCreate(&blur_end));
 		throw_error(cudaEventCreate(&compose_begin));
 		throw_error(cudaEventCreate(&compose_end));
 
 		HDRPipeline pipeline(static_cast<unsigned int>(width(input)), static_cast<unsigned int>(height(input)));
 
+		float luminance_time = 0.0f;
 		float downsample_time = 0.0f;
 		float tonemap_time = 0.0f;
+		float blur_time = 0.0f;
 		float compose_time = 0.0f;
 		float overall_time = 0.0f;
 
@@ -92,15 +123,21 @@ int main(int argc, char* argv[])
 			throw_error(cudaEventRecord(pipeline_consume));
 			pipeline.consume(reinterpret_cast<const float*>(data(input)));
 
+			throw_error(cudaEventRecord(luminance_begin));
+			pipeline.computeLuminance();
+			throw_error(cudaEventRecord(luminance_end));
+
 			throw_error(cudaEventRecord(downsample_begin));
 			float lum = pipeline.downsample();
-			printf("average: %d ", lum);
-
 			throw_error(cudaEventRecord(downsample_end));
 
 			throw_error(cudaEventRecord(tonemap_begin));
 			pipeline.tonemap(exposure / lum, brightpass_threshold);
 			throw_error(cudaEventRecord(tonemap_end));
+
+			throw_error(cudaEventRecord(blur_begin));
+			pipeline.blur();
+			throw_error(cudaEventRecord(blur_end));
 
 			throw_error(cudaEventRecord(compose_begin));
 			pipeline.compose();
@@ -109,10 +146,14 @@ int main(int argc, char* argv[])
 			throw_error(cudaEventSynchronize(compose_end));
 
 			float t;
+			throw_error(cudaEventElapsedTime(&t, luminance_begin, luminance_end));
+			luminance_time += t;
 			throw_error(cudaEventElapsedTime(&t, downsample_begin, downsample_end));
 			downsample_time += t;
 			throw_error(cudaEventElapsedTime(&t, tonemap_begin, tonemap_end));
 			tonemap_time += t;
+			throw_error(cudaEventElapsedTime(&t, blur_begin, blur_end));
+			blur_time += t;
 			throw_error(cudaEventElapsedTime(&t, compose_begin, compose_end));
 			compose_time += t;
 			throw_error(cudaEventElapsedTime(&t, pipeline_consume, compose_end));
@@ -121,17 +162,21 @@ int main(int argc, char* argv[])
 
 		{
 			float t_norm = 1.0f / test_runs;
+			luminance_time *= t_norm;
 			downsample_time *= t_norm;
 			tonemap_time *= t_norm;
+			blur_time *= t_norm;
 			compose_time *= t_norm;
 			overall_time *= t_norm;
 		}
 
 		std::cout << "------------------------------------------------------------------------\n" << std::setprecision(2) << std::fixed <<
-		             "downsample time:   " << downsample_time << " ms\n"
-		             "tonemapping time:  " << tonemap_time << " ms\n"
-		             "compositing time:  " << compose_time << " ms\n"
-		             "overall time:      " << overall_time << " ms\n";
+		             "luminance:      " << luminance_time << " ms\n"
+		             "downsampling:   " << downsample_time << " ms\n"
+		             "tonemapping:    " << tonemap_time << " ms\n"
+		             "blur:           " << blur_time << " ms\n"
+		             "compositing:    " << compose_time << " ms\n"
+		             "overall:        " << overall_time << " ms\n";
 
 
 		auto luminance = pipeline.readLuminance();
@@ -142,11 +187,21 @@ int main(int argc, char* argv[])
 		PFM::saveR32F("downsample.pfm", downsample);
 		PNG::saveImage("downsample.png", tonemap(downsample));
 
+		auto tonemapped = pipeline.readTonemapped();
+		PFM::saveRGB32F("tonemapped.pfm", tonemapped);
+		PNG::saveImage("tonemapped.png", tonemap(tonemapped));
+
 		auto brightpass = pipeline.readBrightpass();
-		PNG::saveImage("brightpass.png", brightpass);
+		PFM::saveRGB32F("brightpass.pfm", brightpass);
+		PNG::saveImage("brightpass.png", tonemap(brightpass));
+
+		auto blurred = pipeline.readBlurred();
+		PFM::saveRGB32F("blurred.pfm", blurred);
+		PNG::saveImage("blurred.png", tonemap(blurred));
 
 		auto output = pipeline.readOutput();
-		PNG::saveImage("output.png", output);
+		PFM::saveRGB32F("output.pfm", output);
+		PNG::saveImage("output.png", tonemap(output));
 	}
 	catch (const usage_error& e)
 	{
