@@ -6,5 +6,5 @@ C_FLAGS = -std=c90
 
 C_DEFINES = -DZ_SOLO
 
-C_INCLUDES = -I/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/framework/zlib/../../../dependencies/zlib 
+C_INCLUDES = -I/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/framework/zlib/../../../dependencies/zlib 
 

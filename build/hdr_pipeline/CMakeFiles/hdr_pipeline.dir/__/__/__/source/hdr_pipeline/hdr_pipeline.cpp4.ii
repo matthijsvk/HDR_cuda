@@ -1,5 +1,5 @@
-# 1 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
-# 1 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline//"
+# 1 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+# 1 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
@@ -12367,11 +12367,11 @@ static __inline__ __attribute__((host)) cudaError_t cudaBindSurfaceToArray(
 # 1930 "/usr/local/cuda-8.0/include/cuda_runtime.h"
 #pragma GCC diagnostic pop
 # 1 "<command-line>" 2
-# 1 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+# 1 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 
 
 
-# 1 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/framework/../../dependencies/math/vector.h" 1
+# 1 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/framework/../../dependencies/math/vector.h" 1
 
 
 
@@ -33746,9 +33746,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 10 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/framework/../../dependencies/math/vector.h" 2
+# 10 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/framework/../../dependencies/math/vector.h" 2
 
-# 1 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/framework/../../dependencies/math/math.h" 1
+# 1 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/framework/../../dependencies/math/math.h" 1
 
 
 
@@ -33756,7 +33756,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
        
-# 29 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/framework/../../dependencies/math/math.h"
+# 29 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/framework/../../dependencies/math/math.h"
 namespace math
 {
  template <typename T>
@@ -33797,7 +33797,7 @@ namespace math
   __attribute__((host)) __attribute__((device)) static long double sqrtTwo() { return 1.4142135623730950488016887242097l; }
   __attribute__((host)) __attribute__((device)) static long double epsilon() { return 0.0000000000001l; }
  };
-# 104 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/framework/../../dependencies/math/math.h"
+# 104 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/framework/../../dependencies/math/math.h"
  __attribute__((host)) __attribute__((device)) inline float min(float a, float b)
  {
   return fminf(a, b);
@@ -34012,8 +34012,8 @@ namespace math
   return t * t * t * (t * (t * 6.0l - 15.0l) + 10.0l);
  }
 }
-# 12 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/framework/../../dependencies/math/vector.h" 2
-# 28 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/framework/../../dependencies/math/vector.h"
+# 12 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/framework/../../dependencies/math/vector.h" 2
+# 28 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/framework/../../dependencies/math/vector.h"
 #pragma warning (push)
 #pragma warning (disable : 4522)
 
@@ -34962,7 +34962,7 @@ namespace math
  {
   return dot(v, v);
  }
-# 989 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/framework/../../dependencies/math/vector.h"
+# 989 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/framework/../../dependencies/math/vector.h"
  typedef vector<float, 2U> float2;
  typedef vector<float, 3U> float3;
  typedef vector<float, 4U> float4;
@@ -34983,11 +34983,11 @@ namespace math
  typedef vector<unsigned int, 3U> uint3;
  typedef vector<unsigned int, 4U> uint4;
 }
-# 1030 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/framework/../../dependencies/math/vector.h"
+# 1030 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/framework/../../dependencies/math/vector.h"
 #pragma warning (pop)
-# 5 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu" 2
+# 5 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu" 2
 
-# 1 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/color.cuh" 1
+# 1 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/color.cuh" 1
 
 
 
@@ -35041,7 +35041,7 @@ __attribute__((device)) float fromSRGB8(unsigned char c)
 {
  return powf(fromLinear8(c), 2.2f);
 }
-# 7 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu" 2
+# 7 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu" 2
 
 
 namespace
@@ -35105,20 +35105,29 @@ __attribute__((global)) void downsample_kernel(float* dest, float* input, unsign
   int F = 2;
 
 
-  if ((x >= width / F ) || (y >= height / F))
+  if ((x*F > width -1) || (y*F > height -1))
    return;
 
   float sum = 0.0f;
+
+  int nb_counted = F * F;
+
+  int xDim = min(F, width - x*F);
+  int yDim = min(F, height - y*F);
+
+  nb_counted = xDim * yDim;
 
 
 
   for (int j = 0; j<F; j++){
    for (int i = 0; i < F; i++){
 
-    sum += input[(y*F+j) * inputPitch + x*F +i];
+    if ((y*F+j) < height && (x*F+i) < width){
+     sum += input[(y*F+j) * inputPitch + x*F +i];
+    }
    }
   }
-  dest[ y* outputPitch + x] = sum / (F * F);
+  dest[ y* outputPitch + x] = sum / nb_counted;
 }
 
 

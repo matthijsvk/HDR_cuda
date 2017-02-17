@@ -1,6 +1,3 @@
-
-
-
 #include <framework/CUDA/error.h>
 
 #include "HDRPipeline.h"
@@ -74,11 +71,6 @@ float HDRPipeline::downsample()
 	// implement downsampling and return average luminance
 	// call the function from hdr_pipeline.cu
 	// dest and input buffers: see HDRPipeline declaration in header file
-	void luminance(float* dest,	const float* input, unsigned int width, unsigned int height);
-	luminance(d_luminance_image.get(),
-			d_input_image.get(),
-			width,
-			height);
 
 	float downsample(float* dest, float* input, unsigned int width, unsigned int height);
 	float lum = downsample((float*)downsample_buffer, d_luminance_image.get(), width, height);

@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/png.c
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/png.c
 pngpriv.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngpriv.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngpriv.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/png.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/png.h
 pnglibconf.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pnglibconf.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pnglibconf.h
 pngconf.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngconf.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngconf.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngconf.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngconf.h
 limits.h
 -
 stddef.h
@@ -28,33 +28,33 @@ setjmp.h
 time.h
 -
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngdebug.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngdebug.h
 crtdbg.h
 -
 stdio.h
 -
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngerror.c
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngerror.c
 pngpriv.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngpriv.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngpriv.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngget.c
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngget.c
 pngpriv.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngpriv.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngpriv.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pnginfo.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pnginfo.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pnglibconf.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pnglibconf.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngmem.c
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngmem.c
 pngpriv.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngpriv.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngpriv.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngpread.c
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngpread.c
 pngpriv.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngpriv.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngpriv.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngpriv.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngpriv.h
 stdlib.h
 -
 string.h
@@ -62,13 +62,13 @@ string.h
 config.h
 -
 pnglibconf.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pnglibconf.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pnglibconf.h
 pngprefix.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngprefix.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngprefix.h
 pngusr.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngusr.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngusr.h
 png.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/png.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/png.h
 float.h
 -
 fp.h
@@ -84,59 +84,59 @@ alloc.h
 windows.h
 -
 pngstruct.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngstruct.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngstruct.h
 pnginfo.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pnginfo.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pnginfo.h
 pngdebug.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngdebug.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngdebug.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngread.c
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngread.c
 pngpriv.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngpriv.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngpriv.h
 errno.h
 -
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngrio.c
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngrio.c
 pngpriv.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngpriv.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngpriv.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngrtran.c
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngrtran.c
 pngpriv.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngpriv.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngpriv.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngrutil.c
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngrutil.c
 pngpriv.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngpriv.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngpriv.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngset.c
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngset.c
 pngpriv.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngpriv.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngpriv.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngstruct.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngstruct.h
 zlib.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/zlib.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/zlib.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngtrans.c
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngtrans.c
 pngpriv.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngpriv.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngpriv.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngwio.c
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngwio.c
 pngpriv.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngpriv.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngpriv.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngwrite.c
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngwrite.c
 pngpriv.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngpriv.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngpriv.h
 errno.h
 -
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngwtran.c
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngwtran.c
 pngpriv.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngpriv.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngpriv.h
 
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngwutil.c
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngwutil.c
 pngpriv.h
-/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/dependencies/libpng/pngpriv.h
+/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/dependencies/libpng/pngpriv.h
 
 cmake/framework/zlib/../../../dependencies/zlib/zconf.h
 windows.h

@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake
+CMAKE_SOURCE_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build
+CMAKE_BINARY_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build
 
 #=============================================================================
 # Directory level rules for directory framework
@@ -89,7 +89,7 @@ framework/preinstall: framework/libpng/preinstall
 framework/CMakeFiles/framework.dir/all:
 	$(MAKE) -f framework/CMakeFiles/framework.dir/build.make framework/CMakeFiles/framework.dir/depend
 	$(MAKE) -f framework/CMakeFiles/framework.dir/build.make framework/CMakeFiles/framework.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target framework"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target framework"
 .PHONY : framework/CMakeFiles/framework.dir/all
 
 # Include target in all.
@@ -99,9 +99,9 @@ all: framework/CMakeFiles/framework.dir/all
 
 # Build rule for subdir invocation for target.
 framework/CMakeFiles/framework.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 framework/CMakeFiles/framework.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles 0
 .PHONY : framework/CMakeFiles/framework.dir/rule
 
 # Convenience name for target.
@@ -144,7 +144,7 @@ framework/zlib/preinstall:
 framework/zlib/CMakeFiles/zlib.dir/all:
 	$(MAKE) -f framework/zlib/CMakeFiles/zlib.dir/build.make framework/zlib/CMakeFiles/zlib.dir/depend
 	$(MAKE) -f framework/zlib/CMakeFiles/zlib.dir/build.make framework/zlib/CMakeFiles/zlib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=26,27,28,29,30,31,32,33,34,35,36,37 "Built target zlib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=26,27,28,29,30,31,32,33,34,35,36,37 "Built target zlib"
 .PHONY : framework/zlib/CMakeFiles/zlib.dir/all
 
 # Include target in all.
@@ -154,9 +154,9 @@ all: framework/zlib/CMakeFiles/zlib.dir/all
 
 # Build rule for subdir invocation for target.
 framework/zlib/CMakeFiles/zlib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 framework/zlib/CMakeFiles/zlib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles 0
 .PHONY : framework/zlib/CMakeFiles/zlib.dir/rule
 
 # Convenience name for target.
@@ -199,7 +199,7 @@ framework/libpng/preinstall:
 framework/libpng/CMakeFiles/lpng.dir/all:
 	$(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/depend
 	$(MAKE) -f framework/libpng/CMakeFiles/lpng.dir/build.make framework/libpng/CMakeFiles/lpng.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25 "Built target lpng"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25 "Built target lpng"
 .PHONY : framework/libpng/CMakeFiles/lpng.dir/all
 
 # Include target in all.
@@ -209,9 +209,9 @@ all: framework/libpng/CMakeFiles/lpng.dir/all
 
 # Build rule for subdir invocation for target.
 framework/libpng/CMakeFiles/lpng.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 framework/libpng/CMakeFiles/lpng.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles 0
 .PHONY : framework/libpng/CMakeFiles/lpng.dir/rule
 
 # Convenience name for target.
@@ -251,12 +251,12 @@ hdr_pipeline/preinstall:
 # Target rules for target hdr_pipeline/CMakeFiles/hdr_pipeline.dir
 
 # All Build rule for target.
+hdr_pipeline/CMakeFiles/hdr_pipeline.dir/all: framework/libpng/CMakeFiles/lpng.dir/all
 hdr_pipeline/CMakeFiles/hdr_pipeline.dir/all: framework/CMakeFiles/framework.dir/all
 hdr_pipeline/CMakeFiles/hdr_pipeline.dir/all: framework/zlib/CMakeFiles/zlib.dir/all
-hdr_pipeline/CMakeFiles/hdr_pipeline.dir/all: framework/libpng/CMakeFiles/lpng.dir/all
 	$(MAKE) -f hdr_pipeline/CMakeFiles/hdr_pipeline.dir/build.make hdr_pipeline/CMakeFiles/hdr_pipeline.dir/depend
 	$(MAKE) -f hdr_pipeline/CMakeFiles/hdr_pipeline.dir/build.make hdr_pipeline/CMakeFiles/hdr_pipeline.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=6,7,8,9 "Built target hdr_pipeline"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=6,7,8,9 "Built target hdr_pipeline"
 .PHONY : hdr_pipeline/CMakeFiles/hdr_pipeline.dir/all
 
 # Include target in all.
@@ -266,9 +266,9 @@ all: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/all
 
 # Build rule for subdir invocation for target.
 hdr_pipeline/CMakeFiles/hdr_pipeline.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles 37
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles 37
 	$(MAKE) -f CMakeFiles/Makefile2 hdr_pipeline/CMakeFiles/hdr_pipeline.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles 0
 .PHONY : hdr_pipeline/CMakeFiles/hdr_pipeline.dir/rule
 
 # Convenience name for target.

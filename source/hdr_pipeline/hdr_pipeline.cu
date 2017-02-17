@@ -60,27 +60,36 @@ void luminance(float* dest,	const float* input, unsigned int width, unsigned int
 }
 
 __global__ void downsample_kernel(float* dest, float* input, unsigned int width, unsigned int height, unsigned int outputPitch, unsigned int inputPitch){
-	// each thread needs to know on which pixels to work -> get absolute coordinates of the thread in the grid
+	// each thread needs to know on which pixels to work -> get absolute coordinates for/of the thread in the grid
 		unsigned int x = blockIdx.x * blockDim.x + threadIdx.x;
 		unsigned int y = blockIdx.y * blockDim.y + threadIdx.y;
 
 		int F = 2; //width of downsampling square (F^2 = number of pixels to be pooled together)
 
 		//printf(" KERNEL width %d | height %d \n", width, height);
-		if ((x >= width / F ) || (y >= height / F))
+		if ((x*F > width -1) || (y*F > height -1))
 			return;
 
 		float sum = 0.0f;
 
-		// 2D version: add pixels in 2x2 block, calculate the average. Jump with F so different threads don't operate on the same pixels.
+		int nb_counted = F * F;
+		// number of pixels to be counted: We start at pixel (x*F, y*F), continue till coordinate(width-1, height-1)
+		int xDim = min(F, width  - x*F);
+		int yDim = min(F, height - y*F);
+		//printf("xDim: %d, yDim: %d \n", xDim, yDim);
+		nb_counted = xDim * yDim;
+		//printf(" counted %d | width %d | height %d | \t x %d | y %d \n", nb_counted, width, height, x*F, y*F);
 
+		// 2D version: add pixels in 2x2 block, calculate the average. Jump with F so different threads don't operate on the same pixels.
 		for (int j = 0; j<F; j++){
 			for (int i = 0; i < F; i++){
-				// current pixel : (x+i, y+j)
-				sum += input[(y*F+j) * inputPitch + x*F +i];
+				// current pixel : (x*F+i, y*F+j)
+				if ((y*F+j) < height && (x*F+i) < width){ //only sum pixels inside the image, don't count overlapping at the right or bottom sides
+					sum += input[(y*F+j) * inputPitch + x*F +i];
+				}
 			}
 		}
-		dest[ y* outputPitch + x] = sum / (F * F);
+		dest[ y* outputPitch + x] = sum / nb_counted;
 }
 
 // get the required number of blocks to cover the whole image, and run the kernel on all blocks

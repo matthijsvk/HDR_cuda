@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake
+CMAKE_SOURCE_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build
+CMAKE_BINARY_DIR = /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build
 
 # Include any dependencies generated for this target.
 include hdr_pipeline/CMakeFiles/hdr_pipeline.dir/depend.make
@@ -59,8 +59,8 @@ include hdr_pipeline/CMakeFiles/hdr_pipeline.dir/flags.make
 
 hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeline_generated_hdr_pipeline.cu.o: dependencies/math/math.h
 hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeline_generated_hdr_pipeline.cu.o: dependencies/math/vector.h
-hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeline_generated_hdr_pipeline.cu.o: /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/color.cuh
-hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeline_generated_hdr_pipeline.cu.o: /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/hdr_pipeline.cu
+hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeline_generated_hdr_pipeline.cu.o: /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/color.cuh
+hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeline_generated_hdr_pipeline.cu.o: /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/hdr_pipeline.cu
 hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeline_generated_hdr_pipeline.cu.o: /usr/include/_G_config.h
 hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeline_generated_hdr_pipeline.cu.o: /usr/include/alloca.h
 hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeline_generated_hdr_pipeline.cu.o: /usr/include/asm-generic/errno-base.h
@@ -259,70 +259,70 @@ hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeli
 hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeline_generated_hdr_pipeline.cu.o: /usr/local/cuda-8.0/include/vector_functions.hpp
 hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeline_generated_hdr_pipeline.cu.o: /usr/local/cuda-8.0/include/vector_types.h
 hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeline_generated_hdr_pipeline.cu.o: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeline_generated_hdr_pipeline.cu.o.cmake
-hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeline_generated_hdr_pipeline.cu.o: /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/hdr_pipeline.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeline_generated_hdr_pipeline.cu.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline && /usr/bin/cmake -E make_directory /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/.
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline && /usr/bin/cmake -D verbose:BOOL=ON -D build_configuration:STRING= -D generated_file:STRING=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/./hdr_pipeline_generated_hdr_pipeline.cu.o -D generated_cubin_file:STRING=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/./hdr_pipeline_generated_hdr_pipeline.cu.o.cubin.txt -P /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeline_generated_hdr_pipeline.cu.o.cmake
+hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeline_generated_hdr_pipeline.cu.o: /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/hdr_pipeline.cu
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeline_generated_hdr_pipeline.cu.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline && /usr/bin/cmake -E make_directory /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/.
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline && /usr/bin/cmake -D verbose:BOOL=ON -D build_configuration:STRING= -D generated_file:STRING=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/./hdr_pipeline_generated_hdr_pipeline.cu.o -D generated_cubin_file:STRING=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/./hdr_pipeline_generated_hdr_pipeline.cu.o.cubin.txt -P /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeline_generated_hdr_pipeline.cu.o.cmake
 
-hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp.o: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/flags.make
-hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp.o: /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/hdr_pipeline && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp.o -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp
+hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp.o: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/flags.make
+hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp.o: /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/hdr_pipeline && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp.o -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp
 
-hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/hdr_pipeline && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp > CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp.i
+hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp.i"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/hdr_pipeline && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp > CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp.i
 
-hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/hdr_pipeline && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp -o CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp.s
+hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp.s"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/hdr_pipeline && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp -o CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp.s
 
-hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp.o.requires:
+hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp.o.requires:
 
-.PHONY : hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp.o.requires
+.PHONY : hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp.o.requires
 
-hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp.o.provides: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp.o.requires
-	$(MAKE) -f hdr_pipeline/CMakeFiles/hdr_pipeline.dir/build.make hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp.o.provides.build
-.PHONY : hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp.o.provides
+hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp.o.provides: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp.o.requires
+	$(MAKE) -f hdr_pipeline/CMakeFiles/hdr_pipeline.dir/build.make hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp.o.provides.build
+.PHONY : hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp.o.provides
 
-hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp.o.provides.build: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp.o
+hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp.o.provides.build: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp.o
 
 
-hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp.o: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/flags.make
-hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp.o: /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp.o"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/hdr_pipeline && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp.o -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp
+hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp.o: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/flags.make
+hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp.o: /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp.o"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/hdr_pipeline && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp.o -c /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp
 
-hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp.i"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/hdr_pipeline && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp > CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp.i
+hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp.i"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/hdr_pipeline && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp > CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp.i
 
-hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp.s"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/hdr_pipeline && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp -o CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp.s
+hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp.s"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/hdr_pipeline && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp -o CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp.s
 
-hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp.o.requires:
+hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp.o.requires:
 
-.PHONY : hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp.o.requires
+.PHONY : hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp.o.requires
 
-hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp.o.provides: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp.o.requires
-	$(MAKE) -f hdr_pipeline/CMakeFiles/hdr_pipeline.dir/build.make hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp.o.provides.build
-.PHONY : hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp.o.provides
+hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp.o.provides: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp.o.requires
+	$(MAKE) -f hdr_pipeline/CMakeFiles/hdr_pipeline.dir/build.make hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp.o.provides.build
+.PHONY : hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp.o.provides
 
-hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp.o.provides.build: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp.o
+hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp.o.provides.build: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp.o
 
 
 # Object files for target hdr_pipeline
 hdr_pipeline_OBJECTS = \
-"CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp.o" \
-"CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp.o"
+"CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp.o" \
+"CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp.o"
 
 # External object files for target hdr_pipeline
 hdr_pipeline_EXTERNAL_OBJECTS = \
-"/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeline_generated_hdr_pipeline.cu.o"
+"/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeline_generated_hdr_pipeline.cu.o"
 
-bin/hdr_pipeline: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp.o
-bin/hdr_pipeline: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp.o
+bin/hdr_pipeline: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp.o
+bin/hdr_pipeline: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp.o
 bin/hdr_pipeline: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeline_generated_hdr_pipeline.cu.o
 bin/hdr_pipeline: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/build.make
 bin/hdr_pipeline: /usr/local/cuda-8.0/lib64/libcudart_static.a
@@ -334,24 +334,24 @@ bin/hdr_pipeline: /usr/local/cuda-8.0/lib64/libcudart.so
 bin/hdr_pipeline: /usr/lib/x86_64-linux-gnu/librt.so
 bin/hdr_pipeline: /usr/local/cuda-8.0/lib64/libcudart.so
 bin/hdr_pipeline: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../bin/hdr_pipeline"
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/hdr_pipeline && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hdr_pipeline.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../bin/hdr_pipeline"
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/hdr_pipeline && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hdr_pipeline.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 hdr_pipeline/CMakeFiles/hdr_pipeline.dir/build: bin/hdr_pipeline
 
 .PHONY : hdr_pipeline/CMakeFiles/hdr_pipeline.dir/build
 
-hdr_pipeline/CMakeFiles/hdr_pipeline.dir/requires: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/main.cpp.o.requires
-hdr_pipeline/CMakeFiles/hdr_pipeline.dir/requires: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/source/hdr_pipeline/HDRPipeline.cpp.o.requires
+hdr_pipeline/CMakeFiles/hdr_pipeline.dir/requires: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/main.cpp.o.requires
+hdr_pipeline/CMakeFiles/hdr_pipeline.dir/requires: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/source/hdr_pipeline/HDRPipeline.cpp.o.requires
 
 .PHONY : hdr_pipeline/CMakeFiles/hdr_pipeline.dir/requires
 
 hdr_pipeline/CMakeFiles/hdr_pipeline.dir/clean:
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/hdr_pipeline && $(CMAKE_COMMAND) -P CMakeFiles/hdr_pipeline.dir/cmake_clean.cmake
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/hdr_pipeline && $(CMAKE_COMMAND) -P CMakeFiles/hdr_pipeline.dir/cmake_clean.cmake
 .PHONY : hdr_pipeline/CMakeFiles/hdr_pipeline.dir/clean
 
 hdr_pipeline/CMakeFiles/hdr_pipeline.dir/depend: hdr_pipeline/CMakeFiles/hdr_pipeline.dir/__/__/__/source/hdr_pipeline/hdr_pipeline_generated_hdr_pipeline.cu.o
-	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/cmake/hdr_pipeline /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/hdr_pipeline /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/download/best2017_public/build/hdr_pipeline/CMakeFiles/hdr_pipeline.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/hdr_pipeline /home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/hdr_pipeline/CMakeFiles/hdr_pipeline.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : hdr_pipeline/CMakeFiles/hdr_pipeline.dir/depend
 
