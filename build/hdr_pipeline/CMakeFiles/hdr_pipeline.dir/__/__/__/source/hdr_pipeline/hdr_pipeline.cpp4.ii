@@ -35133,7 +35133,7 @@ void luminance(float* dest, const float* input, unsigned int width, unsigned int
 
 }
 
-__attribute__((global)) void downsample_kernel(float* dest, float* input, unsigned int width, unsigned int height, unsigned int inputPitch, unsigned int outputPitch){
+__attribute__((global)) void downsample_kernel(float* dest, float* input, unsigned int width, unsigned int height, unsigned int outputPitch, unsigned int inputPitch){
 
   unsigned int x = blockIdx.x * blockDim.x + threadIdx.x;
   unsigned int y = blockIdx.y * blockDim.y + threadIdx.y;
@@ -35158,7 +35158,7 @@ __attribute__((global)) void downsample_kernel(float* dest, float* input, unsign
 }
 
 
-void downsample(float* dest, float* luminance, unsigned int width, unsigned int height){
+float downsample(float* dest, float* luminance, unsigned int width, unsigned int height){
  const dim3 block_size = { 32, 32 };
 
  const dim3 num_blocks = {
@@ -35171,7 +35171,7 @@ void downsample(float* dest, float* luminance, unsigned int width, unsigned int 
  const unsigned int pitchLuminance = width;
 
 
- downsample_kernel<<<num_blocks, block_size>>>(dest, luminance, width, height, pitchLuminance, pitchBuf);
+ downsample_kernel<<<num_blocks, block_size>>>(dest, luminance, width, height, pitchBuf, pitchLuminance);
  int ping = 0;
 
  while (width != 1 || height != 1){
@@ -35189,11 +35189,11 @@ void downsample(float* dest, float* luminance, unsigned int width, unsigned int 
 
   printf(" width %d | height %d \n", width, height);
   if (ping){
-   downsample_kernel<<<num_blocks, block_size>>>(dest, luminance, width, height, pitchLuminance, pitchBuf);
+   downsample_kernel<<<num_blocks, block_size>>>(dest, luminance, width, height, pitchBuf, pitchLuminance);
   }
   else {
 
-   downsample_kernel<<<num_blocks, block_size>>>(luminance, dest, width, height, pitchBuf, pitchLuminance);
+   downsample_kernel<<<num_blocks, block_size>>>(luminance, dest, width, height, pitchLuminance, pitchBuf);
   }
   ping = ! ping;
  }
@@ -35205,6 +35205,9 @@ void downsample(float* dest, float* luminance, unsigned int width, unsigned int 
 
 
 
+ float average;
+ cudaMemcpy(&average, dest, sizeof(float), cudaMemcpyDeviceToHost);
+ return average;
 }
 
 

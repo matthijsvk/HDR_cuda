@@ -2332,7 +2332,7 @@ static __attribute__((device)) float _Z9fromSRGB8h(unsigned char);
 __attribute__((global)) extern void _Z16luminance_kernelPfPKfjj(float *, const float *, unsigned, unsigned);
 # 98 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 __attribute__((global)) extern void _Z17downsample_kernelPfS_jjjj(float *, float *, unsigned, unsigned, unsigned, unsigned);
-# 175 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+# 178 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 __attribute__((global)) extern void _Z14tonemap_kernelP6uchar4S0_PKfjjff(struct uchar4 *, struct uchar4 *, const float *, unsigned, unsigned, float, float);
 # 312 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/framework/../../dependencies/math/vector.h"
 static __attribute__((device)) __inline__ void _ZN4math6vectorIfLj3EEC1Efff(struct _ZN4math6vectorIfLj3EEE *const, float, float, float);
@@ -2525,9 +2525,9 @@ unsigned width,
 # 98 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 unsigned height,
 # 98 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
-unsigned inputPitch,
+unsigned outputPitch,
 # 98 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
-unsigned outputPitch){
+unsigned inputPitch){
 # 98 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 {
 # 100 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
@@ -2578,75 +2578,75 @@ __cuda_local_var_38696_9_non_const_sum += (input[(((((__cuda_local_var_38688_16_
 (dest[((__cuda_local_var_38688_16_non_const_y * outputPitch) + __cuda_local_var_38687_16_non_const_x)]) = ( fdividef(__cuda_local_var_38696_9_non_const_sum , ((float)(__cuda_local_var_38690_7_non_const_F * __cuda_local_var_38690_7_non_const_F))));
 # 120 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 }}
-# 175 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+# 178 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 __attribute__((global)) void _Z14tonemap_kernelP6uchar4S0_PKfjjff(
-# 175 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+# 178 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 struct uchar4 *tonemapped,
-# 175 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+# 178 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 struct uchar4 *brightpass,
-# 175 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+# 178 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 const float *src,
-# 175 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+# 178 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 unsigned width,
-# 175 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+# 178 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 unsigned height,
-# 175 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+# 178 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 float exposure,
-# 175 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+# 178 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 float brightpass_thdesthold){
-# 176 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+# 179 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 { static const struct uchar4 __T26 = {((unsigned char)0U),((unsigned char)0U),((unsigned char)0U),((unsigned char)255U)};
-# 177 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
- unsigned __cuda_local_var_38764_15_non_const_x;
-# 178 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
- unsigned __cuda_local_var_38765_15_non_const_y;
-# 177 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
-__cuda_local_var_38764_15_non_const_x = (((blockIdx.x) * (blockDim.x)) + (threadIdx.x));
-# 178 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
-__cuda_local_var_38765_15_non_const_y = (((blockIdx.y) * (blockDim.y)) + (threadIdx.y));
 # 180 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
-if ((__cuda_local_var_38764_15_non_const_x < width) && (__cuda_local_var_38765_15_non_const_y < height))
+ unsigned __cuda_local_var_38767_15_non_const_x;
 # 181 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+ unsigned __cuda_local_var_38768_15_non_const_y;
+# 180 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+__cuda_local_var_38767_15_non_const_x = (((blockIdx.x) * (blockDim.x)) + (threadIdx.x));
+# 181 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+__cuda_local_var_38768_15_non_const_y = (((blockIdx.y) * (blockDim.y)) + (threadIdx.y));
+# 183 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+if ((__cuda_local_var_38767_15_non_const_x < width) && (__cuda_local_var_38768_15_non_const_y < height))
+# 184 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 { float __T27;
  float __T28;
  float __T29;
  struct uchar4 __T210;
-# 183 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
- _ZN4math6float3E __cuda_local_var_38770_16_non_const_c;
 # 186 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
- _ZN4math6float3E __cuda_local_var_38773_16_non_const_c_t;
+ _ZN4math6float3E __cuda_local_var_38773_16_non_const_c;
 # 189 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
- struct uchar4 __cuda_local_var_38776_10_non_const_out;
-__T27 = (src[((3U * ((__cuda_local_var_38765_15_non_const_y * width) + __cuda_local_var_38764_15_non_const_x)) + 0U)]); __T28 = (src[((3U * ((__cuda_local_var_38765_15_non_const_y * width) + __cuda_local_var_38764_15_non_const_x)) + 1U)]); __T29 = (src[((3U * ((__cuda_local_var_38765_15_non_const_y * width) + __cuda_local_var_38764_15_non_const_x)) + 2U)]);
-# 183 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
-_ZN4math6vectorIfLj3EEC1Efff((&__cuda_local_var_38770_16_non_const_c), __T27, __T28, __T29);
-# 186 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
-memset((char *)&__cuda_local_var_38773_16_non_const_c_t, 0,sizeof(__cuda_local_var_38773_16_non_const_c_t));
-# 186 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
-__cuda_local_var_38773_16_non_const_c_t = (_Z7tonemapRKN4math6vectorIfLj3EEEf((((const _ZN4math6float3E *)&__cuda_local_var_38770_16_non_const_c)), exposure));
-# 189 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
-memset((char *)&__cuda_local_var_38776_10_non_const_out, 0,sizeof(__cuda_local_var_38776_10_non_const_out));
-# 189 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
-__cuda_local_var_38776_10_non_const_out.x = ((unsigned char)0U);
-# 189 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
-__cuda_local_var_38776_10_non_const_out.y = ((unsigned char)0U);
-# 189 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
-__cuda_local_var_38776_10_non_const_out.z = ((unsigned char)0U);
-# 189 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
-__cuda_local_var_38776_10_non_const_out.w = ((unsigned char)255U);
-# 189 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
-(__cuda_local_var_38776_10_non_const_out.x) = (_Z7toSRGB8f((__cuda_local_var_38773_16_non_const_c_t.x)));
-# 189 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
-(__cuda_local_var_38776_10_non_const_out.y) = (_Z7toSRGB8f((__cuda_local_var_38773_16_non_const_c_t.y)));
-# 189 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
-(__cuda_local_var_38776_10_non_const_out.z) = (_Z7toSRGB8f((__cuda_local_var_38773_16_non_const_c_t.z)));
-# 190 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
-(tonemapped[((__cuda_local_var_38765_15_non_const_y * width) + __cuda_local_var_38764_15_non_const_x)]) = __cuda_local_var_38776_10_non_const_out;
-# 191 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
-(brightpass[((__cuda_local_var_38765_15_non_const_y * width) + __cuda_local_var_38764_15_non_const_x)]) = ((((_Z9luminanceRKN4math6vectorIfLj3EEE((((const _ZN4math6float3E *)&__cuda_local_var_38773_16_non_const_c_t)))) > brightpass_thdesthold) ? ((void)(__T210 = __cuda_local_var_38776_10_non_const_out)) : ((void)(__T210 = __T26))) , __T210);
+ _ZN4math6float3E __cuda_local_var_38776_16_non_const_c_t;
 # 192 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
-}
+ struct uchar4 __cuda_local_var_38779_10_non_const_out;
+__T27 = (src[((3U * ((__cuda_local_var_38768_15_non_const_y * width) + __cuda_local_var_38767_15_non_const_x)) + 0U)]); __T28 = (src[((3U * ((__cuda_local_var_38768_15_non_const_y * width) + __cuda_local_var_38767_15_non_const_x)) + 1U)]); __T29 = (src[((3U * ((__cuda_local_var_38768_15_non_const_y * width) + __cuda_local_var_38767_15_non_const_x)) + 2U)]);
+# 186 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+_ZN4math6vectorIfLj3EEC1Efff((&__cuda_local_var_38773_16_non_const_c), __T27, __T28, __T29);
+# 189 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+memset((char *)&__cuda_local_var_38776_16_non_const_c_t, 0,sizeof(__cuda_local_var_38776_16_non_const_c_t));
+# 189 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+__cuda_local_var_38776_16_non_const_c_t = (_Z7tonemapRKN4math6vectorIfLj3EEEf((((const _ZN4math6float3E *)&__cuda_local_var_38773_16_non_const_c)), exposure));
+# 192 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+memset((char *)&__cuda_local_var_38779_10_non_const_out, 0,sizeof(__cuda_local_var_38779_10_non_const_out));
+# 192 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+__cuda_local_var_38779_10_non_const_out.x = ((unsigned char)0U);
+# 192 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+__cuda_local_var_38779_10_non_const_out.y = ((unsigned char)0U);
+# 192 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+__cuda_local_var_38779_10_non_const_out.z = ((unsigned char)0U);
+# 192 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+__cuda_local_var_38779_10_non_const_out.w = ((unsigned char)255U);
+# 192 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+(__cuda_local_var_38779_10_non_const_out.x) = (_Z7toSRGB8f((__cuda_local_var_38776_16_non_const_c_t.x)));
+# 192 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+(__cuda_local_var_38779_10_non_const_out.y) = (_Z7toSRGB8f((__cuda_local_var_38776_16_non_const_c_t.y)));
+# 192 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+(__cuda_local_var_38779_10_non_const_out.z) = (_Z7toSRGB8f((__cuda_local_var_38776_16_non_const_c_t.z)));
 # 193 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+(tonemapped[((__cuda_local_var_38768_15_non_const_y * width) + __cuda_local_var_38767_15_non_const_x)]) = __cuda_local_var_38779_10_non_const_out;
+# 194 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+(brightpass[((__cuda_local_var_38768_15_non_const_y * width) + __cuda_local_var_38767_15_non_const_x)]) = ((((_Z9luminanceRKN4math6vectorIfLj3EEE((((const _ZN4math6float3E *)&__cuda_local_var_38776_16_non_const_c_t)))) > brightpass_thdesthold) ? ((void)(__T210 = __cuda_local_var_38779_10_non_const_out)) : ((void)(__T210 = __T26))) , __T210);
+# 195 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+}
+# 196 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 }}
 __asm__(".align 2");
 # 312 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/framework/../../dependencies/math/vector.h"

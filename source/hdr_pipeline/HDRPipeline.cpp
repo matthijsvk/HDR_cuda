@@ -57,12 +57,11 @@ float HDRPipeline::downsample()
 			width,
 			height);
 
-	void downsample(float* dest, float* input, unsigned int width, unsigned int height);
-	downsample((float*)downsample_buffer, d_luminance_image.get(), width, height);
+	float downsample(float* dest, float* input, unsigned int width, unsigned int height);
+	float lum = downsample((float*)downsample_buffer, d_luminance_image.get(), width, height);
+	printf("LUM: %f \n", lum);
 
-	//printf("average: %d ", *(float*)downsample_buffer);
-
-	return 1.0;
+	return 1.0f;
 }
 
 void HDRPipeline::tonemap(float exposure, float brightpass_threshold)

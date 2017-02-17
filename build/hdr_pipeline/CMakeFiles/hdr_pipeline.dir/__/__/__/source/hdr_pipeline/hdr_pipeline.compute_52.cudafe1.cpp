@@ -37506,7 +37506,7 @@ const dim3 num_blocks = {divup(width, block_size.x), divup(height, block_size.y)
 # 96
 } 
 # 98
-void downsample_kernel(float *dest, float *input, unsigned width, unsigned height, unsigned inputPitch, unsigned outputPitch) ;
+void downsample_kernel(float *dest, float *input, unsigned width, unsigned height, unsigned outputPitch, unsigned inputPitch) ;
 #if 0
 # 98
 { 
@@ -37538,7 +37538,7 @@ sum += (input[((((y * F) + j) * inputPitch) + (x * F)) + i]);
 } 
 #endif
 # 123 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
-void downsample(float *dest, float *luminance, unsigned width, unsigned height) { 
+float downsample(float *dest, float *luminance, unsigned width, unsigned height) { 
 # 124
 const dim3 block_size = {32, 32}; 
 # 126
@@ -37548,7 +37548,7 @@ const unsigned pitchBuf = width / (2);
 # 133
 const unsigned pitchLuminance = width; 
 # 136
-(cudaConfigureCall(num_blocks, block_size)) ? (void)0 : (downsample_kernel)(dest, luminance, width, height, pitchLuminance, pitchBuf); 
+(cudaConfigureCall(num_blocks, block_size)) ? (void)0 : (downsample_kernel)(dest, luminance, width, height, pitchBuf, pitchLuminance); 
 # 137
 int ping = 0; 
 # 139
@@ -37578,13 +37578,13 @@ printf(" width %d | height %d \n", width, height);
 # 153
 if (ping) { 
 # 154
-(cudaConfigureCall(num_blocks, block_size)) ? (void)0 : (downsample_kernel)(dest, luminance, width, height, pitchLuminance, pitchBuf); 
+(cudaConfigureCall(num_blocks, block_size)) ? (void)0 : (downsample_kernel)(dest, luminance, width, height, pitchBuf, pitchLuminance); 
 # 155
 } else 
 # 156
 { 
 # 158
-(cudaConfigureCall(num_blocks, block_size)) ? (void)0 : (downsample_kernel)(luminance, dest, width, height, pitchBuf, pitchLuminance); 
+(cudaConfigureCall(num_blocks, block_size)) ? (void)0 : (downsample_kernel)(luminance, dest, width, height, pitchLuminance, pitchBuf); 
 # 159
 }  
 # 160
@@ -37598,46 +37598,52 @@ cudaMemcpy(luminance, dest, 1, cudaMemcpyDeviceToDevice);
 # 166
 }  
 # 170
+float average; 
+# 171
+cudaMemcpy(&average, dest, sizeof(float), cudaMemcpyDeviceToHost); 
+# 172
+return average; 
+# 173
 } 
-# 175
+# 178
 void tonemap_kernel(uchar4 *tonemapped, uchar4 *brightpass, const float *src, unsigned width, unsigned height, float exposure, float brightpass_thdesthold) ;
 #if 0
-# 176
+# 179
 { 
-# 177
-unsigned x = ((__device_builtin_variable_blockIdx.x) * (__device_builtin_variable_blockDim.x)) + (__device_builtin_variable_threadIdx.x); 
-# 178
-unsigned y = ((__device_builtin_variable_blockIdx.y) * (__device_builtin_variable_blockDim.y)) + (__device_builtin_variable_threadIdx.y); 
 # 180
-if ((x < width) && (y < height)) 
+unsigned x = ((__device_builtin_variable_blockIdx.x) * (__device_builtin_variable_blockDim.x)) + (__device_builtin_variable_threadIdx.x); 
 # 181
-{ 
+unsigned y = ((__device_builtin_variable_blockIdx.y) * (__device_builtin_variable_blockDim.y)) + (__device_builtin_variable_threadIdx.y); 
 # 183
-math::float3 c = {src[((3) * ((y * width) + x)) + (0)], src[((3) * ((y * width) + x)) + (1)], src[((3) * ((y * width) + x)) + (2)]}; 
+if ((x < width) && (y < height)) 
+# 184
+{ 
 # 186
-math::float3 c_t = tonemap(c, exposure); 
+math::float3 c = {src[((3) * ((y * width) + x)) + (0)], src[((3) * ((y * width) + x)) + (1)], src[((3) * ((y * width) + x)) + (2)]}; 
 # 189
-uchar4 out = {toSRGB8(c_t.x), toSRGB8(c_t.y), toSRGB8(c_t.z), (255U)}; 
-# 190
-(tonemapped[(y * width) + x]) = out; 
-# 191
-(brightpass[(y * width) + x]) = (((luminance(c_t) > brightpass_thdesthold) ? out : (uchar4{(0U), (0U), (0U), (255U)}))); 
+math::float3 c_t = tonemap(c, exposure); 
 # 192
-}  
+uchar4 out = {toSRGB8(c_t.x), toSRGB8(c_t.y), toSRGB8(c_t.z), (255U)}; 
 # 193
+(tonemapped[(y * width) + x]) = out; 
+# 194
+(brightpass[(y * width) + x]) = (((luminance(c_t) > brightpass_thdesthold) ? out : (uchar4{(0U), (0U), (0U), (255U)}))); 
+# 195
+}  
+# 196
 } 
 #endif
-# 195 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+# 198 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 void tonemap(uchar4 *tonemapped, uchar4 *brightpass, const float *src, unsigned width, unsigned height, float exposure, float brightpass_thdesthold) 
-# 196
-{ 
-# 197
-const auto block_size = dim3{32U, 32U}; 
 # 199
-auto num_blocks = dim3{divup(width, block_size.x), divup(height, block_size.y)}; 
-# 201
-(cudaConfigureCall(num_blocks, block_size)) ? (void)0 : (tonemap_kernel)(tonemapped, brightpass, src, width, height, exposure, brightpass_thdesthold); 
+{ 
+# 200
+const auto block_size = dim3{32U, 32U}; 
 # 202
+auto num_blocks = dim3{divup(width, block_size.x), divup(height, block_size.y)}; 
+# 204
+(cudaConfigureCall(num_blocks, block_size)) ? (void)0 : (tonemap_kernel)(tonemapped, brightpass, src, width, height, exposure, brightpass_thdesthold); 
+# 205
 } 
 
 # 1 "hdr_pipeline.compute_52.cudafe1.stub.c"

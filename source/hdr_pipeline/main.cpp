@@ -94,6 +94,8 @@ int main(int argc, char* argv[])
 
 			throw_error(cudaEventRecord(downsample_begin));
 			float lum = pipeline.downsample();
+			printf("average: %d ", lum);
+
 			throw_error(cudaEventRecord(downsample_end));
 
 			throw_error(cudaEventRecord(tonemap_begin));
