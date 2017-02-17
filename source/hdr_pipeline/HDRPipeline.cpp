@@ -89,8 +89,7 @@ void HDRPipeline::tonemap(float exposure, float brightpass_threshold)
 void HDRPipeline::blur()
 {
 	void gaussian_blur(float* dest, const float* src, unsigned int width, unsigned int height);
-
-	gaussian_blur(d_blurred_image.get(), d_brightpass_image.get(), width, height);
+	gaussian_blur(d_blurred_image.get(), d_tonemapped_image.get(), width, height); 				//d_brightpass_image
 }
 
 void HDRPipeline::compose()

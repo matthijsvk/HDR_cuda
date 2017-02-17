@@ -37621,101 +37621,171 @@ void blur_kernel_x(float *dest, const float *src, unsigned width, unsigned heigh
 # 151
 { 
 # 152
-constexpr float weights[] = {(0.002882040106F), (0.004183189943F), (0.005927539896F), (0.008199799806F), (0.01107368991F), (0.01459965017F), (0.01879115961F), (0.02361161076F), (0.02896397933F), (0.03468580917F), (0.04055143893F), (0.04628301039F), (0.05157006904F), (0.05609637126F), (0.05957068875F), (0.06175772846F), (0.06250444055F), (0.06175772846F), (0.05957068875F), (0.05609637126F), (0.05157006904F), (0.04628301039F), (0.04055143893F), (0.03468580917F), (0.02896397933F), (0.02361161076F), (0.01879115961F), (0.01459965017F), (0.01107368991F), (0.008199799806F), (0.005927539896F), (0.004183189943F), (0.002882040106F)}; 
+const float weights[] = {(0.002882040106F), (0.004183189943F), (0.005927539896F), (0.008199799806F), (0.01107368991F), (0.01459965017F), (0.01879115961F), (0.02361161076F), (0.02896397933F), (0.03468580917F), (0.04055143893F), (0.04628301039F), (0.05157006904F), (0.05609637126F), (0.05957068875F), (0.06175772846F), (0.06250444055F), (0.06175772846F), (0.05957068875F), (0.05609637126F), (0.05157006904F), (0.04628301039F), (0.04055143893F), (0.03468580917F), (0.02896397933F), (0.02361161076F), (0.01879115961F), (0.01459965017F), (0.01107368991F), (0.008199799806F), (0.005927539896F), (0.004183189943F), (0.002882040106F)}; 
 # 162
 unsigned x = ((__device_builtin_variable_blockIdx.x) * (__device_builtin_variable_blockDim.x)) + (__device_builtin_variable_threadIdx.x); 
 # 163
 unsigned y = ((__device_builtin_variable_blockIdx.y) * (__device_builtin_variable_blockDim.y)) + (__device_builtin_variable_threadIdx.y); 
 # 165
-float sum = (0.0F); 
+if (!(__device_builtin_variable_threadIdx.x)) { 
 # 166
-for (int i = x - (16); i <= 16; i++) { 
-# 167
-if ((x + i) < width) { 
+printf("x %d | y %d \n", x, y); }  
 # 168
-printf("weight: %d \n", (weights)[i + 16]); 
+float sumR = (0.0F); 
 # 169
-sum += ((src[((y * inputPitch) + x) + i]) * ((weights)[i + 16])); 
+float sumG = (0.0F); 
 # 170
-}  
-# 171
-}  
+float sumB = (0.0F); 
 # 172
-printf("sum: %d \n", sum); 
+for (int i = (-16); i <= 16; i++) { 
 # 173
-(dest[(y * outputPitch) + x]) = sum; 
+if ((((3) * (x + i)) > (0)) && (((3) * (x + i)) < ((3) * width))) { 
 # 174
+sumR += ((src[(((3) * y) * inputPitch) + ((3) * (x + i))]) * ((weights)[i + 16])); 
+# 175
+sumG += ((src[((((3) * y) * inputPitch) + ((3) * (x + i))) + (1)]) * ((weights)[i + 16])); 
+# 176
+sumB += ((src[((((3) * y) * inputPitch) + ((3) * (x + i))) + (2)]) * ((weights)[i + 16])); 
+# 177
+}  
+# 178
+}  
+# 179
+if (!(__device_builtin_variable_threadIdx.x)) { 
+# 180
+printf("sumR: %f | sumG: %f | sumB: %f \n", sumR, sumG, sumB); 
+# 181
+}  
+# 183
+(dest[(((3) * y) * outputPitch) + ((3) * x)]) = sumR; 
+# 184
+(dest[((((3) * y) * outputPitch) + ((3) * x)) + (1)]) = sumG; 
+# 185
+(dest[((((3) * y) * outputPitch) + ((3) * x)) + (2)]) = sumB; 
+# 186
 } 
 #endif
-# 176 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+# 188 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+void blur_kernel_y(float *dest, const float *src, unsigned width, unsigned height, unsigned inputPitch, unsigned outputPitch) ;
+#if 0
+# 189
+{ 
+# 190
+const float weights[] = {(0.002882040106F), (0.004183189943F), (0.005927539896F), (0.008199799806F), (0.01107368991F), (0.01459965017F), (0.01879115961F), (0.02361161076F), (0.02896397933F), (0.03468580917F), (0.04055143893F), (0.04628301039F), (0.05157006904F), (0.05609637126F), (0.05957068875F), (0.06175772846F), (0.06250444055F), (0.06175772846F), (0.05957068875F), (0.05609637126F), (0.05157006904F), (0.04628301039F), (0.04055143893F), (0.03468580917F), (0.02896397933F), (0.02361161076F), (0.01879115961F), (0.01459965017F), (0.01107368991F), (0.008199799806F), (0.005927539896F), (0.004183189943F), (0.002882040106F)}; 
+# 200
+unsigned x = ((__device_builtin_variable_blockIdx.x) * (__device_builtin_variable_blockDim.x)) + (__device_builtin_variable_threadIdx.x); 
+# 201
+unsigned y = ((__device_builtin_variable_blockIdx.y) * (__device_builtin_variable_blockDim.y)) + (__device_builtin_variable_threadIdx.y); 
+# 203
+if (!(__device_builtin_variable_threadIdx.x)) { 
+# 204
+printf("x %d | y %d \n", x, y); }  
+# 206
+float sumR = (0.0F); 
+# 207
+float sumG = (0.0F); 
+# 208
+float sumB = (0.0F); 
+# 210
+for (int i = (-16); i <= 16; i++) { 
+# 211
+if ((((3) * (y + i)) > (0)) && (((3) * (y + i)) < ((3) * height))) { 
+# 212
+sumR += ((src[(((3) * (y + i)) * inputPitch) + ((3) * x)]) * ((weights)[i + 16])); 
+# 213
+sumG += ((src[((((3) * (y + i)) * inputPitch) + ((3) * x)) + (1)]) * ((weights)[i + 16])); 
+# 214
+sumB += ((src[((((3) * (y + i)) * inputPitch) + ((3) * x)) + (2)]) * ((weights)[i + 16])); 
+# 215
+}  
+# 216
+}  
+# 217
+if (!(__device_builtin_variable_threadIdx.x)) { 
+# 218
+printf("sumR: %f | sumG: %f | sumB: %f \n", sumR, sumG, sumB); 
+# 219
+}  
+# 221
+(dest[(((3) * y) * outputPitch) + ((3) * x)]) = sumR; 
+# 222
+(dest[((((3) * y) * outputPitch) + ((3) * x)) + (1)]) = sumG; 
+# 223
+(dest[((((3) * y) * outputPitch) + ((3) * x)) + (2)]) = sumB; 
+# 224
+} 
+#endif
+# 226 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 void gaussian_blur(float *dest, const float *src, unsigned width, unsigned height) 
-# 177
+# 227
 { 
-# 178
+# 228
 const dim3 block_size = {32, 32}; 
-# 180
+# 230
 const dim3 num_blocks = {divup(width, block_size.x), divup(height, block_size.y)}; 
-# 185
+# 235
 int inputPitch = width; 
-# 186
+# 236
 int outputPitch = width; 
-# 187
+# 238
 (cudaConfigureCall(num_blocks, block_size)) ? (void)0 : (blur_kernel_x)(dest, src, width, height, inputPitch, outputPitch); 
-# 188
+# 239
+(cudaConfigureCall(num_blocks, block_size)) ? (void)0 : (blur_kernel_y)(dest, dest, width, height, inputPitch, outputPitch); 
+# 241
 } 
-# 192
+# 245
 void compose(float *output, const float *tonemapped, const float *blurred, unsigned width, unsigned height) 
-# 193
+# 246
 { 
-# 195
+# 248
 } 
-# 199
+# 252
 void tonemap_kernel(float *tonemapped, float *brightpass, const float *src, unsigned width, unsigned height, float exposure, float brightpass_threshold) ;
 #if 0
-# 200
+# 253
 { 
-# 201
+# 254
 unsigned x = ((__device_builtin_variable_blockIdx.x) * (__device_builtin_variable_blockDim.x)) + (__device_builtin_variable_threadIdx.x); 
-# 202
+# 255
 unsigned y = ((__device_builtin_variable_blockIdx.y) * (__device_builtin_variable_blockDim.y)) + (__device_builtin_variable_threadIdx.y); 
-# 204
+# 257
 if ((x < width) && (y < height)) 
-# 205
+# 258
 { 
-# 207
+# 260
 math::float3 c = {src[((3) * ((y * width) + x)) + (0)], src[((3) * ((y * width) + x)) + (1)], src[((3) * ((y * width) + x)) + (2)]}; 
-# 210
+# 263
 math::float3 c_t = tonemap(c, exposure); 
-# 213
+# 266
 (tonemapped[((3) * ((y * width) + x)) + (0)]) = (c_t.x); 
-# 214
+# 267
 (tonemapped[((3) * ((y * width) + x)) + (1)]) = (c_t.y); 
-# 215
+# 268
 (tonemapped[((3) * ((y * width) + x)) + (2)]) = (c_t.z); 
-# 218
+# 271
 math::float3 c_b = ((luminance(c_t) > brightpass_threshold) ? c_t : math::float3{(0.0F), (0.0F), (0.0F)}); 
-# 219
+# 272
 (brightpass[((3) * ((y * width) + x)) + (0)]) = (c_b.x); 
-# 220
+# 273
 (brightpass[((3) * ((y * width) + x)) + (1)]) = (c_b.y); 
-# 221
+# 274
 (brightpass[((3) * ((y * width) + x)) + (2)]) = (c_b.z); 
-# 222
+# 275
 }  
-# 223
+# 276
 } 
 #endif
-# 225 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+# 278 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 void tonemap(float *tonemapped, float *brightpass, const float *src, unsigned width, unsigned height, float exposure, float brightpass_threshold) 
-# 226
+# 279
 { 
-# 227
+# 280
 const auto block_size = dim3{32U, 32U}; 
-# 229
+# 282
 auto num_blocks = dim3{divup(width, block_size.x), divup(height, block_size.y)}; 
-# 231
+# 284
 (cudaConfigureCall(num_blocks, block_size)) ? (void)0 : (tonemap_kernel)(tonemapped, brightpass, src, width, height, exposure, brightpass_threshold); 
-# 232
+# 285
 } 
 
 # 1 "hdr_pipeline.compute_52.cudafe1.stub.c"
