@@ -38702,14 +38702,14 @@ float downsample(float* dest, float* luminance, unsigned int width, unsigned int
   height = height / 2;
   if (width < 1){
    width = 1;
-   printf("width < 1 \n");
+
   }
   if (height < 1){
    height = 1;
-   printf("height < 1 \n");
+
   }
 
-  printf(" width %d | height %d \n", width, height);
+
   if (ping){
    downsample_kernel<<<num_blocks, block_size>>>(dest, luminance, width, height, pitchBuf, pitchLuminance);
   }
@@ -38733,10 +38733,7 @@ float downsample(float* dest, float* luminance, unsigned int width, unsigned int
 
 
 
-
-__attribute__((global)) void blur_kernel_x(float* dest, const float* src, unsigned int width, unsigned int height, unsigned int inputPitch, unsigned int outputPitch)
-{
- const float weights[] = {
+__attribute__((constant)) float weights[] = {
 
   0.00288204f, 0.00418319f, 0.00592754f, 0.00819980f, 0.01107369f, 0.01459965f, 0.01879116f, 0.02361161f, 0.02896398f, 0.03468581f, 0.04055144f, 0.04628301f, 0.05157007f, 0.05609637f, 0.05957069f, 0.06175773f,
 
@@ -38745,13 +38742,12 @@ __attribute__((global)) void blur_kernel_x(float* dest, const float* src, unsign
   0.06175773f, 0.05957069f, 0.05609637f, 0.05157007f, 0.04628301f, 0.04055144f, 0.03468581f, 0.02896398f, 0.02361161f, 0.01879116f, 0.01459965f, 0.01107369f, 0.00819980f, 0.00592754f, 0.00418319f, 0.00288204f
  };
 
+__attribute__((global)) void blur_kernel_x(float* dest, const float* src, unsigned int width, unsigned int height, unsigned int inputPitch, unsigned int outputPitch)
+{
 
  unsigned int x = blockIdx.x * blockDim.x + threadIdx.x;
  unsigned int y = blockIdx.y * blockDim.y + threadIdx.y;
-
- if (!threadIdx.x)
-  printf("x %d | y %d \n", x,y);
-
+# 183 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
  float sumR = 0.0f;
  float sumG = 0.0f;
  float sumB = 0.0f;
@@ -38763,32 +38759,23 @@ __attribute__((global)) void blur_kernel_x(float* dest, const float* src, unsign
    sumB += src[3*y*inputPitch + 3*(x+i) +2] * weights[i+16];
   }
  }
- if (!threadIdx.x){
-  printf("sumR: %f | sumG: %f | sumB: %f \n", sumR, sumG, sumB);
- }
+
+
+
 
  dest[ 3*y* outputPitch + 3*x] = sumR;
  dest[ 3*y* outputPitch + 3*x +1] = sumG;
  dest[ 3*y* outputPitch + 3*x +2] = sumB;
 }
 
+
+
 __attribute__((global)) void blur_kernel_y(float* dest, const float* src, unsigned int width, unsigned int height, unsigned int inputPitch, unsigned int outputPitch)
 {
- const float weights[] = {
-
-  0.00288204f, 0.00418319f, 0.00592754f, 0.00819980f, 0.01107369f, 0.01459965f, 0.01879116f, 0.02361161f, 0.02896398f, 0.03468581f, 0.04055144f, 0.04628301f, 0.05157007f, 0.05609637f, 0.05957069f, 0.06175773f,
-
-  0.06250444f,
-
-  0.06175773f, 0.05957069f, 0.05609637f, 0.05157007f, 0.04628301f, 0.04055144f, 0.03468581f, 0.02896398f, 0.02361161f, 0.01879116f, 0.01459965f, 0.01107369f, 0.00819980f, 0.00592754f, 0.00418319f, 0.00288204f
- };
 
 
  unsigned int x = blockIdx.x * blockDim.x + threadIdx.x;
  unsigned int y = blockIdx.y * blockDim.y + threadIdx.y;
-
- if (!threadIdx.x)
-  printf("x %d | y %d \n", x,y);
 
  float sumR = 0.0f;
  float sumG = 0.0f;
@@ -38796,13 +38783,14 @@ __attribute__((global)) void blur_kernel_y(float* dest, const float* src, unsign
 
  for (int i = -16; i<=16; i++){
   if ((3*(y+i) > 0) && (3*(y+i) < 3*height)){
+
+
+
+
    sumR += src[3*(y+i)*inputPitch + 3*x] * weights[i+16];
    sumG += src[3*(y+i)*inputPitch + 3*x +1] * weights[i+16];
    sumB += src[3*(y+i)*inputPitch + 3*x +2] * weights[i+16];
   }
- }
- if (!threadIdx.x){
-  printf("sumR: %f | sumG: %f | sumB: %f \n", sumR, sumG, sumB);
  }
 
  dest[ 3*y* outputPitch + 3*x] = sumR;
@@ -38822,15 +38810,17 @@ void gaussian_blur(float* dest, const float* src, unsigned int width, unsigned i
  int inputPitch = width;
  int outputPitch = width;
 
+
+
  blur_kernel_x<<<num_blocks, block_size>>>(dest, src, width, height, inputPitch, outputPitch);
  blur_kernel_y<<<num_blocks, block_size>>>(dest, dest, width, height, inputPitch, outputPitch);
-
 }
 
 
 
 void compose(float* output, const float* tonemapped, const float* blurred, unsigned int width, unsigned int height)
 {
+
 
 }
 

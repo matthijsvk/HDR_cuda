@@ -37571,20 +37571,14 @@ height = (height / (2));
 if (width < (1)) { 
 # 117
 width = (1); 
-# 118
-printf("width < 1 \n"); 
 # 119
 }  
 # 120
 if (height < (1)) { 
 # 121
 height = (1); 
-# 122
-printf("height < 1 \n"); 
 # 123
 }  
-# 125
-printf(" width %d | height %d \n", width, height); 
 # 126
 if (ping) { 
 # 127
@@ -37615,177 +37609,155 @@ cudaMemcpy(&average, dest, sizeof(float), cudaMemcpyDeviceToHost);
 return average; 
 # 145
 } 
-# 150
+# 149
+static float weights[33]; 
+# 158
 void blur_kernel_x(float *dest, const float *src, unsigned width, unsigned height, unsigned inputPitch, unsigned outputPitch) ;
 #if 0
-# 151
+# 159
 { 
-# 152
-const float weights[] = {(0.002882040106F), (0.004183189943F), (0.005927539896F), (0.008199799806F), (0.01107368991F), (0.01459965017F), (0.01879115961F), (0.02361161076F), (0.02896397933F), (0.03468580917F), (0.04055143893F), (0.04628301039F), (0.05157006904F), (0.05609637126F), (0.05957068875F), (0.06175772846F), (0.06250444055F), (0.06175772846F), (0.05957068875F), (0.05609637126F), (0.05157006904F), (0.04628301039F), (0.04055143893F), (0.03468580917F), (0.02896397933F), (0.02361161076F), (0.01879115961F), (0.01459965017F), (0.01107368991F), (0.008199799806F), (0.005927539896F), (0.004183189943F), (0.002882040106F)}; 
-# 162
+# 161
 unsigned x = ((__device_builtin_variable_blockIdx.x) * (__device_builtin_variable_blockDim.x)) + (__device_builtin_variable_threadIdx.x); 
-# 163
+# 162
 unsigned y = ((__device_builtin_variable_blockIdx.y) * (__device_builtin_variable_blockDim.y)) + (__device_builtin_variable_threadIdx.y); 
-# 165
-if (!(__device_builtin_variable_threadIdx.x)) { 
-# 166
-printf("x %d | y %d \n", x, y); }  
-# 168
-float sumR = (0.0F); 
-# 169
-float sumG = (0.0F); 
-# 170
-float sumB = (0.0F); 
-# 172
-for (int i = (-16); i <= 16; i++) { 
-# 173
-if ((((3) * (x + i)) > (0)) && (((3) * (x + i)) < ((3) * width))) { 
-# 174
-sumR += ((src[(((3) * y) * inputPitch) + ((3) * (x + i))]) * ((weights)[i + 16])); 
-# 175
-sumG += ((src[((((3) * y) * inputPitch) + ((3) * (x + i))) + (1)]) * ((weights)[i + 16])); 
-# 176
-sumB += ((src[((((3) * y) * inputPitch) + ((3) * (x + i))) + (2)]) * ((weights)[i + 16])); 
-# 177
-}  
-# 178
-}  
-# 179
-if (!(__device_builtin_variable_threadIdx.x)) { 
-# 180
-printf("sumR: %f | sumG: %f | sumB: %f \n", sumR, sumG, sumB); 
-# 181
-}  
 # 183
-(dest[(((3) * y) * outputPitch) + ((3) * x)]) = sumR; 
+float sumR = (0.0F); 
 # 184
-(dest[((((3) * y) * outputPitch) + ((3) * x)) + (1)]) = sumG; 
+float sumG = (0.0F); 
 # 185
+float sumB = (0.0F); 
+# 187
+for (int i = (-16); i <= 16; i++) { 
+# 188
+if ((((3) * (x + i)) > (0)) && (((3) * (x + i)) < ((3) * width))) { 
+# 189
+sumR += ((src[(((3) * y) * inputPitch) + ((3) * (x + i))]) * ((weights)[i + 16])); 
+# 190
+sumG += ((src[((((3) * y) * inputPitch) + ((3) * (x + i))) + (1)]) * ((weights)[i + 16])); 
+# 191
+sumB += ((src[((((3) * y) * inputPitch) + ((3) * (x + i))) + (2)]) * ((weights)[i + 16])); 
+# 192
+}  
+# 193
+}  
+# 198
+(dest[(((3) * y) * outputPitch) + ((3) * x)]) = sumR; 
+# 199
+(dest[((((3) * y) * outputPitch) + ((3) * x)) + (1)]) = sumG; 
+# 200
 (dest[((((3) * y) * outputPitch) + ((3) * x)) + (2)]) = sumB; 
-# 186
+# 201
 } 
 #endif
-# 188 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+# 205 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 void blur_kernel_y(float *dest, const float *src, unsigned width, unsigned height, unsigned inputPitch, unsigned outputPitch) ;
 #if 0
-# 189
-{ 
-# 190
-const float weights[] = {(0.002882040106F), (0.004183189943F), (0.005927539896F), (0.008199799806F), (0.01107368991F), (0.01459965017F), (0.01879115961F), (0.02361161076F), (0.02896397933F), (0.03468580917F), (0.04055143893F), (0.04628301039F), (0.05157006904F), (0.05609637126F), (0.05957068875F), (0.06175772846F), (0.06250444055F), (0.06175772846F), (0.05957068875F), (0.05609637126F), (0.05157006904F), (0.04628301039F), (0.04055143893F), (0.03468580917F), (0.02896397933F), (0.02361161076F), (0.01879115961F), (0.01459965017F), (0.01107368991F), (0.008199799806F), (0.005927539896F), (0.004183189943F), (0.002882040106F)}; 
-# 200
-unsigned x = ((__device_builtin_variable_blockIdx.x) * (__device_builtin_variable_blockDim.x)) + (__device_builtin_variable_threadIdx.x); 
-# 201
-unsigned y = ((__device_builtin_variable_blockIdx.y) * (__device_builtin_variable_blockDim.y)) + (__device_builtin_variable_threadIdx.y); 
-# 203
-if (!(__device_builtin_variable_threadIdx.x)) { 
-# 204
-printf("x %d | y %d \n", x, y); }  
 # 206
-float sumR = (0.0F); 
-# 207
-float sumG = (0.0F); 
-# 208
-float sumB = (0.0F); 
+{ 
+# 209
+unsigned x = ((__device_builtin_variable_blockIdx.x) * (__device_builtin_variable_blockDim.x)) + (__device_builtin_variable_threadIdx.x); 
 # 210
-for (int i = (-16); i <= 16; i++) { 
-# 211
-if ((((3) * (y + i)) > (0)) && (((3) * (y + i)) < ((3) * height))) { 
+unsigned y = ((__device_builtin_variable_blockIdx.y) * (__device_builtin_variable_blockDim.y)) + (__device_builtin_variable_threadIdx.y); 
 # 212
-sumR += ((src[(((3) * (y + i)) * inputPitch) + ((3) * x)]) * ((weights)[i + 16])); 
+float sumR = (0.0F); 
 # 213
-sumG += ((src[((((3) * (y + i)) * inputPitch) + ((3) * x)) + (1)]) * ((weights)[i + 16])); 
+float sumG = (0.0F); 
 # 214
-sumB += ((src[((((3) * (y + i)) * inputPitch) + ((3) * x)) + (2)]) * ((weights)[i + 16])); 
-# 215
-}  
+float sumB = (0.0F); 
 # 216
-}  
+for (int i = (-16); i <= 16; i++) { 
 # 217
-if (!(__device_builtin_variable_threadIdx.x)) { 
-# 218
-printf("sumR: %f | sumG: %f | sumB: %f \n", sumR, sumG, sumB); 
-# 219
-}  
-# 221
-(dest[(((3) * y) * outputPitch) + ((3) * x)]) = sumR; 
+if ((((3) * (y + i)) > (0)) && (((3) * (y + i)) < ((3) * height))) { 
 # 222
-(dest[((((3) * y) * outputPitch) + ((3) * x)) + (1)]) = sumG; 
+sumR += ((src[(((3) * (y + i)) * inputPitch) + ((3) * x)]) * ((weights)[i + 16])); 
 # 223
-(dest[((((3) * y) * outputPitch) + ((3) * x)) + (2)]) = sumB; 
+sumG += ((src[((((3) * (y + i)) * inputPitch) + ((3) * x)) + (1)]) * ((weights)[i + 16])); 
 # 224
+sumB += ((src[((((3) * (y + i)) * inputPitch) + ((3) * x)) + (2)]) * ((weights)[i + 16])); 
+# 225
+}  
+# 226
+}  
+# 228
+(dest[(((3) * y) * outputPitch) + ((3) * x)]) = sumR; 
+# 229
+(dest[((((3) * y) * outputPitch) + ((3) * x)) + (1)]) = sumG; 
+# 230
+(dest[((((3) * y) * outputPitch) + ((3) * x)) + (2)]) = sumB; 
+# 231
 } 
 #endif
-# 226 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+# 233 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 void gaussian_blur(float *dest, const float *src, unsigned width, unsigned height) 
-# 227
+# 234
 { 
-# 228
-const dim3 block_size = {32, 32}; 
-# 230
-const dim3 num_blocks = {divup(width, block_size.x), divup(height, block_size.y)}; 
 # 235
+const dim3 block_size = {32, 32}; 
+# 237
+const dim3 num_blocks = {divup(width, block_size.x), divup(height, block_size.y)}; 
+# 242
 int inputPitch = width; 
-# 236
+# 243
 int outputPitch = width; 
-# 238
+# 247
 (cudaConfigureCall(num_blocks, block_size)) ? (void)0 : (blur_kernel_x)(dest, src, width, height, inputPitch, outputPitch); 
-# 239
-(cudaConfigureCall(num_blocks, block_size)) ? (void)0 : (blur_kernel_y)(dest, dest, width, height, inputPitch, outputPitch); 
-# 241
-} 
-# 245
-void compose(float *output, const float *tonemapped, const float *blurred, unsigned width, unsigned height) 
-# 246
-{ 
 # 248
+(cudaConfigureCall(num_blocks, block_size)) ? (void)0 : (blur_kernel_y)(dest, dest, width, height, inputPitch, outputPitch); 
+# 249
 } 
-# 252
+# 253
+void compose(float *output, const float *tonemapped, const float *blurred, unsigned width, unsigned height) 
+# 254
+{ 
+# 257
+} 
+# 261
 void tonemap_kernel(float *tonemapped, float *brightpass, const float *src, unsigned width, unsigned height, float exposure, float brightpass_threshold) ;
 #if 0
-# 253
+# 262
 { 
-# 254
-unsigned x = ((__device_builtin_variable_blockIdx.x) * (__device_builtin_variable_blockDim.x)) + (__device_builtin_variable_threadIdx.x); 
-# 255
-unsigned y = ((__device_builtin_variable_blockIdx.y) * (__device_builtin_variable_blockDim.y)) + (__device_builtin_variable_threadIdx.y); 
-# 257
-if ((x < width) && (y < height)) 
-# 258
-{ 
-# 260
-math::float3 c = {src[((3) * ((y * width) + x)) + (0)], src[((3) * ((y * width) + x)) + (1)], src[((3) * ((y * width) + x)) + (2)]}; 
 # 263
-math::float3 c_t = tonemap(c, exposure); 
+unsigned x = ((__device_builtin_variable_blockIdx.x) * (__device_builtin_variable_blockDim.x)) + (__device_builtin_variable_threadIdx.x); 
+# 264
+unsigned y = ((__device_builtin_variable_blockIdx.y) * (__device_builtin_variable_blockDim.y)) + (__device_builtin_variable_threadIdx.y); 
 # 266
-(tonemapped[((3) * ((y * width) + x)) + (0)]) = (c_t.x); 
+if ((x < width) && (y < height)) 
 # 267
-(tonemapped[((3) * ((y * width) + x)) + (1)]) = (c_t.y); 
-# 268
-(tonemapped[((3) * ((y * width) + x)) + (2)]) = (c_t.z); 
-# 271
-math::float3 c_b = ((luminance(c_t) > brightpass_threshold) ? c_t : math::float3{(0.0F), (0.0F), (0.0F)}); 
+{ 
+# 269
+math::float3 c = {src[((3) * ((y * width) + x)) + (0)], src[((3) * ((y * width) + x)) + (1)], src[((3) * ((y * width) + x)) + (2)]}; 
 # 272
-(brightpass[((3) * ((y * width) + x)) + (0)]) = (c_b.x); 
-# 273
-(brightpass[((3) * ((y * width) + x)) + (1)]) = (c_b.y); 
-# 274
-(brightpass[((3) * ((y * width) + x)) + (2)]) = (c_b.z); 
+math::float3 c_t = tonemap(c, exposure); 
 # 275
-}  
+(tonemapped[((3) * ((y * width) + x)) + (0)]) = (c_t.x); 
 # 276
+(tonemapped[((3) * ((y * width) + x)) + (1)]) = (c_t.y); 
+# 277
+(tonemapped[((3) * ((y * width) + x)) + (2)]) = (c_t.z); 
+# 280
+math::float3 c_b = ((luminance(c_t) > brightpass_threshold) ? c_t : math::float3{(0.0F), (0.0F), (0.0F)}); 
+# 281
+(brightpass[((3) * ((y * width) + x)) + (0)]) = (c_b.x); 
+# 282
+(brightpass[((3) * ((y * width) + x)) + (1)]) = (c_b.y); 
+# 283
+(brightpass[((3) * ((y * width) + x)) + (2)]) = (c_b.z); 
+# 284
+}  
+# 285
 } 
 #endif
-# 278 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
+# 287 "/home/matthijs/Documents/Dropbox/_MyDocs/_ku_leuven/Master/CUDA/Projects/HDR2/build/cmake/hdr_pipeline/../../../source/hdr_pipeline/hdr_pipeline.cu"
 void tonemap(float *tonemapped, float *brightpass, const float *src, unsigned width, unsigned height, float exposure, float brightpass_threshold) 
-# 279
+# 288
 { 
-# 280
+# 289
 const auto block_size = dim3{32U, 32U}; 
-# 282
+# 291
 auto num_blocks = dim3{divup(width, block_size.x), divup(height, block_size.y)}; 
-# 284
+# 293
 (cudaConfigureCall(num_blocks, block_size)) ? (void)0 : (tonemap_kernel)(tonemapped, brightpass, src, width, height, exposure, brightpass_threshold); 
-# 285
+# 294
 } 
 
 # 1 "hdr_pipeline.compute_52.cudafe1.stub.c"

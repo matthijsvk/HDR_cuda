@@ -115,14 +115,14 @@ float downsample(float* dest,	float* luminance, unsigned int width, unsigned int
 		height = height / 2;
 		if (width < 1){
 			width = 1;
-			printf("width < 1 \n");
+//			printf("width < 1 \n");
 		}
 		if (height < 1){
 			height = 1;
-			printf("height < 1 \n");
+//			printf("height < 1 \n");
 		}
 
-		printf(" width %d | height %d \n", width, height);
+//		printf(" width %d | height %d \n", width, height);
 		if (ping){
 			downsample_kernel<<<num_blocks, block_size>>>(dest, luminance, width, height, pitchBuf, pitchLuminance);
 		}
@@ -146,10 +146,7 @@ float downsample(float* dest,	float* luminance, unsigned int width, unsigned int
 
 // first do it on the x direction
 // then do it on the y direction (-> texture memory to make this fast)
-
-__global__ void blur_kernel_x(float* dest, const float* src, unsigned int width, unsigned int height, unsigned int inputPitch, unsigned int outputPitch)
-{
-	const float weights[] = {  //weights in one dimension -> 33x33 filter
+__constant__ float weights[] = {  //weights in one dimension -> 33x33 filter
 		//  -16           -15         -14          -13          -12          -11          -10           -9           -8           -7           -6           -5           -4           -3           -2           -1
 		0.00288204f, 0.00418319f, 0.00592754f, 0.00819980f, 0.01107369f, 0.01459965f, 0.01879116f, 0.02361161f, 0.02896398f, 0.03468581f, 0.04055144f, 0.04628301f, 0.05157007f, 0.05609637f, 0.05957069f, 0.06175773f,
 		//    0
@@ -158,12 +155,30 @@ __global__ void blur_kernel_x(float* dest, const float* src, unsigned int width,
 		0.06175773f, 0.05957069f, 0.05609637f, 0.05157007f, 0.04628301f, 0.04055144f, 0.03468581f, 0.02896398f, 0.02361161f, 0.01879116f, 0.01459965f, 0.01107369f, 0.00819980f, 0.00592754f, 0.00418319f, 0.00288204f
 	};
 
+__global__ void blur_kernel_x(float* dest, const float* src, unsigned int width, unsigned int height, unsigned int inputPitch, unsigned int outputPitch)
+{
 	// 1 thread per output pixel
 	unsigned int x = blockIdx.x * blockDim.x + threadIdx.x;
 	unsigned int y = blockIdx.y * blockDim.y + threadIdx.y;
 
-	if (!threadIdx.x)
-		printf("x %d | y %d \n", x,y);
+//	__shared__ float blur_buffer[65*65];
+//	if (threadIdx.x == 0){
+//		// read 64x64 input image into shared buffer
+//		// make sure you don't read out of bounds when the kernels operate near the image borders
+//		int startx = max(0,x - 64);
+//		int endx = min(width-1, x+64);
+//
+//		int starty = max(0,y - 64);
+//		int endy = min(height-1, y+64);
+//
+//		blur_buffer = src[startx:endx][starty:endy];
+//		for (int i = 0; i < 65; i++){
+//			for (int j = 0; j< 65){
+//				// if the kernel is near the borders, you need to fill the buffer with zeros at the right places
+//				// so the access of the  buffer is easy relative to the thread coordinates.
+//			}
+//		}
+//	}
 
 	float sumR = 0.0f;
 	float sumG = 0.0f;
@@ -171,37 +186,28 @@ __global__ void blur_kernel_x(float* dest, const float* src, unsigned int width,
 
 	for (int i = -16; i<=16; i++){
 		if ((3*(x+i) > 0) && (3*(x+i) < 3*width)){
-			sumR += src[3*y*inputPitch + 3*(x+i)]    * weights[i+16];
+			sumR += src[3*y*inputPitch + 3*(x+i)] * weights[i+16];
 			sumG += src[3*y*inputPitch + 3*(x+i) +1] * weights[i+16];
 			sumB += src[3*y*inputPitch + 3*(x+i) +2] * weights[i+16];
 		}
 	}
-	if (!threadIdx.x){
-		printf("sumR: %f | sumG: %f | sumB: %f \n", sumR, sumG, sumB);
-	}
+//	if (!threadIdx.x){
+//		printf("sumR: %f | sumG: %f | sumB: %f \n", sumR, sumG, sumB);
+//	}
 
 	dest[ 3*y* outputPitch + 3*x]    = sumR;
 	dest[ 3*y* outputPitch + 3*x +1] = sumG;
 	dest[ 3*y* outputPitch + 3*x +2] = sumB;
 }
 
+
+
 __global__ void blur_kernel_y(float* dest, const float* src, unsigned int width, unsigned int height, unsigned int inputPitch, unsigned int outputPitch)
 {
-	const float weights[] = {  //weights in one dimension -> 33x33 filter
-		//  -16           -15         -14          -13          -12          -11          -10           -9           -8           -7           -6           -5           -4           -3           -2           -1
-		0.00288204f, 0.00418319f, 0.00592754f, 0.00819980f, 0.01107369f, 0.01459965f, 0.01879116f, 0.02361161f, 0.02896398f, 0.03468581f, 0.04055144f, 0.04628301f, 0.05157007f, 0.05609637f, 0.05957069f, 0.06175773f,
-		//    0
-		0.06250444f,
-		//    1             2           3            4            5            6            7            8            9           10           11           12           13           14           15           16
-		0.06175773f, 0.05957069f, 0.05609637f, 0.05157007f, 0.04628301f, 0.04055144f, 0.03468581f, 0.02896398f, 0.02361161f, 0.01879116f, 0.01459965f, 0.01107369f, 0.00819980f, 0.00592754f, 0.00418319f, 0.00288204f
-	};
 
 	// 1 thread per output pixel
 	unsigned int x = blockIdx.x * blockDim.x + threadIdx.x;
 	unsigned int y = blockIdx.y * blockDim.y + threadIdx.y;
-
-	if (!threadIdx.x)
-		printf("x %d | y %d \n", x,y);
 
 	float sumR = 0.0f;
 	float sumG = 0.0f;
@@ -209,13 +215,14 @@ __global__ void blur_kernel_y(float* dest, const float* src, unsigned int width,
 
 	for (int i = -16; i<=16; i++){
 		if ((3*(y+i) > 0) && (3*(y+i) < 3*height)){
-			sumR += src[3*(y+i)*inputPitch + 3*x]    * weights[i+16];
+// all threads in the block read the same pixels. -> lots of overlap.
+// each block accesses 32x32 pixels plus 16 on each side for the gaussian operation -> 64x64 pixels are to be read
+// Before processing, have the threads each read 4 pixels (32x32 threads, 64x64 pixels) in a shared buffer. Then Sync, and have the threads process data from this shared buffer instead of from memory.
+
+			sumR += src[3*(y+i)*inputPitch + 3*x] * weights[i+16];
 			sumG += src[3*(y+i)*inputPitch + 3*x +1] * weights[i+16];
 			sumB += src[3*(y+i)*inputPitch + 3*x +2] * weights[i+16];
 		}
-	}
-	if (!threadIdx.x){
-		printf("sumR: %f | sumG: %f | sumB: %f \n", sumR, sumG, sumB);
 	}
 
 	dest[ 3*y* outputPitch + 3*x]    = sumR;
@@ -235,9 +242,10 @@ void gaussian_blur(float* dest, const float* src, unsigned int width, unsigned i
 	int inputPitch = width;
 	int outputPitch = width;
 
+
+
 	blur_kernel_x<<<num_blocks, block_size>>>(dest, src, width, height, inputPitch, outputPitch);
 	blur_kernel_y<<<num_blocks, block_size>>>(dest, dest, width, height, inputPitch, outputPitch);
-
 }
 
 
@@ -245,6 +253,7 @@ void gaussian_blur(float* dest, const float* src, unsigned int width, unsigned i
 void compose(float* output, const float* tonemapped, const float* blurred, unsigned int width, unsigned int height)
 {
 	// TODO: add blurred brightpass to tonemapped image
+
 }
 
 
